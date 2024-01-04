@@ -1,0 +1,7 @@
+﻿print ("请输入一个字母或数字")
+number = input ()
+print ("你输入的是",number)
+print ("请输入你的名字")
+name = input ()
+print ("你好",name,"我是周杰伦")
+input ()

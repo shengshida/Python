@@ -1,0 +1,1263 @@
+﻿----------连接时间:2020年08月29日-14时28分31秒----------
+
+User Access Verification
+
+Username: admin
+Password: 
+ 
+SZ-YX-6B-03-C2960X-XOA-06#sho run 
+Building configuration...
+
+Current configuration : 36928 bytes
+!
+! Last configuration change at 14:28:38 CST Sat Aug 29 2020 by admin
+! NVRAM config last updated at 14:28:39 CST Sat Aug 29 2020 by admin
+!
+version 15.2
+no service pad
+service tcp-keepalives-in
+service tcp-keepalives-out
+service timestamps debug datetime msec localtime
+service timestamps log datetime msec localtime
+service password-encryption
+!
+hostname SZ-YX-6B-03-C2960X-XOA-06
+!
+boot-start-marker
+boot-end-marker
+!         
+logging buffered 40960 informational
+enable secret 9 $9$vbXDf9sXP3YmPN$RXZPSDTJThoeKb0LzouYBf5k3xHhKjTotgX/VYYpXq2
+!
+username admin privilege 15 secret 9 $9$Zy5sHV2uMCqUoU$LFUE3NIuOeRhcQ8HlNz3kyS1fVcmpEkhFT18WdzFkOU
+aaa new-model
+!
+!
+aaa group server tacacs+ tencent-tacacs
+ server name 10.14.32.81
+ server name 10.14.160.81
+!
+aaa group server radius tencent-radius
+ server name 10.14.70.33
+ server name 10.14.128.101
+!
+aaa authentication login default group tacacs+ local
+aaa authentication login consoleloginlocal local
+aaa authentication dot1x default group radius
+aaa authorization config-commands
+aaa authorization exec default group tacacs+ local 
+aaa authorization commands 1 default group tacacs+ local 
+aaa authorization commands 2 default group tacacs+ local 
+aaa authorization commands 15 default group tacacs+ local 
+aaa authorization network default group radius 
+aaa accounting exec default start-stop group tacacs+
+aaa accounting commands 0 default start-stop group tacacs+
+aaa accounting commands 1 default start-stop group tacacs+
+aaa accounting commands 2 default start-stop group tacacs+
+aaa accounting commands 15 default start-stop group tacacs+
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone CST 8 0
+switch 1 provision ws-c2960x-48ts-l
+!
+!
+!
+!
+no ip source-route
+ip arp inspection vlan 1-9,12-43,45-99,110-599
+ip arp inspection validate src-mac 
+ip arp inspection log-buffer entries 1024
+ip arp inspection log-buffer logs 1 interval 60
+no ip dhcp conflict logging
+!
+!
+ip dhcp snooping vlan 1-4094
+no ip dhcp snooping information option
+ip dhcp snooping database flash:dhcp-snooping.db
+ip dhcp snooping
+no ip domain-lookup
+ip domain-name tencent.com
+!
+!
+!
+!
+!
+!
+!
+!
+dot1x system-auth-control
+!
+spanning-tree mode rapid-pvst
+spanning-tree portfast edge bpduguard default
+no spanning-tree optimize bpdu transmission
+spanning-tree extend system-id
+errdisable recovery cause udld
+errdisable recovery cause bpduguard
+errdisable recovery cause security-violation
+errdisable recovery cause channel-misconfig
+errdisable recovery cause pagp-flap
+errdisable recovery cause dtp-flap
+errdisable recovery cause link-flap
+errdisable recovery cause gbic-invalid
+errdisable recovery cause psecure-violation
+errdisable recovery cause dhcp-rate-limit
+errdisable recovery cause loopback
+errdisable recovery interval 120
+port-channel load-balance src-dst-ip
+!
+!
+!
+!
+vlan internal allocation policy ascending
+!
+lldp run  
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+interface Port-channel1
+ description TO_SZ-YX-6B-01-C3650-DOA-01/02_Port-channel6
+ switchport trunk allowed vlan 10,32,666
+ switchport mode trunk
+ ip arp inspection trust
+ spanning-tree guard loop
+ ip dhcp snooping trust
+!         
+interface FastEthernet0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet1/0/1
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/2
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/3
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/4
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/5
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/6
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab      
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/7
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/8
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!         
+interface GigabitEthernet1/0/9
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/10
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/11
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/12
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/13
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/14
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/15
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab      
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/16
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/17
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!         
+interface GigabitEthernet1/0/18
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/19
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/20
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/21
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/22
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/23
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/24
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab      
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/25
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/26
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!         
+interface GigabitEthernet1/0/27
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/28
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/29
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/30
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/31
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/32
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/33
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab      
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/34
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/35
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!         
+interface GigabitEthernet1/0/36
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/37
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/38
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/39
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/40
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/41
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/42
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab      
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/43
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/44
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!         
+interface GigabitEthernet1/0/45
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/46
+ switchport access vlan 32
+ switchport mode access
+ switchport port-security violation restrict
+ switchport port-security
+ ip arp inspection limit rate 300
+ authentication event fail action authorize vlan 666
+ authentication event no-response action authorize vlan 666
+ authentication order mab dot1x
+ authentication port-control auto
+ authentication violation protect
+ mab
+ dot1x pae authenticator
+ dot1x timeout tx-period 1
+ dot1x max-req 1
+ storm-control broadcast level pps 300
+ storm-control multicast level pps 20k
+ storm-control action shutdown
+ spanning-tree portfast edge
+ spanning-tree bpduguard enable
+ ip dhcp snooping limit rate 300
+!
+interface GigabitEthernet1/0/47
+ description TO_SZ-YX-6B-01-C3650-DOA-01/02_GigabitEthernet1/0/6
+ switchport trunk allowed vlan 10,32,666
+ switchport mode trunk
+ ip arp inspection trust
+ udld port aggressive
+ spanning-tree guard loop
+ channel-group 1 mode active
+ ip dhcp snooping trust
+!         
+interface GigabitEthernet1/0/48
+ description TO_SZ-YX-6B-01-C3650-DOA-01/02_GigabitEthernet2/0/6
+ switchport trunk allowed vlan 10,32,666
+ switchport mode trunk
+ ip arp inspection trust
+ udld port aggressive
+ spanning-tree guard loop
+ channel-group 1 mode active
+ ip dhcp snooping trust
+!
+interface GigabitEthernet1/0/49
+!
+interface GigabitEthernet1/0/50
+!
+interface GigabitEthernet1/0/51
+!
+interface GigabitEthernet1/0/52
+!         
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ ip address 10.95.128.30 255.255.255.192
+!
+ip default-gateway 10.95.128.1
+!
+no ip http server
+no ip http secure-server
+ip ssh version 2
+ip tacacs source-interface Vlan10
+!
+ip access-list standard CL
+ permit 10.12.220.0 0.0.0.255
+ permit 10.123.127.0 0.0.0.255
+ permit 10.14.90.0 0.0.0.255
+ permit 10.14.67.0 0.0.0.255
+ permit 10.14.34.0 0.0.0.255
+ permit 10.14.70.0 0.0.0.255
+ permit 10.14.64.0 0.0.0.255
+ permit 10.85.15.192 0.0.0.63
+ permit 10.76.83.0 0.0.0.255
+ permit 10.76.1.0 0.0.0.3
+ permit 10.6.3.0 0.0.0.3
+ permit 10.95.128.0 0.0.0.63
+ permit 10.95.128.64 0.0.0.63
+!
+logging origin-id hostname
+logging facility local2
+logging source-interface Vlan10
+logging host 10.14.0.35
+logging host 10.14.0.36
+logging host 10.14.203.30
+logging host 10.34.27.26
+access-list 10 permit 10.14.0.0 0.0.0.255
+access-list 10 permit 10.14.34.0 0.0.0.255
+access-list 10 permit 10.14.67.0 0.0.0.255
+access-list 10 permit 10.14.203.0 0.0.0.255
+access-list 10 permit 10.34.27.0 0.0.0.255
+!
+!
+snmp-server community tencent RO 10
+snmp mib flash cache
+tacacs-server directed-request
+tacacs server 10.14.32.81
+ address ipv4 10.14.32.81
+ key 7 03105E05050A2F58
+tacacs server 10.14.160.81
+ address ipv4 10.14.160.81
+ key 7 120D0019110E0210
+!
+!         
+radius server 10.14.70.33
+ address ipv4 10.14.70.33 auth-port 28882 acct-port 28883
+ key 7 1311121C08090A3E0B2D3C20
+!
+radius server 10.14.128.101
+ address ipv4 10.14.128.101 auth-port 28882 acct-port 28883
+ key 7 03105E05050A2F586E000D16
+!
+!
+line con 0
+ logging synchronous
+ login authentication consoleloginlocal
+line vty 0 4
+ access-class CL in
+ logging synchronous
+ transport input all
+line vty 5 15
+ access-class CL in
+ logging synchronous
+ transport input all
+!
+ntp server 10.14.0.136
+ntp server 10.14.198.20
+!
+end
+
+SZ-YX-6B-03-C2960X-XOA-06#                                                           
+SZ-YX-6B-03-C2960X-XOA-06#exit
+----------断开时间:2020年08月29日-14时28分53秒----------

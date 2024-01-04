@@ -1,0 +1,82 @@
+    edit 1872
+        set srcintf "To-MDCN"
+        set dstintf "TO-DMZ"
+            set srcaddr "10.251.0.0/16"             
+            set dstaddr "10.253.43.7/32"             
+        set rtp-nat disable
+        set action accept
+        set status enable
+        set dynamic-profile disable
+        unset dynamic-profile-access
+        set schedule "always"
+        set schedule-timeout disable
+            set service "8008" "TCP/8090"             
+        set utm-status disable
+        set logtraffic disable
+        set logtraffic-app enable
+        set auto-asic-offload enable
+        set webcache disable
+        set session-ttl 0
+        set wccp disable
+        set fsso disable
+        set disclaimer disable
+        set natip 0.0.0.0 0.0.0.0
+        set match-vip disable
+        set diffserv-forward disable
+        set diffserv-reverse disable
+        set tcp-mss-sender 0
+        set tcp-mss-receiver 0
+        set comments "  WSC_YX_20180305_6224869"
+        set endpoint-check disable
+        set label ''
+        set global-label ''
+        set replacemsg-override-group ''
+        set identity-based disable
+        set traffic-shaper ''
+        set traffic-shaper-reverse ''
+        set per-ip-shaper ''
+        set nat disable
+        set dynamic-profile-fallthrough disable
+        set client-reputation disable
+    next
+    edit 1873
+        set srcintf "To-MDCN"
+        set dstintf "TO-DMZ"
+            set srcaddr "10.240.0.0/12"             
+            set dstaddr "10.253.43.7/32"             
+        set rtp-nat disable
+        set action accept
+        set status enable
+        set dynamic-profile disable
+        unset dynamic-profile-access
+        set schedule "always"
+        set schedule-timeout disable
+            set service "8008" "TCP/8090"             
+        set utm-status disable
+        set logtraffic disable
+        set logtraffic-app enable
+        set auto-asic-offload enable
+        set webcache disable
+        set session-ttl 0
+        set wccp disable
+        set fsso disable
+        set disclaimer disable
+        set natip 0.0.0.0 0.0.0.0
+        set match-vip disable
+        set diffserv-forward disable
+        set diffserv-reverse disable
+        set tcp-mss-sender 0
+        set tcp-mss-receiver 0
+        set comments "WSC_YX_20180305_6224869"
+        set endpoint-check disable
+        set label ''
+        set global-label ''
+        set replacemsg-override-group ''
+        set identity-based disable
+        set traffic-shaper ''
+        set traffic-shaper-reverse ''
+        set per-ip-shaper ''
+        set nat disable
+        set dynamic-profile-fallthrough disable
+        set client-reputation disable
+    next

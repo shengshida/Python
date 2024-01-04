@@ -1,0 +1,2694 @@
+ip service-set ALL type object
+ip service-set ALL_TCP type object
+ip service-set ALL_UDP type object
+ip service-set ALL_ICMP type object
+ip service-set ALL_ICMP6 type object
+ip service-set webproxy type object
+ip service-set TCP/6554、6555 type object
+ service protocol tcp destination-port 6554
+ip service-set TCP/6563 type object
+ service protocol tcp destination-port 6563
+ip service-set TCP/6556 type object
+ service protocol tcp destination-port 6556
+ip service-set TCP/6553-6656 type object
+ service protocol tcp destination-port 6553
+ip service-set TCP/20 type object
+ service protocol tcp destination-port 20
+ip service-set TCP/1521 type object
+ service protocol tcp destination-port 1521
+ip service-set TCP/5678 type object
+ service protocol tcp destination-port 5678
+ip service-set TCP/30021 type object
+ service protocol tcp destination-port 30021
+ip service-set TCP/30030 type object
+ service protocol tcp destination-port 30030
+ip service-set TCP/9151 type object
+ service protocol tcp destination-port 9151
+ip service-set TCP/9152 type object
+ service protocol tcp destination-port 9152
+ip service-set TCP/9153 type object
+ service protocol tcp destination-port 9153
+ip service-set TCP/9154 type object
+ service protocol tcp destination-port 9154
+ip service-set TCP/8000 type object
+ service protocol tcp destination-port 8000
+ip service-set TCP/1521-1561 type object
+ service protocol tcp destination-port 1521
+ip service-set TCP/7890 type object
+ service protocol tcp destination-port 7890
+ip service-set TCP/31759 type object
+ service protocol tcp destination-port 31759
+ip service-set TCP/1100 type object
+ service protocol tcp destination-port 1100
+ip service-set TCP/30020 type object
+ service protocol tcp destination-port 30020
+ip service-set UDP/123 type object
+ service protocol udp destination-port 123
+ip service-set TCP/1100-1200 type object
+ service protocol tcp destination-port 1100
+ip service-set TCP/31759-31859 type object
+ service protocol tcp destination-port 31759
+ip service-set TCP/7570 type object
+ service protocol tcp destination-port 7570
+ip service-set TCP/7591 type object
+ service protocol tcp destination-port 7591
+ip service-set TCP/8005 type object
+ service protocol tcp destination-port 8005
+ip service-set TCP/8090 type object
+ service protocol tcp destination-port 8090
+ip service-set TCP/28090 type object
+ service protocol tcp destination-port 28090
+ip service-set TCP/28443 type object
+ service protocol tcp destination-port 28443
+ip service-set TCP/38080 type object
+ service protocol tcp destination-port 38080
+ip service-set TCP/38443 type object
+ service protocol tcp destination-port 38443
+ip service-set TCP/38007 type object
+ service protocol tcp destination-port 38007
+ip service-set TCP/3868 type object
+ service protocol tcp destination-port 3868
+ip service-set TCP/8443 type object
+ service protocol tcp destination-port 8443
+ip service-set TCP/177 type object
+ service protocol tcp destination-port 177
+ip service-set TCP/1526 type object
+ service protocol tcp destination-port 1526
+ip service-set TCP/8000-9999 type object
+ service protocol tcp destination-port 8000
+ip service-set TCP/1080-1099 type object
+ service protocol tcp destination-port 1080
+ip service-set TCP/123 type object
+ service protocol tcp destination-port 123
+ip service-set TCP/80-99 type object
+ service protocol tcp destination-port 80
+ip service-set TCP/9000-9999 type object
+ service protocol tcp destination-port 9000
+ip service-set TCP/1521-1529 type object
+ service protocol tcp destination-port 1521
+ip service-set TCP/8000-8099 type object
+ service protocol tcp destination-port 8000
+ip service-set TCP/1060-1090 type object
+ service protocol tcp destination-port 1060
+ip service-set TCP/8000-8030 type object
+ service protocol tcp destination-port 8000
+ip service-set TCP/9040-9049 type object
+ service protocol tcp destination-port 9040
+ip service-set TCP/9060-9065 type object
+ service protocol tcp destination-port 9060
+ip service-set TCP/9090-9099 type object
+ service protocol tcp destination-port 9090
+ip service-set TCP/19080-19089 type object
+ service protocol tcp destination-port 19080
+ip service-set TCP/39080-39089 type object
+ service protocol tcp destination-port 39080
+ip service-set TCP/5200 type object
+ service protocol tcp destination-port 5200
+ip service-set TCP/6200 type object
+ service protocol tcp destination-port 6200
+ip service-set TCP/180 type object
+ service protocol tcp destination-port 180
+ip service-set TCP/7163 type object
+ service protocol tcp destination-port 7163
+ip service-set TCP/7160 type object
+ service protocol tcp destination-port 7160
+ip service-set TCP/5500 type object
+ service protocol tcp destination-port 5500
+ip service-set TCP/5505-5515 type object
+ service protocol tcp destination-port 5505
+ip service-set TCP/5520 type object
+ service protocol tcp destination-port 5520
+ip service-set TCP/5530 type object
+ service protocol tcp destination-port 5530
+ip service-set TCP/5540 type object
+ service protocol tcp destination-port 5540
+ip service-set TCP/5550 type object
+ service protocol tcp destination-port 5550
+ip service-set TCP/5560 type object
+ service protocol tcp destination-port 5560
+ip service-set TCP/5570 type object
+ service protocol tcp destination-port 5570
+ip service-set TCP/5580 type object
+ service protocol tcp destination-port 5580
+ip service-set TCP/9080 type object
+ service protocol tcp destination-port 9080
+ip service-set TCP/7001 type object
+ service protocol tcp destination-port 7001
+ip service-set TCP/8044 type object
+ service protocol tcp destination-port 8044
+ip service-set TCP/9006 type object
+ service protocol tcp destination-port 9006
+ip service-set TCP/9005 type object
+ service protocol tcp destination-port 9005
+ip service-set TCP/7006 type object
+ service protocol tcp destination-port 7006
+ip service-set TCP/8088 type object
+ service protocol tcp destination-port 8088
+ip service-set TCP/7788 type object
+ service protocol tcp destination-port 7788
+ip service-set TCP/90 type object
+ service protocol tcp destination-port 90
+ip service-set TCP/92 type object
+ service protocol tcp destination-port 92
+ip service-set TCP/94 type object
+ service protocol tcp destination-port 94
+ip service-set TCP/98 type object
+ service protocol tcp destination-port 98
+ip service-set TCP/83 type object
+ service protocol tcp destination-port 83
+ip service-set TCP/86 type object
+ service protocol tcp destination-port 86
+ip service-set TCP/84 type object
+ service protocol tcp destination-port 84
+ip service-set TCP/20000 type object
+ service protocol tcp destination-port 20000
+ip service-set TCP/20001 type object
+ service protocol tcp destination-port 20001
+ip service-set TCP/20002 type object
+ service protocol tcp destination-port 20002
+ip service-set TCP/20008 type object
+ service protocol tcp destination-port 20008
+ip service-set TCP/30099 type object
+ service protocol tcp destination-port 30099
+ip service-set TCP/6616 type object
+ service protocol tcp destination-port 6616
+ip service-set TCP/6626 type object
+ service protocol tcp destination-port 6626
+ip service-set TCP/1110 type object
+ service protocol tcp destination-port 1110
+ip service-set TCP/29999 type object
+ service protocol tcp destination-port 29999
+ip service-set TCP/101 type object
+ service protocol tcp destination-port 101
+ip service-set TCP/8080 type object
+ service protocol tcp destination-port 8080
+ip service-set TCP/3399 type object
+ service protocol tcp destination-port 3399
+ip service-set TCP/8018 type object
+ service protocol tcp destination-port 8018
+ip service-set TCP/8070 type object
+ service protocol tcp destination-port 8070
+ip service-set TCP/17082 type object
+ service protocol tcp destination-port 17082
+ip service-set tcp/1521-1560 type object
+ service protocol tcp destination-port 1521
+ip service-set TCP/7800-7900 type object
+ service protocol tcp destination-port 7800
+ip service-set TCP/9001 type object
+ service protocol tcp destination-port 9001
+ip service-set TCP/81 type object
+ service protocol tcp destination-port 81
+ip service-set TCP/9081 type object
+ service protocol tcp destination-port 9081
+ip service-set TCP/9082 type object
+ service protocol tcp destination-port 9082
+ip service-set TCP/10033 type object
+ service protocol tcp destination-port 10033
+ip service-set TCP/10021 type object
+ service protocol tcp destination-port 10021
+ip service-set TCP/14355 type object
+ service protocol tcp destination-port 14355
+ip service-set TCP/14353 type object
+ service protocol tcp destination-port 14353
+ip service-set TCP/19999 type object
+ service protocol tcp destination-port 19999
+ip service-set TCP/80-100 type object
+ service protocol tcp destination-port 80
+ip service-set TCP/9030-9100 type object
+ service protocol tcp destination-port 9030
+ip service-set TCP/9440-9560 type object
+ service protocol tcp destination-port 9440
+ip service-set TCP/1070-1090 type object
+ service protocol tcp destination-port 1070
+ip service-set TCP/8000-8020 type object
+ service protocol tcp destination-port 8000
+ip service-set TCP/6570-6580 type object
+ service protocol tcp destination-port 6570
+ip service-set TCP/1520-1527 type object
+ service protocol tcp destination-port 1520
+ip service-set TCP/14340-14360 type object
+ service protocol tcp destination-port 14340
+ip service-set TCP/9080-9090 type object
+ service protocol tcp destination-port 9080
+ip service-set TCP/80-90 type object
+ service protocol tcp destination-port 80
+ip service-set TCP/1521-1537 type object
+ service protocol tcp destination-port 1521
+ip service-set tcp/1588 type object
+ service protocol tcp destination-port 1588
+ip service-set tcp/9088 type object
+ service protocol tcp destination-port 9088
+ip service-set tcp/9089 type object
+ service protocol tcp destination-port 9089
+ip service-set TCP/1521-1525 type object
+ service protocol tcp destination-port 1521
+ip service-set TCP/9080-9086 type object
+ service protocol tcp destination-port 9080
+ip service-set TCP/1414 type object
+ service protocol tcp destination-port 1414
+ip service-set TCP/1430 type object
+ service protocol tcp destination-port 1430
+ip service-set 18443 type object
+ service protocol tcp destination-port 18443
+ip service-set TCP/5001 type object
+ service protocol tcp destination-port 5001
+ip service-set TCP/9999 type object
+ service protocol tcp destination-port 9999
+ip service-set tcp/8120-8180 type object
+ service protocol tcp destination-port 8120
+ip service-set tcp/1520-1525 type object
+ service protocol tcp destination-port 1520
+ip service-set tcp/8440-8443 type object
+ service protocol tcp destination-port 8440
+ip service-set tcp/28440-28443 type object
+ service protocol tcp destination-port 28440
+ip service-set TCP/9002 type object
+ service protocol tcp destination-port 9002
+ip service-set tcp/18443 type object
+ service protocol tcp destination-port 18443
+ip service-set tcp/10050-10054 type object
+ service protocol tcp destination-port 10050
+ip service-set tcp/181 type object
+ service protocol tcp destination-port 181
+ip service-set tcp/183 type object
+ service protocol tcp destination-port 183
+ip service-set 40999 type object
+ service protocol tcp destination-port 40999
+ip service-set 40754 type object
+ service protocol tcp destination-port 40754
+ip service-set 40660 type object
+ service protocol tcp destination-port 40660
+ip service-set 40768 type object
+ service protocol tcp destination-port 40768
+ip service-set 40663 type object
+ service protocol tcp destination-port 40663
+ip service-set 40751 type object
+ service protocol tcp destination-port 40751
+ip service-set 40763 type object
+ service protocol tcp destination-port 40763
+ip service-set 40766 type object
+ service protocol tcp destination-port 40766
+ip service-set 40758 type object
+ service protocol tcp destination-port 40758
+ip service-set 80 type object
+ service protocol tcp destination-port 80
+ip service-set 1521-1539 type object
+ service protocol tcp destination-port 1521
+ip service-set 82 type object
+ service protocol tcp destination-port 82
+ip service-set 85 type object
+ service protocol tcp destination-port 85
+ip service-set 1521-1528 type object
+ service protocol tcp destination-port 1521
+ip service-set 9084-9085 type object
+ service protocol tcp destination-port 9084
+ip service-set TCP/30000-30099 type object
+ service protocol tcp destination-port 30000
+ip service-set TCP/6570 type object
+ service protocol tcp destination-port 6570
+ip service-set TCP/9084 type object
+ service protocol tcp destination-port 9084
+ip service-set TCP/9083 type object
+ service protocol tcp destination-port 9083
+ip service-set TCP/5016 type object
+ service protocol tcp destination-port 5016
+ip service-set tcp/1556 type object
+ service protocol tcp destination-port 1556
+ip service-set tcp/13720 type object
+ service protocol tcp destination-port 13720
+ip service-set tcp/13724 type object
+ service protocol tcp destination-port 13724
+ip service-set tcp/13780 type object
+ service protocol tcp destination-port 13780
+ip service-set tcp/13782 type object
+ service protocol tcp destination-port 13782
+ip service-set tcp/1415 type object
+ service protocol tcp destination-port 1415
+ip service-set tcp/1434 type object
+ service protocol tcp destination-port 1434
+ip service-set tcp/1441 type object
+ service protocol tcp destination-port 1441
+ip service-set tcp/40663 type object
+ service protocol tcp destination-port 40663
+ip service-set tcp/40660 type object
+ service protocol tcp destination-port 40660
+ip service-set tcp/40754 type object
+ service protocol tcp destination-port 40754
+ip service-set tcp/40768 type object
+ service protocol tcp destination-port 40768
+ip service-set tcp/40751 type object
+ service protocol tcp destination-port 40751
+ip service-set tcp/40763 type object
+ service protocol tcp destination-port 40763
+ip service-set tcp/40766 type object
+ service protocol tcp destination-port 40766
+ip service-set tcp/40758 type object
+ service protocol tcp destination-port 40758
+ip service-set tcp/40999 type object
+ service protocol tcp destination-port 40999
+ip service-set tcp/1521-1539 type object
+ service protocol tcp destination-port 1521
+ip service-set tcp/10754 type object
+ service protocol tcp destination-port 10754
+ip service-set tcp/10660 type object
+ service protocol tcp destination-port 10660
+ip service-set tcp/10768 type object
+ service protocol tcp destination-port 10768
+ip service-set tcp/10663 type object
+ service protocol tcp destination-port 10663
+ip service-set tcp/10751 type object
+ service protocol tcp destination-port 10751
+ip service-set tcp/10763 type object
+ service protocol tcp destination-port 10763
+ip service-set tcp/10766 type object
+ service protocol tcp destination-port 10766
+ip service-set tcp/10758 type object
+ service protocol tcp destination-port 10758
+ip service-set tcp/20754 type object
+ service protocol tcp destination-port 20754
+ip service-set tcp/20660 type object
+ service protocol tcp destination-port 20660
+ip service-set tcp/20768 type object
+ service protocol tcp destination-port 20768
+ip service-set tcp/20663 type object
+ service protocol tcp destination-port 20663
+ip service-set tcp/20751 type object
+ service protocol tcp destination-port 20751
+ip service-set tcp/20763 type object
+ service protocol tcp destination-port 20763
+ip service-set tcp/20766 type object
+ service protocol tcp destination-port 20766
+ip service-set tcp/20758 type object
+ service protocol tcp destination-port 20758
+ip service-set tcp/30754 type object
+ service protocol tcp destination-port 30754
+ip service-set tcp/30660 type object
+ service protocol tcp destination-port 30660
+ip service-set tcp/30768 type object
+ service protocol tcp destination-port 30768
+ip service-set tcp/30663 type object
+ service protocol tcp destination-port 30663
+ip service-set tcp/30751 type object
+ service protocol tcp destination-port 30751
+ip service-set tcp/30763 type object
+ service protocol tcp destination-port 30763
+ip service-set tcp/30766 type object
+ service protocol tcp destination-port 30766
+ip service-set tcp/30758 type object
+ service protocol tcp destination-port 30758
+ip service-set tcp/80-85 type object
+ service protocol tcp destination-port 80
+ip service-set tcp/107 type object
+ service protocol tcp destination-port 107
+ip service-set tcp/7701-8899 type object
+ service protocol tcp destination-port 7701
+ip service-set tcp/5000 type object
+ service protocol tcp destination-port 5000
+ip service-set tcp/6915 type object
+ service protocol tcp destination-port 6915
+ip service-set tcp/6000-6100 type object
+ service protocol tcp destination-port 6000
+ip service-set tcp/50758 type object
+ service protocol tcp destination-port 50758
+ip service-set tcp/8100-8200 type object
+ service protocol tcp destination-port 8100
+ip service-set tcp/7500-7600 type object
+ service protocol tcp destination-port 7500
+ip service-set tcp/6553-6564 type object
+ service protocol tcp destination-port 6553
+ip service-set tcp/56186-56188 type object
+ service protocol tcp destination-port 56186
+ip service-set tcp/5555 type object
+ service protocol tcp destination-port 5555
+ip service-set tcp/6912 type object
+ service protocol tcp destination-port 6912
+ip service-set tcp/1700 type object
+ service protocol tcp destination-port 1700
+ip service-set tcp/9040-9170 type object
+ service protocol tcp destination-port 9040
+ip service-set tcp/40001-40010 type object
+ service protocol tcp destination-port 40001
+ip service-set TCP/1080-1085 type object
+ service protocol tcp destination-port 1080
+ip service-set TCP/1090-1091 type object
+ service protocol tcp destination-port 1090
+ip service-set TCP/1180-1185 type object
+ service protocol tcp destination-port 1180
+ip service-set TCP/8008-8019 type object
+ service protocol tcp destination-port 8008
+ip service-set TCP/8108-8113 type object
+ service protocol tcp destination-port 8108
+ip service-set TCP/8119 type object
+ service protocol tcp destination-port 8119
+ip service-set tcp/22 type object
+ service protocol tcp destination-port 22
+ip service-set tcp/9060 type object
+ service protocol tcp destination-port 9060
+ip service-set tcp/9043 type object
+ service protocol tcp destination-port 9043
+ip service-set tcp/9061 type object
+ service protocol tcp destination-port 9061
+ip service-set tcp/9044 type object
+ service protocol tcp destination-port 9044
+ip service-set tcp/8019 type object
+ service protocol tcp destination-port 8019
+ip service-set tcp/50754 type object
+ service protocol tcp destination-port 50754
+ip service-set tcp/50763 type object
+ service protocol tcp destination-port 50763
+ip service-set tcp/50751 type object
+ service protocol tcp destination-port 50751
+ip service-set tcp/50663 type object
+ service protocol tcp destination-port 50663
+ip service-set tcp/3000 type object
+ service protocol tcp destination-port 3000
+ip service-set tcp/6916 type object
+ service protocol tcp destination-port 6916
+ip service-set tcp/8081 type object
+ service protocol tcp destination-port 8081
+ip service-set tcp/35000 type object
+ service protocol tcp destination-port 35000
+ip service-set tcp/9346 type object
+ service protocol tcp destination-port 9346
+ip service-set tcp/9360 type object
+ service protocol tcp destination-port 9360
+ip service-set tcp/180-190 type object
+ service protocol tcp destination-port 180
+ip service-set tcp/182 type object
+ service protocol tcp destination-port 182
+ip service-set tcp/80-90 type object
+ service protocol tcp destination-port 80
+ip service-set tcp/180-183 type object
+ service protocol tcp destination-port 180
+ip service-set tcp/1521-1540 type object
+ service protocol tcp destination-port 1521
+ip service-set tcp/6000-9000 type object
+ service protocol tcp destination-port 6000
+ip service-set 1107 type object
+ service protocol tcp destination-port 1107
+ip service-set tcp/1521-1530 type object
+ service protocol tcp destination-port 1521
+ip service-set tcp/50660 type object
+ service protocol tcp destination-port 50660
+ip service-set tcp/50768 type object
+ service protocol tcp destination-port 50768
+ip service-set tcp/50766 type object
+ service protocol tcp destination-port 50766
+ip service-set tcp/10999 type object
+ service protocol tcp destination-port 10999
+ip service-set tcp/1534 type object
+ service protocol tcp destination-port 1534
+ip service-set tcp/1710-1730 type object
+ service protocol tcp destination-port 1710
+ip service-set tcp/8150-8170 type object
+ service protocol tcp destination-port 8150
+ip service-set tcp/8010 type object
+ service protocol tcp destination-port 8010
+ip service-set tcp/3389 type object
+ service protocol tcp destination-port 3389
+ip service-set tcp/6553 type object
+ service protocol tcp destination-port 6553
+ip service-set tcp/6575 type object
+ service protocol tcp destination-port 6575
+ip service-set tcp/8000-9000 type object
+ service protocol tcp destination-port 8000
+ip service-set tcp/7000-9990 type object
+ service protocol tcp destination-port 7000
+ip service-set tcp/1414-1424 type object
+ service protocol tcp destination-port 1414
+ip service-set tcp/19910-19930 type object
+ service protocol tcp destination-port 19910
+ip service-set tcp/8450-8470 type object
+ service protocol tcp destination-port 8450
+ip service-set tcp/1127 type object
+ service protocol tcp destination-port 1127
+ip service-set tcp/23 type object
+ service protocol tcp destination-port 23
+ip service-set tcp/8002 type object
+ service protocol tcp destination-port 8002
+ip service-set tcp/53389 type object
+ service protocol tcp destination-port 53389
+ip service-set tcp/80 type object
+ service protocol tcp destination-port 80
+ip service-set tcp/20999 type object
+ service protocol tcp destination-port 20999
+ip service-set tcp/30999 type object
+ service protocol tcp destination-port 30999
+ip service-set TCP/1080-1199 type object
+ service protocol tcp destination-port 1080
+ip service-set TCP/10660-10999 type object
+ service protocol tcp destination-port 10660
+ip service-set TCP/20660-20999 type object
+ service protocol tcp destination-port 20660
+ip service-set TCP/30660-30999 type object
+ service protocol tcp destination-port 30660
+ip service-set TCP/40660-40999 type object
+ service protocol tcp destination-port 40660
+ip service-set TCP/50660-50999 type object
+ service protocol tcp destination-port 50660
+ip service-set TCP/19998 type object
+ service protocol tcp destination-port 19998
+ip service-set TCP/8996 type object
+ service protocol tcp destination-port 8996
+ip service-set TCP/8180 type object
+ service protocol tcp destination-port 8180
+ip service-set TCP/1409 type object
+ service protocol tcp destination-port 1409
+ip service-set TCP/1434 type object
+ service protocol tcp destination-port 1434
+ip service-set TCP/29090 type object
+ service protocol tcp destination-port 29090
+ip service-set TCP/39090 type object
+ service protocol tcp destination-port 39090
+ip service-set TCP/10051 type object
+ service protocol tcp destination-port 10051
+ip service-set TCP/10052 type object
+ service protocol tcp destination-port 10052
+ip service-set TCP/10053 type object
+ service protocol tcp destination-port 10053
+ip service-set TCP/10050 type object
+ service protocol tcp destination-port 10050
+ip service-set TCP/10054 type object
+ service protocol tcp destination-port 10054
+ip service-set TCP/1400-1500 type object
+ service protocol tcp destination-port 1400
+ip service-set TCP/60660-60999 type object
+ service protocol tcp destination-port 60660
+ip service-set TCP/80-190 type object
+ service protocol tcp destination-port 80
+ip service-set TCP/19000-20000 type object
+ service protocol tcp destination-port 19000
+ip service-set tcp/1688 type object
+ service protocol tcp destination-port 1688
+ip service-set TCP/19910-20000 type object
+ service protocol tcp destination-port 19910
+ip service-set 21 type object
+ service protocol tcp destination-port 21
+ip service-set 443 type object
+ service protocol tcp destination-port 443
+ip service-set 19900-20000 type object
+ service protocol tcp destination-port 19900
+ip service-set 135-139 type object
+ service protocol tcp destination-port 135
+ip service-set tcp25 type object
+ service protocol tcp destination-port 25
+ip service-set tcp53 type object
+ service protocol tcp destination-port 53
+ip service-set tcp69 type object
+ service protocol tcp destination-port 69
+ip service-set tcp161 type object
+ service protocol tcp destination-port 161
+ip service-set tcp513 type object
+ service protocol tcp destination-port 513
+ip service-set tcp1433 type object
+ service protocol tcp destination-port 1433
+ip service-set tcp2381 type object
+ service protocol tcp destination-port 2381
+ip service-set tcp6379 type object
+ service protocol tcp destination-port 6379
+ip service-set tcp11211 type object
+ service protocol tcp destination-port 11211
+ip service-set udp161 type object
+ service protocol udp destination-port 161
+ip service-set tcp427 type object
+ service protocol tcp destination-port 427
+ip service-set tcp1718 type object
+ service protocol tcp destination-port 1718
+ip service-set tcp1720 type object
+ service protocol tcp destination-port 1720
+ip service-set tcp1722 type object
+ service protocol tcp destination-port 1722
+ip service-set tcp1750 type object
+ service protocol tcp destination-port 1750
+ip service-set tcp1751 type object
+ service protocol tcp destination-port 1751
+ip service-set tcp1755 type object
+ service protocol tcp destination-port 1755
+ip service-set 8451-8455 type object
+ service protocol tcp destination-port 8451
+ip service-set udp23 type object
+ service protocol udp destination-port 23
+ip service-set udp25 type object
+ service protocol udp destination-port 25
+ip service-set udp53 type object
+ service protocol udp destination-port 53
+ip service-set udp69 type object
+ service protocol udp destination-port 69
+ip service-set udp123 type object
+ service protocol udp destination-port 123
+ip service-set udp135-139 type object
+ service protocol udp destination-port 135
+ip service-set udp513 type object
+ service protocol udp destination-port 513
+ip service-set udp1433 type object
+ service protocol udp destination-port 1433
+ip service-set udp2381 type object
+ service protocol udp destination-port 2381
+ip service-set udp3389 type object
+ service protocol udp destination-port 3389
+ip service-set udp6379 type object
+ service protocol udp destination-port 6379
+ip service-set udp11211 type object
+ service protocol udp destination-port 11211
+ip service-set tcp111 type object
+ service protocol tcp destination-port 111
+ip service-set tcp897-898 type object
+ service protocol tcp destination-port 897
+ip service-set udp897-898 type object
+ service protocol udp destination-port 897
+ip service-set udp162 type object
+ service protocol udp destination-port 162
+ip service-set udp514 type object
+ service protocol udp destination-port 514
+ip service-set 45001-45002 type object
+ service protocol tcp destination-port 45001
+ip service-set 1080 type object
+ service protocol tcp destination-port 1080
+ip service-set TCP/1080-1083 type object
+ service protocol tcp destination-port 1080
+ip service-set TCP/1180-1183 type object
+ service protocol tcp destination-port 1180
+ip service-set TCP/8008-8011 type object
+ service protocol tcp destination-port 8008
+ip service-set TCP/8108-8111 type object
+ service protocol tcp destination-port 8108
+ip service-set TCP/8008-8013 type object
+ service protocol tcp destination-port 8008
+ip service-set TCP/8000-10999 type object
+ service protocol tcp destination-port 8000
+ip service-set TCP/1520-1550 type object
+ service protocol tcp destination-port 1520
+ip service-set TCP/10756-10757 type object
+ service protocol tcp destination-port 10756
+ip service-set TCP/10760 type object
+ service protocol tcp destination-port 10760
+ip service-set TCP/20756-20757 type object
+ service protocol tcp destination-port 20756
+ip service-set TCP/20760 type object
+ service protocol tcp destination-port 20760
+ip service-set TCP/30756 type object
+ service protocol tcp destination-port 30756
+ip service-set TCP/30760 type object
+ service protocol tcp destination-port 30760
+ip service-set TCP/40756-40757 type object
+ service protocol tcp destination-port 40756
+ip service-set TCP/40760 type object
+ service protocol tcp destination-port 40760
+ip service-set TCP/50756-50757 type object
+ service protocol tcp destination-port 50756
+ip service-set TCP/180-185 type object
+ service protocol tcp destination-port 180
+ip service-set TCP/9000-9200 type object
+ service protocol tcp destination-port 9000
+ip service-set UDP/5500 type object
+ service protocol udp destination-port 5500
+ip service-set TCP6800-6900 type object
+ service protocol tcp destination-port 6800
+ip service-set TCP/7000-9999 type object
+ service protocol tcp destination-port 7000
+ip service-set TCP/6000-7000 type object
+ service protocol tcp destination-port 6000
+ip service-set tcp/50760 type object
+ service protocol tcp destination-port 50760
+ip service-set TCP/10757 type object
+ service protocol tcp destination-port 10757
+ip service-set TCP/20757 type object
+ service protocol tcp destination-port 20757
+ip service-set TCP/30757 type object
+ service protocol tcp destination-port 30757
+ip service-set TCP/40757 type object
+ service protocol tcp destination-port 40757
+ip service-set TCP/50757 type object
+ service protocol tcp destination-port 50757
+ip service-set TCP/10756 type object
+ service protocol tcp destination-port 10756
+ip service-set TCP/20756 type object
+ service protocol tcp destination-port 20756
+ip service-set TCP/40756 type object
+ service protocol tcp destination-port 40756
+ip service-set TCP/50756 type object
+ service protocol tcp destination-port 50756
+ip service-set tcp6915-6920 type object
+ service protocol tcp destination-port 6915
+ip service-set TCP/7480-7490 type object
+ service protocol tcp destination-port 7480
+ip service-set 20~22 type object
+ service protocol tcp destination-port 20
+ip service-set 6553~6564 type object
+ service protocol tcp destination-port 6553
+ip service-set 20~21 type object
+ service protocol tcp destination-port 20
+ip service-set 6560-6570 type object
+ service protocol tcp destination-port 6560
+ip service-set 9000-10999 type object
+ service protocol tcp destination-port 9000
+ip service-set 7920~7953 type object
+ service protocol tcp destination-port 7920
+ip service-set 19910~19950 type object
+ service protocol tcp destination-port 19910
+ip service-set 8450~8490 type object
+ service protocol tcp destination-port 8450
+ip service-set 10055 type object
+ service protocol tcp destination-port 10055
+ip service-set TCP/1000-2000 type object
+ service protocol tcp destination-port 1000
+ip service-set tcp-amp type object
+ service protocol tcp destination-port 20
+ip service-set udp-amp type object
+ service protocol udp destination-port 20
+ip service-set TCP/990 type object
+ service protocol tcp destination-port 990
+ip service-set TCP/60000-60020 type object
+ service protocol tcp destination-port 60000
+ip service-set TCP/8081-8085 type object
+ service protocol tcp destination-port 8081
+ip service-set TCP/9081-9085 type object
+ service protocol tcp destination-port 9081
+ip service-set TCP/10054-10055 type object
+ service protocol tcp destination-port 10054
+ip service-set TCP/10051-10052 type object
+ service protocol tcp destination-port 10051
+ip service-set UDP/10054-10055 type object
+ service protocol udp destination-port 10054
+ip service-set UCP/10051-10052 type object
+ service protocol udp destination-port 10051
+ip service-set TCP/1180 type object
+ service protocol tcp destination-port 1180
+ip service-set TCP/1089 type object
+ service protocol tcp destination-port 1089
+ip service-set tcp190 type object
+ service protocol tcp destination-port 190
+ip service-set TCP/1090 type object
+ service protocol tcp destination-port 1090
+ip service-set TCP/21-22 type object
+ service protocol tcp destination-port 21
+ip service-set TCP/10050-10052 type object
+ service protocol tcp destination-port 10050
+ip service-set UDP/10050-10052 type object
+ service protocol udp destination-port 10050
+ip service-set UDP/10054 type object
+ service protocol udp destination-port 10054
+ip service-set TCP/10055 type object
+ service protocol tcp destination-port 10055
+ip service-set UDP/10055 type object
+ service protocol udp destination-port 10055
+ip service-set UDP/10051-10052 type object
+ service protocol udp destination-port 10051
+ip service-set 19910-19930 type object
+ service protocol tcp destination-port 19910
+ip service-set 8450-8470 type object
+ service protocol tcp destination-port 8450
+ip service-set 177 type object
+ service protocol udp destination-port 177
+ip service-set UDP177 type object
+ service protocol udp destination-port 177
+ip service-set tcp/25580 type object
+ service protocol tcp destination-port 25580
+ip service-set tcp/25680 type object
+ service protocol tcp destination-port 25680
+ip service-set TCP/1523 type object
+ service protocol tcp destination-port 1523
+ip service-set TCP/1524 type object
+ service protocol tcp destination-port 1524
+ip service-set TCP/1525 type object
+ service protocol tcp destination-port 1525
+ip service-set TCP/1527 type object
+ service protocol tcp destination-port 1527
+ip service-set TCP/1529 type object
+ service protocol tcp destination-port 1529
+ip service-set TCP/1531 type object
+ service protocol tcp destination-port 1531
+ip service-set TCP/1533 type object
+ service protocol tcp destination-port 1533
+ip service-set TCP/1535 type object
+ service protocol tcp destination-port 1535
+ip service-set TCP/1537 type object
+ service protocol tcp destination-port 1537
+ip service-set 19914 type object
+ service protocol tcp destination-port 19914
+ip service-set 19916 type object
+ service protocol tcp destination-port 19916
+ip service-set 19918 type object
+ service protocol tcp destination-port 19918
+ip service-set 19920 type object
+ service protocol tcp destination-port 19920
+ip service-set 7169-7180 type object
+ service protocol tcp destination-port 7169
+ip service-set tcp1080-1083 type object
+ service protocol tcp destination-port 1080
+ip service-set tcp1180-1183 type object
+ service protocol tcp destination-port 1180
+ip service-set tcp1090 type object
+ service protocol tcp destination-port 1090
+ip service-set tcp1091 type object
+ service protocol tcp destination-port 1091
+ip service-set tcp8008-8011 type object
+ service protocol tcp destination-port 8008
+ip service-set tcp8108-8111 type object
+ service protocol tcp destination-port 8108
+ip service-set tcp8019 type object
+ service protocol tcp destination-port 8019
+ip service-set tcp8119 type object
+ service protocol tcp destination-port 8119
+ip service-set tcp1080-1085 type object
+ service protocol tcp destination-port 1080
+ip service-set tcp1090-1091 type object
+ service protocol tcp destination-port 1090
+ip service-set tcp1180-1185 type object
+ service protocol tcp destination-port 1180
+ip service-set tcp8008-8013 type object
+ service protocol tcp destination-port 8008
+ip service-set tcp8018-8019 type object
+ service protocol tcp destination-port 8018
+ip service-set tcp8108-8113 type object
+ service protocol tcp destination-port 8108
+ip service-set 10755 type object
+ service protocol tcp destination-port 10755
+ip service-set 20755 type object
+ service protocol tcp destination-port 20755
+ip service-set 30755 type object
+ service protocol tcp destination-port 30755
+ip service-set 40755 type object
+ service protocol tcp destination-port 40755
+ip service-set 50755 type object
+ service protocol tcp destination-port 50755
+ip service-set 60755 type object
+ service protocol tcp destination-port 60755
+ip service-set TCP/10050-10056 type object
+ service protocol tcp destination-port 10050
+ip service-set UDP/20-22 type object
+ service protocol udp destination-port 20
+ip service-set UDP/10050-10056 type object
+ service protocol udp destination-port 10050
+ip service-set TCP/8080-8090 type object
+ service protocol tcp destination-port 8080
+ip service-set UDP/9083 type object
+ service protocol udp destination-port 9083
+ip service-set 7169 type object
+ service protocol tcp destination-port 7169
+ip service-set 389 type object
+ service protocol tcp destination-port 389
+ip service-set 33890 type object
+ service protocol tcp destination-port 33890
+ip service-set UDP/1521 type object
+ service protocol udp destination-port 1521
+ip service-set TCP/3306 type object
+ service protocol tcp destination-port 3306
+ip service-set UDP/3306 type object
+ service protocol udp destination-port 3306
+ip service-set TCP/8084 type object
+ service protocol tcp destination-port 8084
+ip service-set UDP/8084 type object
+ service protocol udp destination-port 8084
+ip service-set tcp88 type object
+ service protocol tcp destination-port 88
+ip service-set TCP/3001 type object
+ service protocol tcp destination-port 3001
+ip service-set TCP/20/21/2121 type object
+ service protocol tcp destination-port 2121
+ip service-set udp1434 type object
+ service protocol udp destination-port 1434
+ip service-set tcp8008 type object
+ service protocol tcp destination-port 8008
+ip service-set TCP/7000 type object
+ service protocol tcp destination-port 7000
+ip service-set TCP/24000 type object
+ service protocol tcp destination-port 24000
+ip service-set TCP/2020 type object
+ service protocol tcp destination-port 2020
+ip service-set TCP/1701-1808 type object
+ service protocol tcp destination-port 1701
+ip service-set TCP/6550-6575 type object
+ service protocol tcp destination-port 6550
+ip service-set 5000-5005 type object
+ service protocol tcp destination-port 5000
+ip service-set TCP/4000-4100 type object
+ service protocol tcp destination-port 4000
+ip service-set 8175-8 type object
+ service protocol tcp destination-port 8175
+ip service-set TCP/10050-10055 type object
+ service protocol tcp destination-port 10050
+ip service-set TCP/1230-1250 type object
+ service protocol tcp destination-port 1230
+ip service-set TCP/1030-1040 type object
+ service protocol tcp destination-port 1030
+ip service-set TCP/9062 type object
+ service protocol tcp destination-port 9062
+ip service-set TCP/9063 type object
+ service protocol tcp destination-port 9063
+ip service-set TCP/9065 type object
+ service protocol tcp destination-port 9065
+ip service-set TCP/3000-3030 type object
+ service protocol tcp destination-port 3000
+ip service-set TCP/2000-2030 type object
+ service protocol tcp destination-port 2000
+ip service-set TCP/9100-9120 type object
+ service protocol tcp destination-port 9100
+ip service-set TCP/30001-30030 type object
+ service protocol tcp destination-port 30001
+ip service-set tcp1522 type object
+ service protocol tcp destination-port 1522
+ip service-set udp1522 type object
+ service protocol udp destination-port 1522
+ip service-set udp1525 type object
+ service protocol udp destination-port 1525
+ip service-set udp1526 type object
+ service protocol udp destination-port 1526
+ip service-set udp443 type object
+ service protocol udp destination-port 443
+ip service-set tcp5989 type object
+ service protocol tcp destination-port 5989
+ip service-set udp5989 type object
+ service protocol udp destination-port 5989
+ip service-set tcp8888 type object
+ service protocol tcp destination-port 8888
+ip service-set udp8888 type object
+ service protocol udp destination-port 8888
+ip service-set tcp636 type object
+ service protocol tcp destination-port 636
+ip service-set udp636 type object
+ service protocol udp destination-port 636
+ip service-set tcp6007 type object
+ service protocol tcp destination-port 6007
+ip service-set udp6007 type object
+ service protocol udp destination-port 6007
+ip service-set jianchaport type object
+ service protocol tcp destination-port 6003
+ service protocol udp destination-port 6003
+ip service-set jianchaport1 type object
+ service protocol tcp destination-port 9050
+ service protocol udp destination-port 9050
+ip service-set tcp1522-1530 type object
+ service protocol tcp destination-port 1522
+ip service-set udp1522-1530 type object
+ service protocol udp destination-port 1522
+ip service-set tcp1522-1537 type object
+ service protocol tcp destination-port 1522
+ip service-set udp1522-1537 type object
+ service protocol udp destination-port 1522
+ip service-set 31098 type object
+ service protocol tcp destination-port 31098
+ip service-set TCP/18080 type object
+ service protocol tcp destination-port 18080
+ip service-set TCP/18005 type object
+ service protocol tcp destination-port 18005
+ip service-set tcp1443 type object
+ service protocol tcp destination-port 1443
+ip service-set 181 type object
+ service protocol tcp destination-port 181
+ip service-set tcp8880 type object
+ service protocol tcp destination-port 8880
+ip service-set udp8880 type object
+ service protocol tcp destination-port 8880
+ip service-set tcp3389 type object
+ service protocol tcp destination-port 3389
+ip service-set tcp6003 type object
+ service protocol tcp destination-port 6003
+ip service-set udp6003 type object
+ service protocol udp destination-port 6003
+ip service-set tcp6000 type object
+ service protocol tcp destination-port 6000
+ip service-set udp6000 type object
+ service protocol udp destination-port 6000
+ip service-set tcp6005 type object
+ service protocol tcp destination-port 6005
+ip service-set udp6005 type object
+ service protocol udp destination-port 6005
+ip service-set tcp8892 type object
+ service protocol tcp destination-port 8892
+ip service-set udp8892 type object
+ service protocol tcp destination-port 8892
+ip service-set tcp8899 type object
+ service protocol tcp destination-port 8899
+ip service-set udp8899 type object
+ service protocol tcp destination-port 8899
+ip service-set tcp9512 type object
+ service protocol tcp destination-port 9512
+ip service-set udp9512 type object
+ service protocol udp destination-port 9512
+ip service-set tcp9575 type object
+ service protocol tcp destination-port 9575
+ip service-set udp9575 type object
+ service protocol udp destination-port 9575
+ip service-set tcp9415 type object
+ service protocol tcp destination-port 9415
+ip service-set udp9415 type object
+ service protocol udp destination-port 9415
+ip service-set tcp9050 type object
+ service protocol tcp destination-port 9050
+ip service-set udp9050 type object
+ service protocol udp destination-port 9050
+ip service-set tcp9207 type object
+ service protocol tcp destination-port 9207
+ip service-set udp9207 type object
+ service protocol udp destination-port 9207
+ip service-set tcp9090 type object
+ service protocol tcp destination-port 9090
+ip service-set udp9090 type object
+ service protocol udp destination-port 9090
+ip service-set udp/3389 type object
+ service protocol udp destination-port 3389
+ip service-set udp/161-162 type object
+ service protocol udp destination-port 161
+ip service-set tcp/427 type object
+ service protocol tcp destination-port 427
+ip service-set tcp/1718 type object
+ service protocol tcp destination-port 1718
+ip service-set tcp/1720 type object
+ service protocol tcp destination-port 1720
+ip service-set tcp/1722 type object
+ service protocol tcp destination-port 1722
+ip service-set tcp/1750-1751 type object
+ service protocol tcp destination-port 1750
+ip service-set tcp/1755 type object
+ service protocol tcp destination-port 1755
+ip service-set tcp/8451-8455 type object
+ service protocol tcp destination-port 8451
+ip service-set tcp/88 type object
+ service protocol tcp destination-port 88
+ip service-set 9050-9440 type object
+ service protocol tcp destination-port 9050
+ip service-set 9889 type object
+ service protocol tcp destination-port 9889
+ip service-set 10449 type object
+ service protocol tcp destination-port 10449
+ip service-set TCP/30022-30025 type object
+ service protocol tcp destination-port 30022
+ip service-set 2000-2100 type object
+ service protocol tcp destination-port 2000
+ip service-set 1710-1740 type object
+ service protocol tcp destination-port 1710
+ip service-set 2000-2200 type object
+ service protocol tcp destination-port 2000
+ip service-set tcp9568 type object
+ service protocol tcp destination-port 9568
+ip service-set tcp9569 type object
+ service protocol tcp destination-port 9569
+ip service-set tcp200 type object
+ service protocol tcp destination-port 200
+ip service-set tcp6020-6021 type object
+ service protocol tcp destination-port 6020
+ip service-set tcp10600-10800 type object
+ service protocol tcp destination-port 10600
+ip service-set tcp20600-20800 type object
+ service protocol tcp destination-port 20600
+ip service-set tcp30600-30800 type object
+ service protocol tcp destination-port 30600
+ip service-set tcp40600-40800 type object
+ service protocol tcp destination-port 40600
+ip service-set tcp50600-50800 type object
+ service protocol tcp destination-port 50600
+ip service-set tcp20-22 type object
+ service protocol tcp destination-port 20
+ip service-set tcp_23 type object
+ service protocol tcp destination-port 23
+ip service-set 2463 type object
+ service protocol tcp destination-port 2463
+ip service-set tcp/29000-30000 type object
+ service protocol tcp destination-port 29000
+ip service-set 9440 type object
+ service protocol tcp destination-port 9440
+ip service-set TCP/20060-20065 type object
+ service protocol tcp destination-port 20060
+ip service-set TCP/10133-10137 type object
+ service protocol tcp destination-port 10133
+ip service-set TCP/10133-10138 type object
+ service protocol tcp destination-port 10133
+ip service-set TCP/10133-10139 type object
+ service protocol tcp destination-port 10133
+ip service-set TCP/10133-10143 type object
+ service protocol tcp destination-port 10133
+ip service-set 5180 type object
+ service protocol tcp destination-port 5180
+ip service-set TCP5140-5141 type object
+ service protocol tcp destination-port 5140
+ip service-set 10001 type object
+ service protocol tcp destination-port 10001
+ip service-set TCP/50022-50023 type object
+ service protocol tcp destination-port 50022
+ip service-set TCP/3900 type object
+ service protocol tcp destination-port 3900
+ip service-set TCP/623 type object
+ service protocol tcp destination-port 623
+ip service-set 1080-1999 type object
+ service protocol tcp destination-port 1080
+ip service-set 9060-9499 type object
+ service protocol tcp destination-port 9060
+ip service-set 20-21 type object
+ service protocol tcp destination-port 20
+ip service-set 31089 type object
+ service protocol tcp destination-port 31089
+ip service-set 2433 type object
+ service protocol tcp destination-port 2433
+ip service-set 9930 type object
+ service protocol tcp destination-port 9930
+ip service-set 9551 type object
+ service protocol tcp destination-port 9551
+ip service-set 10000-2000 type object
+ service protocol tcp destination-port 10000
+ip service-set 10000-20000 type object
+ service protocol tcp destination-port 10000
+ip service-set 20010-20085 type object
+ service protocol tcp destination-port 20010
+ip service-set tcp1081 type object
+ service protocol tcp destination-port 1081
+ip service-set 1024-65535 type object
+ service protocol tcp destination-port 1024
+ip service-set 1080-1280 type object
+ service protocol tcp destination-port 1080
+ip service-set tcp50001 type object
+ service protocol tcp destination-port 50001
+ip service-set 1080-1190 type object
+ service protocol tcp destination-port 1080
+ip service-set TCP/1550 type object
+ service protocol tcp destination-port 1550
+ip service-set TCP/1538 type object
+ service protocol tcp destination-port 1538
+ip service-set tcp/8888 type object
+ service protocol tcp destination-port 8888
+ip service-set tcp2121 type object
+ service protocol tcp destination-port 2121
+ip service-set 1181 type object
+ service protocol tcp destination-port 1181
+ip service-set 1082 type object
+ service protocol tcp destination-port 1082
+ip service-set 1182 type object
+ service protocol tcp destination-port 1182
+ip service-set tcp8009 type object
+ service protocol tcp destination-port 8009
+ip service-set tcp1080-1082 type object
+ service protocol tcp destination-port 1080
+ip service-set TCP/1080-1082 type object
+ service protocol tcp destination-port 1080
+ip service-set TCP/1180-1182 type object
+ service protocol tcp destination-port 1180
+ip service-set TCP/8008-8010 type object
+ service protocol tcp destination-port 8008
+ip service-set TCP/8108-8110 type object
+ service protocol tcp destination-port 8108
+ip service-set udp_8080 type object
+ service protocol udp destination-port 8080
+ip service-set tcp445 type object
+ service protocol tcp destination-port 445
+ip service-set 20-22 type object
+ service protocol tcp destination-port 20
+ip service-set TCP/20-22 type object
+ service protocol tcp destination-port 20
+ip service-set 1000-9999 type object
+ service protocol tcp destination-port 1000
+ip service-set 7920 type object
+ service protocol tcp destination-port 7920
+ip service-set tcp2181 type object
+ service protocol tcp destination-port 2181
+ip service-set tcp/80-134 type object
+ service protocol tcp destination-port 80
+ip service-set tcp/136-138 type object
+ service protocol tcp destination-port 136
+ip service-set tcp/140-190 type object
+ service protocol tcp destination-port 140
+ip service-set 10020-10039 type object
+ service protocol tcp destination-port 10020
+ip service-set tcp5030 type object
+ service protocol tcp destination-port 5030
+ip service-set 9000-9500 type object
+ service protocol tcp destination-port 9000
+ip service-set 2000-2002 type object
+ service protocol tcp destination-port 2000
+ip service-set 2008 type object
+ service protocol tcp destination-port 2008
+ip service-set tcp443 type object
+ service protocol tcp destination-port 443
+ip service-set tcp1080-1182 type object
+ service protocol tcp destination-port 1080
+ip service-set tcp8008-8110 type object
+ service protocol tcp destination-port 8008
+ip service-set tcp162 type object
+ service protocol tcp destination-port 162
+ip service-set tcp139 type object
+ service protocol tcp destination-port 139
+ip service-set tcp20702 type object
+ service protocol tcp destination-port 20702
+ip service-set tcp_8081-8090 type object
+ service protocol tcp destination-port 8081
+ip service-set tcp_8080-8090 type object
+ service protocol tcp destination-port 8080
+ip service-set TCP_5505 type object
+ service protocol tcp destination-port 5505
+ip service-set 1521~1537 type object
+ service protocol tcp destination-port 1521
+ip service-set 45001 type object
+ service protocol tcp destination-port 45001
+ip service-set 8089 type object
+ service protocol tcp destination-port 8089
+ip service-set udp111 type object
+ service protocol udp destination-port 111
+ip service-set tcp2049 type object
+ service protocol tcp destination-port 2049
+ip service-set udp2049 type object
+ service protocol udp destination-port 2049
+ip service-set tcp11111-11112 type object
+ service protocol tcp destination-port 11111
+ip service-set udp11111-11112 type object
+ service protocol tcp destination-port 11111
+ip service-set 9000-9001 type object
+ service protocol tcp destination-port 9000
+ip service-set 9095-9098 type object
+ service protocol tcp destination-port 9095
+ip service-set 9933 type object
+ service protocol tcp destination-port 9933
+ip service-set UDP9933 type object
+ service protocol udp destination-port 9933
+ip service-set tcp9933 type object
+ service protocol tcp destination-port 9933
+ip service-set udp139 type object
+ service protocol udp destination-port 139
+ip service-set udp1537 type object
+ service protocol udp destination-port 1537
+ip service-set udp9152 type object
+ service protocol udp destination-port 9152
+ip service-set tcp135 type object
+ service protocol tcp destination-port 135
+ip service-set udp135 type object
+ service protocol udp destination-port 135
+ip service-set tcp137 type object
+ service protocol tcp destination-port 137
+ip service-set udp137 type object
+ service protocol udp destination-port 137
+ip service-set udp445 type object
+ service protocol udp destination-port 445
+ip service-set 10021-10039 type object
+ service protocol tcp destination-port 10021
+ip service-set tcp10086 type object
+ service protocol tcp destination-port 10086
+ip service-set TCP4090-4099 type object
+ service protocol tcp destination-port 4090
+ip service-set TCP5570-5579 type object
+ service protocol tcp destination-port 5570
+ip service-set tcp30000-30100 type object
+ service protocol tcp destination-port 30000
+ip service-set tcp3000-3100 type object
+ service protocol tcp destination-port 3000
+ip service-set TCP/2029 type object
+ service protocol tcp destination-port 2029
+ip service-set TCP/7180 type object
+ service protocol tcp destination-port 7180
+ip service-set TCP/60010 type object
+ service protocol tcp destination-port 60010
+ip service-set TCP/60020 type object
+ service protocol tcp destination-port 60020
+ip service-set 5029 type object
+ service protocol tcp destination-port 5029
+ip service-set 1521-1551 type object
+ service protocol tcp destination-port 1521
+ip service-set tcp5018 type object
+ service protocol tcp destination-port 5018
+ip service-set tcp9068-9069 type object
+ service protocol tcp destination-port 9068
+ip service-set tcp9037-9039 type object
+ service protocol tcp destination-port 9037
+ip service-set tcp9061 type object
+ service protocol tcp destination-port 9061
+ip service-set ams5865449 type object
+ service protocol tcp destination-port 9062
+ip service-set tcp/9051 type object
+ service protocol tcp destination-port 9051
+ip service-set tcp/9053 type object
+ service protocol tcp destination-port 9053
+ip service-set tcp/9071 type object
+ service protocol tcp destination-port 9071
+ip service-set tcp/9073 type object
+ service protocol tcp destination-port 9073
+ip service-set 9091 type object
+ service protocol tcp destination-port 9091
+ip service-set tcp/9093 type object
+ service protocol tcp destination-port 9093
+ip service-set tcp/9045 type object
+ service protocol tcp destination-port 9045
+ip service-set 8080 type object
+ service protocol tcp destination-port 8080
+ip service-set 2101 type object
+ service protocol tcp destination-port 2101
+ip service-set 8102 type object
+ service protocol tcp destination-port 8102
+ip service-set ams5923587 type object
+ service protocol tcp destination-port 80
+ip service-set 1087 type object
+ service protocol tcp destination-port 1087
+ip service-set tcp_48443 type object
+ service protocol tcp destination-port 48443
+ip service-set tcp_9043-9047 type object
+ service protocol tcp destination-port 9043
+ip service-set tcp9050-9200 type object
+ service protocol tcp destination-port 9050
+ip service-set tcp9400-9600 type object
+ service protocol tcp destination-port 9400
+ip service-set 1088 type object
+ service protocol tcp destination-port 1088
+ip service-set 1030-1050 type object
+ service protocol tcp destination-port 1030
+ip service-set TCP90 type object
+ service protocol tcp destination-port 90
+ip service-set tcp6080 type object
+ service protocol tcp destination-port 6080
+ip service-set tcp6180 type object
+ service protocol tcp destination-port 6180
+ip service-set tcp6280 type object
+ service protocol tcp destination-port 6280
+ip service-set tcp6380 type object
+ service protocol tcp destination-port 6380
+ip service-set 1050 type object
+ service protocol tcp destination-port 1050
+ip service-set 1050-1200 type object
+ service protocol tcp destination-port 1050
+ip service-set 19043 type object
+ service protocol tcp destination-port 19043
+ip service-set 29043 type object
+ service protocol tcp destination-port 29043
+ip service-set 39043 type object
+ service protocol tcp destination-port 39043
+ip service-set tcp9037-9040 type object
+ service protocol tcp destination-port 9037
+ip service-set tcp9043-9048 type object
+ service protocol tcp destination-port 9043
+ip service-set 9054 type object
+ service protocol tcp destination-port 9054
+ip service-set TCP/9087 type object
+ service protocol tcp destination-port 9087
+ip service-set TCP/9094 type object
+ service protocol tcp destination-port 9094
+ip service-set tcp/1520-1570 type object
+ service protocol tcp destination-port 1520
+ip service-set tcp20140 type object
+ service protocol tcp destination-port 20140
+ip service-set tcp20150 type object
+ service protocol tcp destination-port 20150
+ip service-set tcp20110 type object
+ service protocol tcp destination-port 20110
+ip service-set 1520-1570 type object
+ service protocol tcp destination-port 1520
+ip service-set 3650-3720 type object
+ service protocol tcp destination-port 3650
+ip service-set 8300-8360 type object
+ service protocol tcp destination-port 8300
+ip service-set 19910-19970 type object
+ service protocol tcp destination-port 19910
+ip service-set 8450-8520 type object
+ service protocol tcp destination-port 8450
+ip service-set 8282 type object
+ service protocol tcp destination-port 8282
+ip service-set 8383 type object
+ service protocol tcp destination-port 8383
+ip service-set 7423 type object
+ service protocol tcp destination-port 7423
+ip service-set 7323 type object
+ service protocol tcp destination-port 7323
+ip service-set 30630 type object
+ service protocol tcp destination-port 30630
+ip service-set 31310 type object
+ service protocol tcp destination-port 31310
+ip service-set 8023 type object
+ service protocol tcp destination-port 8023
+ip service-set 8020 type object
+ service protocol tcp destination-port 8020
+ip service-set 2024 type object
+ service protocol tcp destination-port 2024
+ip service-set 9597 type object
+ service protocol tcp destination-port 9597
+ip service-set tcp/2000-10000 type object
+ service protocol tcp destination-port 2000
+ip service-set tcp/8082 type object
+ service protocol tcp destination-port 8082
+ip service-set udp6514 type object
+ service protocol udp destination-port 6514
+ip service-set TCP/1000-3000 type object
+ service protocol tcp destination-port 1000
+ip service-set tcp185 type object
+ service protocol tcp destination-port 185
+ip service-set 2042-2050 type object
+ service protocol tcp destination-port 2042
+ip service-set 2142-2150 type object
+ service protocol tcp destination-port 2142
+ip service-set 2492-2500 type object
+ service protocol tcp destination-port 2492
+ip service-set 2592-2600 type object
+ service protocol tcp destination-port 2592
+ip service-set 3692-3700 type object
+ service protocol tcp destination-port 3692
+ip service-set 4042-4050 type object
+ service protocol tcp destination-port 4042
+ip service-set 4092-4100 type object
+ service protocol tcp destination-port 4092
+ip service-set 4142-4150 type object
+ service protocol tcp destination-port 4142
+ip service-set 4192-4200 type object
+ service protocol tcp destination-port 4192
+ip service-set 8342-8350 type object
+ service protocol tcp destination-port 8342
+ip service-set 8492-8500 type object
+ service protocol tcp destination-port 8492
+ip service-set 19952-19960 type object
+ service protocol tcp destination-port 19952
+ip service-set tcp/21 type object
+ service protocol tcp destination-port 21
+ip service-set tcp20145 type object
+ service protocol tcp destination-port 20145
+ip service-set tcp20151 type object
+ service protocol tcp destination-port 20151
+ip service-set tcp20160 type object
+ service protocol tcp destination-port 20160
+ip service-set tcp/20-21 type object
+ service protocol tcp destination-port 20
+ip service-set tcp20146-20150 type object
+ service protocol tcp destination-port 20146
+ip service-set tcp19952 type object
+ service protocol tcp destination-port 19952
+ip service-set 1180-1199 type object
+ service protocol tcp destination-port 1180
+ip service-set 9080-9199 type object
+ service protocol tcp destination-port 9080
+ip service-set 180-189 type object
+ service protocol tcp destination-port 180
+ip service-set 1522-1539 type object
+ service protocol tcp destination-port 1522
+ip service-set tcp2001-2013 type object
+ service protocol tcp destination-port 2001
+ip service-set tcp9100-9107 type object
+ service protocol tcp destination-port 9100
+ip service-set tcp30001-30005 type object
+ service protocol tcp destination-port 30001
+ip service-set tcp4000-4020 type object
+ service protocol tcp destination-port 4000
+ip service-set tcp1030-1031 type object
+ service protocol tcp destination-port 1030
+ip service-set tcp46000-46006 type object
+ service protocol tcp destination-port 46000
+ip service-set tcp3310-3318 type object
+ service protocol tcp destination-port 3310
+ip service-set tcp9000-9007 type object
+ service protocol tcp destination-port 9000
+ip service-set tcp2201-2203 type object
+ service protocol tcp destination-port 2201
+ip service-set tcp10086-10087 type object
+ service protocol tcp destination-port 10086
+ip service-set tcp6001-6003 type object
+ service protocol tcp destination-port 6001
+ip service-set TCP/9200 type object
+ service protocol tcp destination-port 9200
+ip service-set TCP/9300 type object
+ service protocol tcp destination-port 9300
+ip service-set tcp/1522 type object
+ service protocol tcp destination-port 1522
+ip service-set 9549 type object
+ service protocol tcp destination-port 9549
+ip service-set 9550 type object
+ service protocol tcp destination-port 9550
+ip service-set 9558 type object
+ service protocol tcp destination-port 9558
+ip service-set 9559 type object
+ service protocol tcp destination-port 9559
+ip service-set 9560 type object
+ service protocol tcp destination-port 9560
+ip service-set 9561 type object
+ service protocol tcp destination-port 9561
+ip service-set 9567 type object
+ service protocol tcp destination-port 9567
+ip service-set 7777 type object
+ service protocol tcp destination-port 7777
+ip service-set 7778 type object
+ service protocol tcp destination-port 7778
+ip service-set 9549-9551 type object
+ service protocol tcp destination-port 9549
+ip service-set 9558-9561 type object
+ service protocol tcp destination-port 9558
+ip service-set 9567-9569 type object
+ service protocol tcp destination-port 9567
+ip service-set 7777-7778 type object
+ service protocol tcp destination-port 7777
+ip service-set 1000-1999 type object
+ service protocol tcp destination-port 1000
+ip service-set 9000-9999 type object
+ service protocol tcp destination-port 9000
+ip service-set 1050-8888 type object
+ service protocol tcp destination-port 1050
+ip service-set 10443 type object
+ service protocol tcp destination-port 10443
+ip service-set 8500 type object
+ service protocol tcp destination-port 8500
+ip service-set tcp5060 type object
+ service protocol tcp destination-port 5060
+ip service-set tcp/9080-9083 type object
+ service protocol tcp destination-port 9080
+ip service-set tcp/8080-8082 type object
+ service protocol tcp destination-port 8080
+ip service-set tcp8452 type object
+ service protocol tcp destination-port 8452
+ip service-set tcp/21-60030 type object
+ service protocol tcp destination-port 21
+ip service-set udp/21-60030 type object
+ service protocol udp destination-port 21
+ip service-set tcp/7300 type object
+ service protocol tcp destination-port 7300
+ip service-set udp/80 type object
+ service protocol udp destination-port 80
+ip service-set udp/3900 type object
+ service protocol udp destination-port 3900
+ip service-set udp/7180 type object
+ service protocol udp destination-port 7180
+ip service-set udp/9080 type object
+ service protocol udp destination-port 9080
+ip service-set udp/21-23 type object
+ service protocol udp destination-port 21
+ip service-set udp/8983 type object
+ service protocol udp destination-port 8983
+ip service-set udp/8984 type object
+ service protocol udp destination-port 8984
+ip service-set udp/7574 type object
+ service protocol udp destination-port 7574
+ip service-set udp/7575 type object
+ service protocol udp destination-port 7575
+ip service-set udp/113 type object
+ service protocol udp destination-port 113
+ip service-set udp/32803 type object
+ service protocol udp destination-port 32803
+ip service-set udp/32769 type object
+ service protocol udp destination-port 32769
+ip service-set udp/875 type object
+ service protocol udp destination-port 875
+ip service-set udp/892 type object
+ service protocol udp destination-port 892
+ip service-set udp/662 type object
+ service protocol udp destination-port 662
+ip service-set udp/20049 type object
+ service protocol udp destination-port 20049
+ip service-set udp/4046 type object
+ service protocol udp destination-port 4046
+ip service-set udp/50010 type object
+ service protocol udp destination-port 50010
+ip service-set udp/50075 type object
+ service protocol udp destination-port 50075
+ip service-set udp/50475 type object
+ service protocol udp destination-port 50475
+ip service-set udp/50020 type object
+ service protocol udp destination-port 50020
+ip service-set udp/50070 type object
+ service protocol udp destination-port 50070
+ip service-set udp/50470 type object
+ service protocol udp destination-port 50470
+ip service-set udp/8020 type object
+ service protocol udp destination-port 8020
+ip service-set udp/8485 type object
+ service protocol udp destination-port 8485
+ip service-set udp/8480 type object
+ service protocol udp destination-port 8480
+ip service-set udp/8019 type object
+ service protocol udp destination-port 8019
+ip service-set udp/8032 type object
+ service protocol udp destination-port 8032
+ip service-set udp/8030 type object
+ service protocol udp destination-port 8030
+ip service-set udp/8031 type object
+ service protocol udp destination-port 8031
+ip service-set udp/8033 type object
+ service protocol udp destination-port 8033
+ip service-set udp/8088 type object
+ service protocol udp destination-port 8088
+ip service-set udp/8040 type object
+ service protocol udp destination-port 8040
+ip service-set udp/8042 type object
+ service protocol udp destination-port 8042
+ip service-set udp/8041 type object
+ service protocol udp destination-port 8041
+ip service-set udp/10020 type object
+ service protocol udp destination-port 10020
+ip service-set udp/19888 type object
+ service protocol udp destination-port 19888
+ip service-set udp/60000 type object
+ service protocol udp destination-port 60000
+ip service-set udp/60010 type object
+ service protocol udp destination-port 60010
+ip service-set udp/60020 type object
+ service protocol udp destination-port 60020
+ip service-set udp/60030 type object
+ service protocol udp destination-port 60030
+ip service-set udp/2181 type object
+ service protocol udp destination-port 2181
+ip service-set udp/10000 type object
+ service protocol udp destination-port 10000
+ip service-set udp/2888 type object
+ service protocol udp destination-port 2888
+ip service-set udp/3888 type object
+ service protocol udp destination-port 3888
+ip service-set udp/1011 type object
+ service protocol udp destination-port 1011
+ip service-set udp/7578 type object
+ service protocol udp destination-port 7578
+ip service-set udp/5678 type object
+ service protocol udp destination-port 5678
+ip service-set udp/2199 type object
+ service protocol udp destination-port 2199
+ip service-set udp/8208 type object
+ service protocol udp destination-port 8208
+ip service-set udp/623 type object
+ service protocol udp destination-port 623
+ip service-set udp/5988 type object
+ service protocol udp destination-port 5988
+ip service-set udp/2198 type object
+ service protocol udp destination-port 2198
+ip service-set udp/1494 type object
+ service protocol udp destination-port 1494
+ip service-set udp/2598 type object
+ service protocol udp destination-port 2598
+ip service-set udp/2200 type object
+ service protocol udp destination-port 2200
+ip service-set udp/2221 type object
+ service protocol udp destination-port 2221
+ip service-set tcp/8983 type object
+ service protocol tcp destination-port 8983
+ip service-set tcp/8984 type object
+ service protocol tcp destination-port 8984
+ip service-set tcp/7574 type object
+ service protocol tcp destination-port 7574
+ip service-set tcp/7575 type object
+ service protocol tcp destination-port 7575
+ip service-set tcp/113 type object
+ service protocol tcp destination-port 113
+ip service-set tcp/32803 type object
+ service protocol tcp destination-port 32803
+ip service-set tcp/32769 type object
+ service protocol tcp destination-port 32769
+ip service-set tcp/875 type object
+ service protocol tcp destination-port 875
+ip service-set tcp/892 type object
+ service protocol tcp destination-port 892
+ip service-set tcp/662 type object
+ service protocol tcp destination-port 662
+ip service-set tcp/20049 type object
+ service protocol tcp destination-port 20049
+ip service-set tcp/4046 type object
+ service protocol tcp destination-port 4046
+ip service-set tcp/50010 type object
+ service protocol tcp destination-port 50010
+ip service-set tcp/50075 type object
+ service protocol tcp destination-port 50075
+ip service-set tcp/50475 type object
+ service protocol tcp destination-port 50475
+ip service-set tcp/50020 type object
+ service protocol tcp destination-port 50020
+ip service-set tcp/50070 type object
+ service protocol tcp destination-port 50070
+ip service-set tcp/50470 type object
+ service protocol tcp destination-port 50470
+ip service-set tcp/8485 type object
+ service protocol tcp destination-port 8485
+ip service-set tcp/8480 type object
+ service protocol tcp destination-port 8480
+ip service-set tcp/8032 type object
+ service protocol tcp destination-port 8032
+ip service-set tcp/8030 type object
+ service protocol tcp destination-port 8030
+ip service-set tcp/8031 type object
+ service protocol tcp destination-port 8031
+ip service-set tcp/8033 type object
+ service protocol tcp destination-port 8033
+ip service-set tcp/8040-8042 type object
+ service protocol tcp destination-port 8040
+ip service-set tcp/19888 type object
+ service protocol tcp destination-port 19888
+ip service-set tcp/60030 type object
+ service protocol tcp destination-port 60030
+ip service-set tcp/10000 type object
+ service protocol tcp destination-port 10000
+ip service-set tcp/2888 type object
+ service protocol tcp destination-port 2888
+ip service-set tcp/3888 type object
+ service protocol tcp destination-port 3888
+ip service-set tcp/1011 type object
+ service protocol tcp destination-port 1011
+ip service-set tcp/7578 type object
+ service protocol tcp destination-port 7578
+ip service-set tcp/2199 type object
+ service protocol tcp destination-port 2199
+ip service-set tcp/8208 type object
+ service protocol tcp destination-port 8208
+ip service-set tcp/5988 type object
+ service protocol tcp destination-port 5988
+ip service-set tcp/2198 type object
+ service protocol tcp destination-port 2198
+ip service-set tcp/1494 type object
+ service protocol tcp destination-port 1494
+ip service-set tcp/2598 type object
+ service protocol tcp destination-port 0
+ip service-set tcp/2200 type object
+ service protocol tcp destination-port 2200
+ip service-set tcp2221 type object
+ service protocol tcp destination-port 2221
+ip service-set tcp20790 type object
+ service protocol tcp destination-port 20790
+ip service-set tcp7182 type object
+ service protocol tcp destination-port 7182
+ip service-set tcp9000 type object
+ service protocol tcp destination-port 9000
+ip service-set 9996 type object
+ service protocol tcp destination-port 9996
+ip service-set tcp9997 type object
+ service protocol tcp destination-port 9997
+ip service-set tcp53880 type object
+ service protocol tcp destination-port 53880
+ip service-set 7809 type object
+ service protocol tcp destination-port 7809
+ip service-set 8400-8450 type object
+ service protocol tcp destination-port 8400
+ip service-set 19900-19950 type object
+ service protocol tcp destination-port 19900
+ip service-set 9092 type object
+ service protocol tcp destination-port 9092
+ip service-set 10380 type object
+ service protocol tcp destination-port 10380
+ip service-set 50000 type object
+ service protocol tcp destination-port 50000
+ip service-set 7800-7809 type object
+ service protocol tcp destination-port 7800
+ip service-set 657 type object
+ service protocol tcp destination-port 657
+ip service-set 9735 type object
+ service protocol tcp destination-port 9735
+ip service-set 9443 type object
+ service protocol tcp destination-port 9443
+ip service-set tcp/1141 type object
+ service protocol tcp destination-port 1141
+ip service-set tcp/1583 type object
+ service protocol tcp destination-port 1583
+ip service-set tcp/1683 type object
+ service protocol tcp destination-port 1683
+ip service-set tcp/8511 type object
+ service protocol tcp destination-port 8511
+ip service-set tcp/8611 type object
+ service protocol tcp destination-port 8611
+ip service-set udp/22 type object
+ service protocol udp destination-port 22
+ip service-set tcp/161-162 type object
+ service protocol tcp destination-port 161
+ip service-set tcp/514 type object
+ service protocol tcp destination-port 514
+ip service-set tcp/443 type object
+ service protocol tcp destination-port 443
+ip service-set tcp/5989 type object
+ service protocol tcp destination-port 5989
+ip service-set tcp/1750 type object
+ service protocol tcp destination-port 1750
+ip service-set tcp/9549-9551 type object
+ service protocol tcp destination-port 9549
+ip service-set tcp/9558-9561 type object
+ service protocol tcp destination-port 9558
+ip service-set tcp/9567-9569 type object
+ service protocol tcp destination-port 9567
+ip service-set tcp/2433 type object
+ service protocol tcp destination-port 2433
+ip service-set tcp/2463 type object
+ service protocol tcp destination-port 2463
+ip service-set tcp/9330 type object
+ service protocol tcp destination-port 9330
+ip service-set tcp/8012 type object
+ service protocol tcp destination-port 8012
+ip service-set udp10161-10162 type object
+ service protocol udp destination-port 10161
+ip service-set tcp/9092_9099 type object
+ service protocol tcp destination-port 9092
+ip service-set tcp_49 type object
+ service protocol tcp destination-port 49
+ip service-set TCP/9096 type object
+ service protocol tcp destination-port 9096
+ip service-set tcp11180 type object
+ service protocol tcp destination-port 11180
+ip service-set TCP/6550-6560 type object
+ service protocol tcp destination-port 6550
+ip service-set tcp/9440 type object
+ service protocol tcp destination-port 9440
+ip service-set tcp/8400-8500 type object
+ service protocol tcp destination-port 8400
+ip service-set tcp/19900-65535 type object
+ service protocol tcp destination-port 19900
+ip service-set tcp_90 type object
+ service protocol tcp destination-port 90
+ip service-set tcp/14237-14238 type object
+ service protocol tcp destination-port 14237
+ip service-set tcp/17990 type object
+ service protocol tcp destination-port 17990
+ip service-set tcp/17988 type object
+ service protocol tcp destination-port 17988
+ip service-set tcp_443 type object
+ service protocol tcp destination-port 443
+ip service-set tcp_80 type object
+ service protocol tcp destination-port 80
+ip service-set TCP/13389 type object
+ service protocol tcp destination-port 13389
+ip service-set tcp_2101 type object
+ service protocol tcp destination-port 2101
+ip service-set tcp/1800 type object
+ service protocol tcp destination-port 1800
+ip service-set tcp/2181 type object
+ service protocol tcp destination-port 2181
+ip service-set tcp/6080 type object
+ service protocol tcp destination-port 6080
+ip service-set tcp/6180 type object
+ service protocol tcp destination-port 6180
+ip service-set tcp/6280 type object
+ service protocol tcp destination-port 6280
+ip service-set tcp/6379 type object
+ service protocol tcp destination-port 6379
+ip service-set tcp/6380 type object
+ service protocol tcp destination-port 6380
+ip service-set tcp/8020 type object
+ service protocol tcp destination-port 8020
+ip service-set tcp/8280 type object
+ service protocol tcp destination-port 8280
+ip service-set tcp/8380 type object
+ service protocol tcp destination-port 8380
+ip service-set tcp/8580 type object
+ service protocol tcp destination-port 8580
+ip service-set tcp/8680 type object
+ service protocol tcp destination-port 8680
+ip service-set tcp/8780 type object
+ service protocol tcp destination-port 8780
+ip service-set tcp/8880 type object
+ service protocol tcp destination-port 8880
+ip service-set tcp/8980 type object
+ service protocol tcp destination-port 8980
+ip service-set tcp/9092 type object
+ service protocol tcp destination-port 9092
+ip service-set tcp/16379 type object
+ service protocol tcp destination-port 16379
+ip service-set tcp/18080-18083 type object
+ service protocol tcp destination-port 18080
+ip service-set tcp/19092 type object
+ service protocol tcp destination-port 19092
+ip service-set tcp/20300 type object
+ service protocol tcp destination-port 20300
+ip service-set tcp/20880-20884 type object
+ service protocol tcp destination-port 20880
+ip service-set tcp/21884 type object
+ service protocol tcp destination-port 21884
+ip service-set tcp/26379 type object
+ service protocol tcp destination-port 26379
+ip service-set tcp/33200 type object
+ service protocol tcp destination-port 33200
+ip service-set tcp/34200 type object
+ service protocol tcp destination-port 34200
+ip service-set tcp/60000 type object
+ service protocol tcp destination-port 60000
+ip service-set 1521-1550 type object
+ service protocol tcp destination-port 1521
+ip service-set tcp/10080 type object
+ service protocol tcp destination-port 10080
+ip service-set tcp/10082 type object
+ service protocol tcp destination-port 10082
+ip service-set tcp/10102 type object
+ service protocol tcp destination-port 10102
+ip service-set tcp/1783 type object
+ service protocol tcp destination-port 1783
+ip service-set tcp/1883 type object
+ service protocol tcp destination-port 1883
+ip service-set tcp/8711 type object
+ service protocol tcp destination-port 8711
+ip service-set tcp/8811 type object
+ service protocol tcp destination-port 8811
+ip service-set tcp/13720-13724 type object
+ service protocol tcp destination-port 13720
+ip service-set tcp/13780-13782 type object
+ service protocol tcp destination-port 13780
+ip service-set tcp_1-22 type object
+ service protocol tcp destination-port 1
+ip service-set tcp_24-112 type object
+ service protocol tcp destination-port 24
+ip service-set tcp_24-122 type object
+ service protocol tcp destination-port 24
+ip service-set tcp_124-134 type object
+ service protocol tcp destination-port 124
+ip service-set tcp_136-138 type object
+ service protocol tcp destination-port 136
+ip service-set tcp_140-444 type object
+ service protocol tcp destination-port 140
+ip service-set tcp_446-1023 type object
+ service protocol tcp destination-port 446
+ip service-set tcp_1024-1432 type object
+ service protocol tcp destination-port 1024
+ip service-set tcp_1435-1520 type object
+ service protocol tcp destination-port 1435
+ip service-set tcp_1522-1899 type object
+ service protocol tcp destination-port 1522
+ip service-set tcp_1901-2512 type object
+ service protocol tcp destination-port 1901
+ip service-set tcp_2514-2744 type object
+ service protocol tcp destination-port 2514
+ip service-set tcp_2746-3126 type object
+ service protocol tcp destination-port 2746
+ip service-set tcp_3128-3305 type object
+ service protocol tcp destination-port 3128
+ip service-set tcp/1520-1521 type object
+ service protocol tcp destination-port 1520
+ip service-set tcp_3307-3388 type object
+ service protocol tcp destination-port 3307
+ip service-set tcp_3390-6128 type object
+ service protocol tcp destination-port 3390
+ip service-set tcp_6130-27664 type object
+ service protocol tcp destination-port 6130
+ip service-set tcp_27666-65535 type object
+ service protocol tcp destination-port 27666
+ip service-set 1580-1590 type object
+ service protocol tcp destination-port 1580
+ip service-set tcp1000-1432 type object
+ service protocol tcp destination-port 1000
+ip service-set tcp1345-1520 type object
+ service protocol tcp destination-port 1345
+ip service-set tcp1522-1899 type object
+ service protocol tcp destination-port 1522
+ip service-set tcp1901-2000 type object
+ service protocol tcp destination-port 1901
+ip service-set 1500-1520 type object
+ service protocol tcp destination-port 1500
+ip service-set 1901-2500 type object
+ service protocol tcp destination-port 1901
+ip service-set 20000-20008 type object
+ service protocol tcp destination-port 20000
+ip service-set tcp/8543 type object
+ service protocol tcp destination-port 8543
+ip service-set udp/395 type object
+ service protocol udp destination-port 395
+ip service-set udp/69 type object
+ service protocol tcp destination-port 69
+ip service-set 1951-1952 type object
+ service protocol tcp destination-port 1951
+ip service-set tcp/6001 type object
+ service protocol tcp destination-port 6001
+ip service-set tcp/7010 type object
+ service protocol tcp destination-port 7010
+ip service-set tcp/7601 type object
+ service protocol tcp destination-port 7601
+ip service-set 9151-9152 type object
+ service protocol tcp destination-port 9151
+ip service-set 47000-48000 type object
+ service protocol tcp destination-port 47000
+ip service-set 46000-46030 type object
+ service protocol tcp destination-port 46000
+ip service-set 1521-1555 type object
+ service protocol tcp destination-port 1521
+ip service-set 10086-10106 type object
+ service protocol tcp destination-port 10086
+ip service-set 53389 type object
+ service protocol tcp destination-port 53389
+ip service-set 13805 type object
+ service protocol tcp destination-port 13805
+ip service-set 30020-30029 type object
+ service protocol tcp destination-port 30020
+ip service-set 9151-9159 type object
+ service protocol tcp destination-port 9151
+ip service-set 6900-6999 type object
+ service protocol tcp destination-port 6900
+ip service-set 1983 type object
+ service protocol tcp destination-port 1983
+ip service-set 2083 type object
+ service protocol tcp destination-port 2083
+ip service-set 2183 type object
+ service protocol tcp destination-port 2183
+ip service-set 2283 type object
+ service protocol tcp destination-port 2283
+ip service-set 8911 type object
+ service protocol tcp destination-port 8911
+ip service-set 9011 type object
+ service protocol tcp destination-port 9011
+ip service-set 9111 type object
+ service protocol tcp destination-port 9111
+ip service-set 9211 type object
+ service protocol tcp destination-port 9211
+ip service-set 1096 type object
+ service protocol tcp destination-port 1096
+ip service-set tcp/1096 type object
+ service protocol tcp destination-port 1096
+ip service-set 2030 type object
+ service protocol tcp destination-port 2030
+ip service-set tcp/2032 type object
+ service protocol tcp destination-port 2032
+ip service-set tcp/5050 type object
+ service protocol tcp destination-port 5050
+ip service-set tcp/8091 type object
+ service protocol tcp destination-port 8091
+ip service-set tcp/8787 type object
+ service protocol tcp destination-port 8787
+ip service-set tcp/9180 type object
+ service protocol tcp destination-port 9180
+ip service-set tcp/19191 type object
+ service protocol tcp destination-port 19191
+ip service-set tcp/50004 type object
+ service protocol tcp destination-port 50004
+ip service-set tcp/19080 type object
+ service protocol tcp destination-port 19080
+ip service-set tcp/8001 type object
+ service protocol tcp destination-port 8001
+ip service-set tcp/8038 type object
+ service protocol tcp destination-port 8038
+ip service-set 53380-53389 type object
+ service protocol tcp destination-port 53380
+ip service-set tcp/6800-6999 type object
+ service protocol tcp destination-port 6800
+ip service-set tcp_91 type object
+ service protocol tcp destination-port 91
+ip service-set 16553 type object
+ service protocol tcp destination-port 16553
+ip service-set 53380-53390 type object
+ service protocol tcp destination-port 53380
+ip service-set udp17990 type object
+ service protocol udp destination-port 17990
+ip service-set udp17988 type object
+ service protocol udp destination-port 17988
+ip service-set tcp/1142 type object
+ service protocol tcp destination-port 1142
+ip service-set tcp_8818 type object
+ service protocol tcp destination-port 8818
+ip service-set tcp_30000 type object
+ service protocol tcp destination-port 30000
+ip service-set tcp_31089 type object
+ service protocol tcp destination-port 31089
+ip service-set 80-179 type object
+ service protocol tcp destination-port 80
+ip service-set tcp/1580-1581 type object
+ service protocol tcp destination-port 1580
+ip service-set tcp22 type object
+ service protocol tcp destination-port 22
+ip service-set 10095 type object
+ service protocol tcp destination-port 10095
+ip service-set 808 type object
+ service protocol tcp destination-port 808
+ip service-set udp/2020 type object
+ service protocol udp destination-port 2020
+ip service-set udp/4001 type object
+ service protocol udp destination-port 4001
+ip service-set udp/9085 type object
+ service protocol udp destination-port 9085
+ip service-set 7810 type object
+ service protocol tcp destination-port 7810
+ip service-set tcp/24 type object
+ service protocol tcp destination-port 24
+ip service-set tcp/25 type object
+ service protocol tcp destination-port 25
+ip service-set tcp7811-7900 type object
+ service protocol tcp destination-port 7811
+ip service-set 1080-1089 type object
+ service protocol tcp destination-port 1080
+ip service-set 9441 type object
+ service protocol tcp destination-port 9441
+ip service-set 9444 type object
+ service protocol tcp destination-port 9444
+ip service-set tcp/9445 type object
+ service protocol tcp destination-port 9445
+ip service-set tcp/9442 type object
+ service protocol tcp destination-port 9442
+ip service-set tcp/9086 type object
+ service protocol tcp destination-port 9086
+ip service-set tcp/9446 type object
+ service protocol tcp destination-port 9446
+ip service-set tcp/9447 type object
+ service protocol tcp destination-port 9447
+ip service-set TCP9440-9447 type object
+ service protocol tcp destination-port 9440
+ip service-set 9080-9087 type object
+ service protocol tcp destination-port 9080
+ip service-set 1086 type object
+ service protocol tcp destination-port 1086
+ip service-set 1186 type object
+ service protocol tcp destination-port 1186
+ip service-set 8013-8016 type object
+ service protocol tcp destination-port 8013
+ip service-set 8113-8116 type object
+ service protocol tcp destination-port 8113
+ip service-set 1080-1086 type object
+ service protocol tcp destination-port 1080
+ip service-set 1180-1186 type object
+ service protocol tcp destination-port 1180
+ip service-set 5080 type object
+ service protocol tcp destination-port 5080
+ip service-set 8085 type object
+ service protocol tcp destination-port 8085
+ip service-set 4002 type object
+ service protocol tcp destination-port 4002
+ip service-set 1037 type object
+ service protocol tcp destination-port 1037
+ip service-set 9393 type object
+ service protocol tcp destination-port 9393
+ip service-set tcp7801-7900 type object
+ service protocol tcp destination-port 7801
+ip service-set tcp1106 type object
+ service protocol tcp destination-port 1106
+ip service-set tcp/1414-1432 type object
+ service protocol tcp destination-port 1414
+ip service-set 40200 type object
+ service protocol tcp destination-port 40200
+ip service-set 20769 type object
+ service protocol tcp destination-port 20769
+ip service-set 20752 type object
+ service protocol tcp destination-port 20752
+ip service-set 20762 type object
+ service protocol tcp destination-port 20762
+ip service-set 20753 type object
+ service protocol tcp destination-port 20753
+ip service-set 20750 type object
+ service protocol tcp destination-port 20750
+ip service-set 20759 type object
+ service protocol tcp destination-port 20759
+ip service-set 20668 type object
+ service protocol tcp destination-port 20668
+ip service-set 20662 type object
+ service protocol tcp destination-port 20662
+ip service-set 20754 type object
+ service protocol tcp destination-port 20754
+ip service-set 1701 type object
+ service protocol tcp destination-port 1701
+ip service-set 1180-1189 type object
+ service protocol tcp destination-port 1180
+ip service-set 1280-1289 type object
+ service protocol tcp destination-port 1280
+ip service-set 1380-1389 type object
+ service protocol tcp destination-port 1380
+ip service-set 11443 type object
+ service protocol tcp destination-port 11443
+ip service-set 12443 type object
+ service protocol tcp destination-port 12443
+ip service-set tcp8750 type object
+ service protocol tcp destination-port 8750
+ip service-set tcp32769-65535 type object
+ service protocol tcp destination-port 32769
+ip service-set TCP/9010-9011 type object
+ service protocol tcp destination-port 9010
+ip service-set tcp7080 type object
+ service protocol tcp destination-port 7080
+ip service-set tcp7443 type object
+ service protocol tcp destination-port 7443
+ip service-set tcp/1581 type object
+ service protocol tcp destination-port 1581
+ip service-set tcp20000-20010 type object
+ service protocol tcp destination-port 20000
+ip service-set 6653 type object
+ service protocol tcp destination-port 6653
+ip service-set 6654 type object
+ service protocol tcp destination-port 6654
+ip service-set 6555 type object
+ service protocol tcp destination-port 6555
+ip service-set 6574 type object
+ service protocol tcp destination-port 6574
+ip service-set 7554 type object
+ service protocol tcp destination-port 7554
+ip service-set 1718-1719 type object
+ service protocol tcp destination-port 1718
+ip service-set 8451-8452 type object
+ service protocol tcp destination-port 8451
+ip service-set 8455 type object
+ service protocol tcp destination-port 8455
+ip service-set tcp9100-9200 type object
+ service protocol tcp destination-port 9100
+ip service-set 1084 type object
+ service protocol tcp destination-port 1084
+ip service-set udp8750 type object
+ service protocol udp destination-port 8750
+ip service-set udp32769-65535 type object
+ service protocol udp destination-port 32769
+ip service-set 8300 type object
+ service protocol tcp destination-port 8300
+ip service-set tcp7001to7012 type object
+ service protocol tcp destination-port 7001
+ip service-set tcp1521-2000 type object
+ service protocol tcp destination-port 1521
+ip service-set tcp1000-65530 type object
+ service protocol tcp destination-port 1000
+ip service-set tcp6621 type object
+ service protocol tcp destination-port 6621
+ip service-set tcp6673 type object
+ service protocol tcp destination-port 6673
+ip service-set tcp6676-6678 type object
+ service protocol tcp destination-port 6676
+ip service-set tcp6942-6945 type object
+ service protocol tcp destination-port 6942
+ip service-set tcp6947-6952 type object
+ service protocol tcp destination-port 6947
+ip service-set tcp1000-65535 type object
+ service protocol tcp destination-port 1000
+ip service-set tcp32 type object
+ service protocol tcp destination-port 32
+ip service-set tcp9241 type object
+ service protocol tcp destination-port 9241
+ip service-set tcp_8014 type object
+ service protocol tcp destination-port 8014
+ip service-set tcp/9060-9063 type object
+ service protocol tcp destination-port 9060
+ip service-set tcp19002 type object
+ service protocol tcp destination-port 19002
+ip service-set tcp38099 type object
+ service protocol tcp destination-port 38099
+ip service-set tcp48099 type object
+ service protocol tcp destination-port 48099
+ip service-set tcp/8011 type object
+ service protocol tcp destination-port 8011
+ip service-set tcp/8450-8499 type object
+ service protocol tcp destination-port 8450
+ip service-set tcp7118 type object
+ service protocol tcp destination-port 7118
+ip service-set tcp/7891 type object
+ service protocol tcp destination-port 7891
+ip service-set TCP23 type object
+ service protocol tcp destination-port 23
+ip service-set tcp/10000-25000 type object
+ service protocol tcp destination-port 10000
+ip service-set tcp/21005-21007 type object
+ service protocol tcp destination-port 21005
+ip service-set 7002 type object
+ service protocol tcp destination-port 7002
+ip service-set 5222 type object
+ service protocol tcp destination-port 5222
+ip service-set 5269 type object
+ service protocol tcp destination-port 5269
+ip service-set 4505-4506 type object
+ service protocol tcp destination-port 4505
+ip service-set 1520-1530 type object
+ service protocol tcp destination-port 1520
+ip service-set 21005 type object
+ service protocol tcp destination-port 21005
+ip service-set 21007 type object
+ service protocol tcp destination-port 21007
+ip service-set 21008 type object
+ service protocol tcp destination-port 21008
+ip service-set 21009 type object
+ service protocol tcp destination-port 21009
+ip service-set tcp1521 type object
+ service protocol tcp destination-port 1521
+ip service-set udp32768 type object
+ service protocol udp destination-port 32768
+ip service-set tcp32768 type object
+ service protocol tcp destination-port 32768
+ip service-set tcp50100 type object
+ service protocol tcp destination-port 20100
+ip service-set tcp50105 type object
+ service protocol tcp destination-port 50105
+ip service-set tcp50090 type object
+ service protocol tcp destination-port 50090
+ip service-set tcp50091 type object
+ service protocol tcp destination-port 50091
+ip service-set tcp8188 type object
+ service protocol tcp destination-port 8188
+ip service-set tcp8481 type object
+ service protocol tcp destination-port 8481
+ip service-set tcp8040 type object
+ service protocol tcp destination-port 8040
+ip service-set tcp8042 type object
+ service protocol tcp destination-port 8042
+ip service-set tcp8041 type object
+ service protocol tcp destination-port 8041
+ip service-set tcp10020 type object
+ service protocol tcp destination-port 10020
+ip service-set tcp60030 type object
+ service protocol tcp destination-port 60030
+ip service-set tcp2888 type object
+ service protocol tcp destination-port 2888
+ip service-set tcp9001 type object
+ service protocol tcp destination-port 9001
+ip service-set tcp9092 type object
+ service protocol tcp destination-port 9092
+ip service-set tcp9393 type object
+ service protocol tcp destination-port 9393
+ip service-set udp1514 type object
+ service protocol udp destination-port 1514
+ip service-set 4118-4120 type object
+ service protocol tcp destination-port 4118
+ip service-set 4122 type object
+ service protocol tcp destination-port 4122
+ip service-set tcp/2010-2011 type object
+ service protocol tcp destination-port 2010
+ip service-set 53489 type object
+ service protocol tcp destination-port 53489
+ip service-set 1520-1540 type object
+ service protocol tcp destination-port 1520
+ip service-set tcp180 type object
+ service protocol tcp destination-port 180
+ip service-set TCP/21066-21070 type object
+ service protocol tcp destination-port 21066
+ip service-set TCP/24000-24049 type object
+ service protocol tcp destination-port 24000
+ip service-set TCP/21000-21010 type object
+ service protocol tcp destination-port 21000
+ip service-set TCP/21730-21749 type object
+ service protocol tcp destination-port 21730
+ip service-set 6672-6950 type object
+ service protocol tcp destination-port 6672
+ip service-set 8001-8004 type object
+ service protocol tcp destination-port 8001
+ip service-set tcp/1080-1090 type object
+ service protocol tcp destination-port 0
+ip service-set 1522-1550 type object
+ service protocol tcp destination-port 1522
+ip service-set TCP2080-2085 type object
+ service protocol tcp destination-port 2080
+ip service-set TCP3080-3085 type object
+ service protocol tcp destination-port 3080
+ip service-set UDP/24000-24049 type object
+ service protocol tcp destination-port 24000
+ip service-set UDP/21000-21010 type object
+ service protocol tcp destination-port 21000
+ip service-set UDP/21730-21749 type object
+ service protocol udp destination-port 21730
+ip service-set TCP/20007 type object
+ service protocol tcp destination-port 20007
+ip service-set TCP/20006 type object
+ service protocol tcp destination-port 20006
+ip service-set TCP/20005 type object
+ service protocol tcp destination-port 20005
+ip service-set TCP/20004 type object
+ service protocol tcp destination-port 20004
+ip service-set TCP/20003 type object
+ service protocol tcp destination-port 20003
+ip service-set TCP/3307 type object
+ service protocol tcp destination-port 3307
+ip service-set tcp/13786 type object
+ service protocol tcp destination-port 13786
+ip service-set 1522-1570 type object
+ service protocol tcp destination-port 1522
+ip service-set 1520 type object
+ service protocol tcp destination-port 1520
+ip service-set tcp/5432 type object
+ service protocol tcp destination-port 5432
+ip service-set UDP/32768-61000 type object
+ service protocol udp destination-port 32768
+ip service-set TCP/32768-61000 type object
+ service protocol tcp destination-port 32768
+ip service-set 6620-7900 type object
+ service protocol tcp destination-port 6620
+ip service-set 5000-5200 type object
+ service protocol tcp destination-port 5000
+ip service-set 1180-1190 type object
+ service protocol tcp destination-port 1180
+ip service-set tcp/6551 type object
+ service protocol tcp destination-port 6551
+ip service-set tcp_31090 type object
+ service protocol tcp destination-port 31090
+ip service-set tcp/9080-9099 type object
+ service protocol tcp destination-port 9080
+ip service-set tcp/8080-8099 type object
+ service protocol tcp destination-port 8080
+ip service-set tcp/1101-1299 type object
+ service protocol tcp destination-port 1101
+ip service-set tcp/1160 type object
+ service protocol tcp destination-port 1160
+ip service-set tcp/6020 type object
+ service protocol tcp destination-port 6020
+ip service-set 8080-8081 type object
+ service protocol tcp destination-port 8080
+ip service-set 8000-8003 type object
+ service protocol tcp destination-port 8000
+ip service-set 1380 type object
+ service protocol tcp destination-port 1380
+ip service-set 80-84 type object
+ service protocol tcp destination-port 80
+ip service-set tcp/9181 type object
+ service protocol tcp destination-port 9181
+ip service-set tcp/9183-9187 type object
+ service protocol tcp destination-port 9183
+ip service-set tcp/9280-9287 type object
+ service protocol tcp destination-port 9280
+ip service-set tcp/9380-9387 type object
+ service protocol tcp destination-port 9380
+ip service-set tcp/9540 type object
+ service protocol tcp destination-port 9540
+ip service-set tcp/9541 type object
+ service protocol tcp destination-port 9541
+ip service-set tcp/9543-9547 type object
+ service protocol tcp destination-port 9543
+ip service-set tcp/9640-9647 type object
+ service protocol tcp destination-port 9640
+ip service-set tcp/9740-9747 type object
+ service protocol tcp destination-port 9740
+ip service-set tcp/1081-1083 type object
+ service protocol tcp destination-port 1081
+ip service-set tcp/1181-1183 type object
+ service protocol tcp destination-port 1181
+ip service-set tcp/18008-18011 type object
+ service protocol tcp destination-port 18008
+ip service-set tcp/18108-18111 type object
+ service protocol tcp destination-port 18108
+ip service-set udp/1080 type object
+ service protocol udp destination-port 1080
+ip service-set udp/1180 type object
+ service protocol udp destination-port 1180
+ip service-set udp/1081-1083 type object
+ service protocol udp destination-port 1081
+ip service-set udp/1181-1183 type object
+ service protocol udp destination-port 1181
+ip service-set udp/18008-18011 type object
+ service protocol udp destination-port 18008
+ip service-set udp/18108-18111 type object
+ service protocol tcp destination-port 18108
+ip service-set udp/9081 type object
+ service protocol udp destination-port 9081
+ip service-set udp/9084-9085 type object
+ service protocol udp destination-port 9084
+ip service-set tcp/9180-9181 type object
+ service protocol tcp destination-port 9180
+ip service-set udp/9180-9181 type object
+ service protocol udp destination-port 9180
+ip service-set udp/9183-9187 type object
+ service protocol udp destination-port 9183
+ip service-set udp/9280-9287 type object
+ service protocol udp destination-port 9280
+ip service-set udp/9380-9387 type object
+ service protocol tcp destination-port 9380
+ip service-set udp/9440-9441 type object
+ service protocol udp destination-port 9440
+ip service-set udp/9444-9445 type object
+ service protocol udp destination-port 9444
+ip service-set udp/9540-9541 type object
+ service protocol udp destination-port 9540
+ip service-set udp/9543-9547 type object
+ service protocol udp destination-port 9543
+ip service-set udp/9640-9647 type object
+ service protocol udp destination-port 9640
+ip service-set udp/9740-9747 type object
+ service protocol udp destination-port 9740
+ip service-set 8000-9093 type object
+ service protocol tcp destination-port 8000
+ip service-set tcp7910-7920 type object
+ service protocol tcp destination-port 7910
+ip service-set tcp6550-6559 type object
+ service protocol tcp destination-port 6550
+ip service-set 9083-9093 type object
+ service protocol tcp destination-port 9083
+ip service-set 1180-1300 type object
+ service protocol tcp destination-port 1180
+ip service-set 6199-10000 type object
+ service protocol tcp destination-port 6199
+ip service-set 26399-27664 type object
+ service protocol tcp destination-port 26399
+ip service-set 27666-30000 type object
+ service protocol tcp destination-port 27666
+ip service-set tcp/5000-6000 type object
+ service protocol tcp destination-port 5000
+ip service-set tcp6620 type object
+ service protocol tcp destination-port 6620
+ip service-set tcp6672-6675 type object
+ service protocol tcp destination-port 6672
+ip service-set tcp6720 type object
+ service protocol tcp destination-port 6720
+ip service-set tcp6772-6775 type object
+ service protocol tcp destination-port 6772
+ip service-set tcp6941-6948 type object
+ service protocol tcp destination-port 6941
+ip service-set tcp7041-7048 type object
+ service protocol tcp destination-port 7041
+ip service-set tcp5016-5018 type object
+ service protocol tcp destination-port 5016
+ip service-set tcp6199-20000 type object
+ service protocol tcp destination-port 6199
+ip service-set tcp8000-10000 type object
+ service protocol tcp destination-port 8000
+ip service-set 1108 type object
+ service protocol tcp destination-port 1108
+ip service-set tcp8030-8033 type object
+ service protocol tcp destination-port 8030
+ip service-set tcp7070 type object
+ service protocol tcp destination-port 7070
+ip service-set 7070 type object
+ service protocol tcp destination-port 7070
+ip service-set udp/10050-10055 type object
+ service protocol udp destination-port 10050
+ip service-set udp/7070 type object
+ service protocol udp destination-port 7070
+ip service-set udp/7443 type object
+ service protocol udp destination-port 7443
+ip service-set 19011 type object
+ service protocol tcp destination-port 19011
+ip service-set tcp9099 type object
+ service protocol tcp destination-port 9099
+ip service-set 6677 type object
+ service protocol tcp destination-port 6677
+ip service-set 6675 type object
+ service protocol tcp destination-port 6675
+ip service-set tcp9080-9095 type object
+ service protocol tcp destination-port 9080
+ip service-set 9966 type object
+ service protocol tcp destination-port 9966
+ip service-set tcp80 type object
+ service protocol tcp destination-port 80
+ip service-set tcp1580 type object
+ service protocol tcp destination-port 1580
+ip service-set tcp/9100-9300 type object
+ service protocol tcp destination-port 9100
+ip service-set 53380-53399 type object
+ service protocol tcp destination-port 53380
+ip service-set 21000-27999 type object
+ service protocol tcp destination-port 21000
+ip service-set 50000-50500 type object
+ service protocol tcp destination-port 50000
+ip service-set tcp902 type object
+ service protocol tcp destination-port 902
+ip service-set tcp903 type object
+ service protocol tcp destination-port 903
+ip service-set udp902 type object
+ service protocol udp destination-port 902
+ip service-set tcp8083 type object
+ service protocol tcp destination-port 8083
+ip service-set 465 type object
+ service protocol tcp destination-port 465
+ip service-set 600-1023 type object
+ service protocol tcp destination-port 600
+ip service-set 6081 type object
+ service protocol tcp destination-port 6081
+ip service-set 8043 type object
+ service protocol tcp destination-port 8043
+ip service-set 8099 type object
+ service protocol tcp destination-port 8099
+ip service-set 8443 type object
+ service protocol tcp destination-port 8443
+ip service-set 8449 type object
+ service protocol tcp destination-port 8449
+ip service-set 8773 type object
+ service protocol tcp destination-port 8773
+ip service-set 10162 type object
+ service protocol tcp destination-port 10162
+ip service-set 12321 type object
+ service protocol tcp destination-port 1232
+ip service-set 12902 type object
+ service protocol tcp destination-port 12902
+ip service-set 12904-12905 type object
+ service protocol tcp destination-port 12904
+ip service-set 20161 type object
+ service protocol tcp destination-port 20161
+ip service-set tcp13399 type object
+ service protocol tcp destination-port 13399
+ip service-set tcp9151-9152 type object
+ service protocol tcp destination-port 9151
+ip service-set tcp30021 type object
+ service protocol tcp destination-port 30021
+ip service-set tcp30030 type object
+ service protocol tcp destination-port 30030
+ip service-set tcp14237-14238 type object
+ service protocol tcp destination-port 14237
+ip service-set udp/0-22 type object
+ service protocol tcp destination-port 0
+ip service-set 27019 type object
+ service protocol tcp destination-port 27019
+ip service-set TCP27019 type object
+ service protocol tcp destination-port 27019
+ip service-set TCp5801 type object
+ service protocol tcp destination-port 5801
+ip service-set UDp5432 type object
+ service protocol udp destination-port 5432
+ip service-set UDp27019 type object
+ service protocol udp destination-port 27019
+ip service-set UDp5801 type object
+ service protocol udp destination-port 5801
+ip service-set tcp9833 type object
+ service protocol tcp destination-port 9833
+ip service-set tcp8082 type object
+ service protocol tcp destination-port 8082
+ip service-set 8022 type object
+ service protocol tcp destination-port 8022
+ip service-set tcp749 type object
+ service protocol tcp destination-port 749
+ip service-set tcp3181 type object
+ service protocol tcp destination-port 3181
+ip service-set tcp4181 type object
+ service protocol tcp destination-port 4181
+ip service-set tcp7574 type object
+ service protocol tcp destination-port 7574
+ip service-set tcp7575 type object
+ service protocol tcp destination-port 7575
+ip service-set 8649 type object
+ service protocol tcp destination-port 8649
+ip service-set 8984 type object
+ service protocol tcp destination-port 8984
+ip service-set 11000 type object
+ service protocol tcp destination-port 11000
+ip service-set 11001 type object
+ service protocol tcp destination-port 11001
+ip service-set 16000 type object
+ service protocol tcp destination-port 16000
+ip service-set 50030 type object
+ service protocol tcp destination-port 50030
+ip service-set 50060 type object
+ service protocol tcp destination-port 50060
+ip service-set 50071 type object
+ service protocol tcp destination-port 50071
+ip service-set tcp1000-9999 type object
+ service protocol tcp destination-port 1000
+ip service-set tcp1520-1540 type object
+ service protocol tcp destination-port 1520
+ip service-set tcp28001-28002 type object
+ service protocol tcp destination-port 28001
+ip service-set tcp1080-1184 type object
+ service protocol tcp destination-port 1080
+ip service-set tcp9080-9999 type object
+ service protocol tcp destination-port 9080
+ip service-set tcp80-90 type object
+ service protocol tcp destination-port 80
+ip service-set TCP22000 type object
+ service protocol tcp destination-port 22000
+ip service-set TCP22100 type object
+ service protocol tcp destination-port 22100
+ip service-set 22418/tcp type object
+ service protocol tcp destination-port 22418
+ip service-set tcp/8021-8022 type object
+ service protocol tcp destination-port 8021
+ip service-set tcp33890 type object
+ service protocol tcp destination-port 33890
+ip service-set tcp13389 type object
+ service protocol tcp destination-port 13389
+ip service-set tcp5678 type object
+ service protocol tcp destination-port 5678
+ip service-set tcp180-184 type object
+ service protocol tcp destination-port 180
+ip service-set 80-122 type object
+ service protocol tcp destination-port 8
+ip service-set tcp20443 type object
+ service protocol tcp destination-port 20443
+ip service-set 5673 type object
+ service protocol tcp destination-port 5673
+ip service-set 8809 type object
+ service protocol tcp destination-port 8809
+ip service-set tcp9080 type object
+ service protocol tcp destination-port 9080
+ip service-set tcp5673 type object
+ service protocol tcp destination-port 5673
+ip service-set tcp8809 type object
+ service protocol tcp destination-port 8809
+ip service-set 3443 type object
+ service protocol tcp destination-port 3443
+ip service-set tcp8003 type object
+ service protocol tcp destination-port 8003
+ip service-set 10160/tcp type object
+ service protocol tcp destination-port 10160
+ip service-set 20000-27999 type object
+ service protocol tcp destination-port 20000
+ip service-set tcp0-22 type object
+ service protocol tcp destination-port 0
+ip service-set 5559 type object
+ service protocol tcp destination-port 5559
+ip service-set 6559 type object
+ service protocol tcp destination-port 6559
+ip service-set tcp_0-22 type object
+ service protocol tcp destination-port 0
+ip service-set udp_0-22 type object
+ service protocol udp destination-port 0

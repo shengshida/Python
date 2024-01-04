@@ -1,0 +1,5399 @@
+config firewall service custom
+    edit "ALL"
+    next
+    edit "ALL_TCP"
+        set protocol-number 6
+    next
+    edit "ALL_UDP"
+        set protocol-number 17
+    next
+    edit "ALL_ICMP"
+        set protocol ICMP
+        set icmpcode 0
+    next
+    edit "ALL_ICMP6"
+        set protocol ICMP6
+        unset icmpcode
+    next
+    edit "webproxy"
+        set protocol-number 6
+    next
+    edit "TCP/6554、6555"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6554-6555 
+    next
+    edit "TCP/6563"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6563 
+    next
+    edit "TCP/6556"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6556 
+    next
+    edit "TCP/6553-6656"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6553-6656 
+    next
+    edit "TCP/20"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20 
+    next
+    edit "TCP/1521"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521 
+    next
+    edit "TCP/5678"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5678 
+    next
+    edit "TCP/30021"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30021 
+    next
+    edit "TCP/30030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30030 
+    next
+    edit "TCP/9151"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9151 
+    next
+    edit "TCP/9152"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9152 
+    next
+    edit "TCP/9153"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9153 
+    next
+    edit "TCP/9154"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9154 
+    next
+    edit "TCP/8000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000 
+    next
+    edit "TCP/1521-1561"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1561 
+    next
+    edit "TCP/7890"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7890 
+    next
+    edit "TCP/31759"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 31759 
+    next
+    edit "TCP/1100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1100 
+    next
+    edit "TCP/30020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30020 
+    next
+    edit "UDP/123"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 123 
+    next
+    edit "TCP/1100-1200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1100-1200 
+    next
+    edit "TCP/31759-31859"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 31759-31859 
+    next
+    edit "TCP/7570"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7570 
+    next
+    edit "TCP/7591"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7591 
+    next
+    edit "TCP/8005"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8005 
+    next
+    edit "TCP/8090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8090 
+    next
+    edit "TCP/28090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 28090 
+    next
+    edit "TCP/28443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 28443 
+    next
+    edit "TCP/38080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 38080 
+    next
+    edit "TCP/38443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 38443 
+    next
+    edit "TCP/38007"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 38007 
+    next
+    edit "TCP/3868"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3868 
+    next
+    edit "TCP/8443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8443 
+    next
+    edit "TCP/177"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 177 
+    next
+    edit "TCP/1526"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1526 
+    next
+    edit "TCP/8000-9999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000-9999 
+    next
+    edit "TCP/1080-1099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1099 
+    next
+    edit "TCP/123"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 123 
+    next
+    edit "TCP/80-99"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-99 
+    next
+    edit "TCP/9000-9999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9000-9999 
+    next
+    edit "TCP/1521-1529"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1529 
+    next
+    edit "TCP/8000-8099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000-8099 
+    next
+    edit "TCP/1060-1090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1060-1090 
+    next
+    edit "TCP/8000-8030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000-8030 
+    next
+    edit "TCP/9040-9049"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9040-9049 
+    next
+    edit "TCP/9060-9065"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9060-9065 
+    next
+    edit "TCP/9090-9099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9090-9099 
+    next
+    edit "TCP/19080-19089"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19080-19089 
+    next
+    edit "TCP/39080-39089"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 39080-39089 
+    next
+    edit "TCP/5200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5200 
+    next
+    edit "TCP/6200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6200 
+    next
+    edit "TCP/180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 180 
+    next
+    edit "TCP/7163"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7163 
+    next
+    edit "TCP/7160"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7160 
+    next
+    edit "TCP/5500"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5500 
+    next
+    edit "TCP/5505-5515"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5505-5515 
+    next
+    edit "TCP/5520"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5520 
+    next
+    edit "TCP/5530"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5530 
+    next
+    edit "TCP/5540"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5540 
+    next
+    edit "TCP/5550"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5550 
+    next
+    edit "TCP/5560"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5560 
+    next
+    edit "TCP/5570"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5570 
+    next
+    edit "TCP/5580"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5580 
+    next
+    edit "TCP/9080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080 
+    next
+    edit "TCP/7001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7001 
+    next
+    edit "TCP/8044"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8044 
+    next
+    edit "TCP/9006"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9006 
+    next
+    edit "TCP/9005"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9005 
+    next
+    edit "TCP/7006"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7006 
+    next
+    edit "TCP/8088"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8088 
+    next
+    edit "TCP/7788"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7788 
+    next
+    edit "TCP/90"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 90 
+    next
+    edit "TCP/92"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 92 
+    next
+    edit "TCP/94"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 94 
+    next
+    edit "TCP/98"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 98 
+    next
+    edit "TCP/83"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 83 
+    next
+    edit "TCP/86"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 86 
+    next
+    edit "TCP/84"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 84 
+    next
+    edit "TCP/20000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20000 
+    next
+    edit "TCP/20001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20001 
+    next
+    edit "TCP/20002"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20002 
+    next
+    edit "TCP/20008"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20008 
+    next
+    edit "TCP/30099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30099 
+    next
+    edit "TCP/6616"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6616 
+    next
+    edit "TCP/6626"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6626 
+    next
+    edit "TCP/1110"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1110 
+    next
+    edit "TCP/29999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 29999 
+    next
+    edit "TCP/101"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 101 
+    next
+    edit "TCP/8080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8080 
+    next
+    edit "TCP/3399"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3399 
+    next
+    edit "TCP/8018"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8018 
+    next
+    edit "TCP/8070"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8070 
+    next
+    edit "TCP/17082"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 17082 
+    next
+    edit "tcp/1521-1560"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1560 
+    next
+    edit "TCP/7800-7900"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7800-7900 
+    next
+    edit "TCP/9001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9001 
+    next
+    edit "TCP/81"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 81 
+    next
+    edit "TCP/9081"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9081 
+    next
+    edit "TCP/9082"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9082 
+    next
+    edit "TCP/10033"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10033 
+    next
+    edit "TCP/10021"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10021 
+    next
+    edit "TCP/14355"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 14355 
+    next
+    edit "TCP/14353"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 14353 
+    next
+    edit "TCP/19999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19999 
+    next
+    edit "TCP/80-100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-100 
+    next
+    edit "TCP/9030-9100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9030-9100 
+    next
+    edit "TCP/9440-9560"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9440-9560 
+    next
+    edit "TCP/1070-1090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1070-1090 
+    next
+    edit "TCP/8000-8020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000-8020 
+    next
+    edit "TCP/6570-6580"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6570-6580 
+    next
+    edit "TCP/1520-1527"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520-1527 
+    next
+    edit "TCP/14340-14360"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 14340-14360 
+    next
+    edit "TCP/9080-9090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080-9090 
+    next
+    edit "TCP/80-90"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-90 
+    next
+    edit "TCP/1521-1537"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1537 
+    next
+    edit "tcp/1588"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1588 
+    next
+    edit "tcp/9088"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9088 
+    next
+    edit "tcp/9089"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9089 
+    next
+    edit "TCP/1521-1525"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1525 
+    next
+    edit "TCP/9080-9086"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080-9086 
+    next
+    edit "TCP/1414"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1414 
+    next
+    edit "TCP/1430"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1430 
+    next
+    edit "18443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 18443 
+    next
+    edit "TCP/5001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5001 
+    next
+    edit "TCP/9999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9999 
+    next
+    edit "tcp/8120-8180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8120-8180 
+    next
+    edit "tcp/1520-1525"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520-1525 
+    next
+    edit "tcp/8440-8443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8440-8443 
+    next
+    edit "tcp/28440-28443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 28440-28443 
+    next
+    edit "TCP/9002"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9002 
+    next
+    edit "tcp/18443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 18443 
+    next
+    edit "tcp/10050-10054"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10050-10054 
+    next
+    edit "tcp/181"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 181 
+    next
+    edit "tcp/183"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 183 
+    next
+    edit "40999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40999 
+    next
+    edit "40754"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40754-49754 
+    next
+    edit "40660"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40660 
+    next
+    edit "40768"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40768 
+    next
+    edit "40663"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40663 
+    next
+    edit "40751"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40751 
+    next
+    edit "40763"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40763 
+    next
+    edit "40766"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40766 
+    next
+    edit "40758"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40758 
+    next
+    edit "80"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80 
+    next
+    edit "1521-1539"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1539 
+    next
+    edit "82"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 82 
+    next
+    edit "85"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 85 
+    next
+    edit "1521-1528"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1528 
+    next
+    edit "9084-9085"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9084-9085 
+    next
+    edit "TCP/30000-30099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30000-30099 
+    next
+    edit "TCP/6570"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6570 
+    next
+    edit "TCP/9084"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9084 
+    next
+    edit "TCP/9083"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9083 
+    next
+    edit "TCP/5016"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5016 
+    next
+    edit "tcp/1556"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1556 
+    next
+    edit "tcp/13720"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13720 
+    next
+    edit "tcp/13724"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13724 
+    next
+    edit "tcp/13780"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13780 
+    next
+    edit "tcp/13782"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13782 
+    next
+    edit "tcp/1415"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1415 
+    next
+    edit "tcp/1434"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1434 
+    next
+    edit "tcp/1441"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1441 
+    next
+    edit "tcp/40663"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40663 
+    next
+    edit "tcp/40660"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40660 
+    next
+    edit "tcp/40754"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40754 
+    next
+    edit "tcp/40768"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40768 
+    next
+    edit "tcp/40751"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40751 
+    next
+    edit "tcp/40763"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40763 
+    next
+    edit "tcp/40766"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40766 
+    next
+    edit "tcp/40758"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40758 
+    next
+    edit "tcp/40999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40999 
+    next
+    edit "tcp/1521-1539"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1539 
+    next
+    edit "tcp/10754"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10754 
+    next
+    edit "tcp/10660"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10660 
+    next
+    edit "tcp/10768"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10768 
+    next
+    edit "tcp/10663"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10663 
+    next
+    edit "tcp/10751"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10751 
+    next
+    edit "tcp/10763"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10763 
+    next
+    edit "tcp/10766"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10766 
+    next
+    edit "tcp/10758"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10758 
+    next
+    edit "tcp/20754"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20754 
+    next
+    edit "tcp/20660"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20660 
+    next
+    edit "tcp/20768"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20768 
+    next
+    edit "tcp/20663"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20663 
+    next
+    edit "tcp/20751"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20751 
+    next
+    edit "tcp/20763"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20763 
+    next
+    edit "tcp/20766"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20766 
+    next
+    edit "tcp/20758"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20758 
+    next
+    edit "tcp/30754"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30754 
+    next
+    edit "tcp/30660"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30660 
+    next
+    edit "tcp/30768"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30768 
+    next
+    edit "tcp/30663"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30663 
+    next
+    edit "tcp/30751"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30751 
+    next
+    edit "tcp/30763"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30763 
+    next
+    edit "tcp/30766"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30766 
+    next
+    edit "tcp/30758"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30758 
+    next
+    edit "tcp/80-85"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-85 
+    next
+    edit "tcp/107"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 107 
+    next
+    edit "tcp/7701-8899"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7701-8899 
+    next
+    edit "tcp/5000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5000 
+    next
+    edit "tcp/6915"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6915 
+    next
+    edit "tcp/6000-6100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6000-6100 
+    next
+    edit "tcp/50758"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50758 
+    next
+    edit "tcp/8100-8200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8100-8200 
+    next
+    edit "tcp/7500-7600"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7500-7600 
+    next
+    edit "tcp/6553-6564"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6553-6564 
+    next
+    edit "tcp/56186-56188"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 56186-56188 
+    next
+    edit "tcp/5555"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5555 
+    next
+    edit "tcp/6912"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6912 
+    next
+    edit "tcp/1700"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1700 
+    next
+    edit "tcp/9040-9170"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9040-9170 
+    next
+    edit "tcp/40001-40010"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40001-40010 
+    next
+    edit "TCP/1080-1085"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1085 
+    next
+    edit "TCP/1090-1091"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1090-1091 
+    next
+    edit "TCP/1180-1185"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1185 
+    next
+    edit "TCP/8008-8019"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8008-8019 
+    next
+    edit "TCP/8108-8113"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8108-8113 
+    next
+    edit "TCP/8119"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8119 
+    next
+    edit "tcp/22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 22 
+    next
+    edit "tcp/9060"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9060 
+    next
+    edit "tcp/9043"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9043 
+    next
+    edit "tcp/9061"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9061 
+    next
+    edit "tcp/9044"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9044 
+    next
+    edit "tcp/8019"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8019 
+    next
+    edit "tcp/50754"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50754 
+    next
+    edit "tcp/50763"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50763 
+    next
+    edit "tcp/50751"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50751 
+    next
+    edit "tcp/50663"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50663 
+    next
+    edit "tcp/3000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3000 
+    next
+    edit "tcp/6916"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6916 
+    next
+    edit "tcp/8081"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8081 
+    next
+    edit "tcp/35000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 35000 
+    next
+    edit "tcp/9346"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9346 
+    next
+    edit "tcp/9360"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9360 
+    next
+    edit "tcp/180-190"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 180-190 
+    next
+    edit "tcp/182"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 182 
+    next
+    edit "tcp/80-90"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-90 
+    next
+    edit "tcp/180-183"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 180-183 
+    next
+    edit "tcp/1521-1540"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1540 
+    next
+    edit "tcp/6000-9000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6000-9000 
+    next
+    edit "1107"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1107 
+    next
+    edit "tcp/1521-1530"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1530 
+    next
+    edit "tcp/50660"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50660 
+    next
+    edit "tcp/50768"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50768 
+    next
+    edit "tcp/50766"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50766 
+    next
+    edit "tcp/10999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10999 
+    next
+    edit "tcp/1534"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1534 
+    next
+    edit "tcp/1710-1730"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1710-1730 
+    next
+    edit "tcp/8150-8170"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8150-8170 
+    next
+    edit "tcp/8010"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8010 
+    next
+    edit "tcp/3389"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3389 
+    next
+    edit "tcp/6553"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6553 
+    next
+    edit "tcp/6575"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6575 
+    next
+    edit "tcp/8000-9000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000-9000 
+    next
+    edit "tcp/7000-9990"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7000-9990 
+    next
+    edit "tcp/1414-1424"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1414-1424 
+    next
+    edit "tcp/19910-19930"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19910-19930 
+    next
+    edit "tcp/8450-8470"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8450-8470 
+    next
+    edit "tcp/1127"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1127 
+    next
+    edit "tcp/23"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 23 
+    next
+    edit "tcp/8002"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8002 
+    next
+    edit "tcp/53389"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 53389 
+    next
+    edit "tcp/80"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80 
+    next
+    edit "tcp/20999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20999 
+    next
+    edit "tcp/30999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30999 
+    next
+    edit "TCP/1080-1199"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1199 
+    next
+    edit "TCP/10660-10999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10660-10999 
+    next
+    edit "TCP/20660-20999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20660-20999 
+    next
+    edit "TCP/30660-30999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30660-30999 
+    next
+    edit "TCP/40660-40999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40660-40999 
+    next
+    edit "TCP/50660-50999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50660-50999 
+    next
+    edit "TCP/19998"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19998 
+    next
+    edit "TCP/8996"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8996 
+    next
+    edit "TCP/8180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8180 
+    next
+    edit "TCP/1409"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1409 
+    next
+    edit "TCP/1434"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1434 
+    next
+    edit "TCP/29090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 29090 
+    next
+    edit "TCP/39090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 39090 
+    next
+    edit "TCP/10051"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10051 
+    next
+    edit "TCP/10052"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10052 
+    next
+    edit "TCP/10053"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10053 
+    next
+    edit "TCP/10050"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10050 
+    next
+    edit "TCP/10054"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10054 
+    next
+    edit "TCP/1400-1500"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1400-1500 
+    next
+    edit "TCP/60660-60999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 60660-60999 
+    next
+    edit "TCP/80-190"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-190 
+    next
+    edit "TCP/19000-20000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19000-20000 
+    next
+    edit "tcp/1688"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1688 
+    next
+    edit "TCP/19910-20000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19910-20000 
+    next
+    edit "21"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21 
+    next
+    edit "443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 443 
+    next
+    edit "19900-20000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19900-20000 
+    next
+    edit "135-139"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 135-139 
+    next
+    edit "tcp25"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 25 
+    next
+    edit "tcp53"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 53 
+    next
+    edit "tcp69"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 69 
+    next
+    edit "tcp161"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 161 
+    next
+    edit "tcp513"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 513 
+    next
+    edit "tcp1433"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1433 
+    next
+    edit "tcp2381"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2381 
+    next
+    edit "tcp6379"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6379 
+    next
+    edit "tcp11211"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 11211 
+    next
+    edit "udp161"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 161 
+    next
+    edit "tcp427"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 427 
+    next
+    edit "tcp1718"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1718 
+    next
+    edit "tcp1720"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1720 
+    next
+    edit "tcp1722"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1722 
+    next
+    edit "tcp1750"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1750 
+    next
+    edit "tcp1751"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1751 
+    next
+    edit "tcp1755"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1755 
+    next
+    edit "8451-8455"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8451-8455 
+    next
+    edit "udp23"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 23 
+    next
+    edit "udp25"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 25 
+    next
+    edit "udp53"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 53 
+    next
+    edit "udp69"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 69 
+    next
+    edit "udp123"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 123 
+    next
+    edit "udp135-139"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 135-139 
+    next
+    edit "udp513"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 513 
+    next
+    edit "udp1433"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1433 
+    next
+    edit "udp2381"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2381 
+    next
+    edit "udp3389"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 3389 
+    next
+    edit "udp6379"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 6379 
+    next
+    edit "udp11211"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 11211 
+    next
+    edit "tcp111"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 111 
+    next
+    edit "tcp897-898"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 897-898 
+    next
+    edit "udp897-898"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 897-898 
+    next
+    edit "udp162"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 162 
+    next
+    edit "udp514"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 514 
+    next
+    edit "45001-45002"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 45001-45002 
+    next
+    edit "1080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080 
+    next
+    edit "TCP/1080-1083"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1083 
+    next
+    edit "TCP/1180-1183"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1183 
+    next
+    edit "TCP/8008-8011"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8008-8011 
+    next
+    edit "TCP/8108-8111"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8108-8111 
+    next
+    edit "TCP/8008-8013"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8008-8013 
+    next
+    edit "TCP/8000-10999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000-10999 
+    next
+    edit "TCP/1520-1550"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520-1550 
+    next
+    edit "TCP/10756-10757"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10756-10757 
+    next
+    edit "TCP/10760"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10760 
+    next
+    edit "TCP/20756-20757"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20756-20757 
+    next
+    edit "TCP/20760"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20760 
+    next
+    edit "TCP/30756"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30756-30757 
+    next
+    edit "TCP/30760"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30760 
+    next
+    edit "TCP/40756-40757"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40756-40757 
+    next
+    edit "TCP/40760"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40760 
+    next
+    edit "TCP/50756-50757"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50756-50757 
+    next
+    edit "TCP/180-185"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 180-185 
+    next
+    edit "TCP/9000-9200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9000-9200 
+    next
+    edit "UDP/5500"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 5500 
+    next
+    edit "TCP6800-6900"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6800-6900 
+    next
+    edit "TCP/7000-9999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7000-9999 
+    next
+    edit "TCP/6000-7000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6000-7000 
+    next
+    edit "tcp/50760"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50760 
+    next
+    edit "TCP/10757"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10757 
+    next
+    edit "TCP/20757"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20757 
+    next
+    edit "TCP/30757"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30757 
+    next
+    edit "TCP/40757"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40757 
+    next
+    edit "TCP/50757"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50757 
+    next
+    edit "TCP/10756"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10756 
+    next
+    edit "TCP/20756"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20756 
+    next
+    edit "TCP/40756"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40756 
+    next
+    edit "TCP/50756"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50756 
+    next
+    edit "tcp6915-6920"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6915-6920 
+    next
+    edit "TCP/7480-7490"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7480-7490 
+    next
+    edit "20~22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20-22 
+    next
+    edit "6553~6564"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6553-6564 
+    next
+    edit "20~21"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20-21 
+    next
+    edit "6560-6570"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6560-6570 
+    next
+    edit "9000-10999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9000-10999 
+    next
+    edit "7920~7953"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7920-7953 
+    next
+    edit "19910~19950"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19910-19950 
+    next
+    edit "8450~8490"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8450-8490 
+    next
+    edit "10055"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10055 
+    next
+    edit "TCP/1000-2000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1000-2000 
+    next
+    edit "tcp-amp"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20-21 10050-10054 
+    next
+    edit "udp-amp"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 20-21 10050-10054 
+    next
+    edit "TCP/990"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 990 
+    next
+    edit "TCP/60000-60020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 60000-60020 
+    next
+    edit "TCP/8081-8085"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8081-8085 
+    next
+    edit "TCP/9081-9085"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9081-9085 
+    next
+    edit "TCP/10054-10055"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10054-10055 
+    next
+    edit "TCP/10051-10052"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10051-10052 
+    next
+    edit "UDP/10054-10055"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10054-10055 
+    next
+    edit "UCP/10051-10052"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10051-10052 
+    next
+    edit "TCP/1180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180 
+    next
+    edit "TCP/1089"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1089 
+    next
+    edit "tcp190"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 190 
+    next
+    edit "TCP/1090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1090 
+    next
+    edit "TCP/21-22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21-22 
+    next
+    edit "TCP/10050-10052"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10050-10052 
+    next
+    edit "UDP/10050-10052"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10050-10052 
+    next
+    edit "UDP/10054"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10054 
+    next
+    edit "TCP/10055"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10055 
+    next
+    edit "UDP/10055"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10055 
+    next
+    edit "UDP/10051-10052"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10051-10052 
+    next
+    edit "19910-19930"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19910-19930 
+    next
+    edit "8450-8470"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8450-8470 
+    next
+    edit "177"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 177 
+    next
+    edit "UDP177"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 177 
+    next
+    edit "tcp/25580"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 25580 
+    next
+    edit "tcp/25680"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 25680 
+    next
+    edit "TCP/1523"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1523 
+    next
+    edit "TCP/1524"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1524 
+    next
+    edit "TCP/1525"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1525 
+    next
+    edit "TCP/1527"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1527 
+    next
+    edit "TCP/1529"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1529 
+    next
+    edit "TCP/1531"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1531 
+    next
+    edit "TCP/1533"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1533 
+    next
+    edit "TCP/1535"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1535 
+    next
+    edit "TCP/1537"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1537 
+    next
+    edit "19914"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19914 
+    next
+    edit "19916"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19916 
+    next
+    edit "19918"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19918 
+    next
+    edit "19920"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19920 
+    next
+    edit "7169-7180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7169-7180 
+    next
+    edit "tcp1080-1083"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1083 
+    next
+    edit "tcp1180-1183"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1183 
+    next
+    edit "tcp1090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1090 
+    next
+    edit "tcp1091"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1091 
+    next
+    edit "tcp8008-8011"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8008-8011 
+    next
+    edit "tcp8108-8111"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8108-8111 
+    next
+    edit "tcp8019"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8019 
+    next
+    edit "tcp8119"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8119 
+    next
+    edit "tcp1080-1085"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1085 
+    next
+    edit "tcp1090-1091"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1090-1091 
+    next
+    edit "tcp1180-1185"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1185 
+    next
+    edit "tcp8008-8013"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8008-8013 
+    next
+    edit "tcp8018-8019"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8018-8019 
+    next
+    edit "tcp8108-8113"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8108-8113 
+    next
+    edit "10755"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10755 
+    next
+    edit "20755"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20755 
+    next
+    edit "30755"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30755 
+    next
+    edit "40755"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40755 
+    next
+    edit "50755"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50755 
+    next
+    edit "60755"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 60755 
+    next
+    edit "TCP/10050-10056"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10050-10056 
+    next
+    edit "UDP/20-22"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 20-22 
+    next
+    edit "UDP/10050-10056"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10050-10056 
+    next
+    edit "TCP/8080-8090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8080-8090 
+    next
+    edit "UDP/9083"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9083 
+    next
+    edit "7169"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7169 
+    next
+    edit "389"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 389 
+    next
+    edit "33890"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 33890 
+    next
+    edit "UDP/1521"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1521 
+    next
+    edit "TCP/3306"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3306 
+    next
+    edit "UDP/3306"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 3306 
+    next
+    edit "TCP/8084"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8084 
+    next
+    edit "UDP/8084"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8084 
+    next
+    edit "tcp88"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 88 
+    next
+    edit "TCP/3001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3001 
+    next
+    edit "TCP/20/21/2121"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2121 20-21 
+    next
+    edit "udp1434"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1434 
+    next
+    edit "tcp8008"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8008:0-65535 
+    next
+    edit "TCP/7000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7000 
+    next
+    edit "TCP/24000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 24000 
+    next
+    edit "TCP/2020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2020 
+    next
+    edit "TCP/1701-1808"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1701-1808 
+    next
+    edit "TCP/6550-6575"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6550-6575 
+    next
+    edit "5000-5005"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5000-5005 
+    next
+    edit "TCP/4000-4100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4000-4100 
+    next
+    edit "8175-8"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8175-8178 
+    next
+    edit "TCP/10050-10055"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10050-10055 
+    next
+    edit "TCP/1230-1250"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1230-1250 
+    next
+    edit "TCP/1030-1040"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1030-1040 
+    next
+    edit "TCP/9062"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9062 
+    next
+    edit "TCP/9063"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9063 
+    next
+    edit "TCP/9065"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9065 
+    next
+    edit "TCP/3000-3030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3000-3030 
+    next
+    edit "TCP/2000-2030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2000-2030 
+    next
+    edit "TCP/9100-9120"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9100-9120 
+    next
+    edit "TCP/30001-30030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30001-30030 
+    next
+    edit "tcp1522"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1522 
+    next
+    edit "udp1522"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1522 
+    next
+    edit "udp1525"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1525 
+    next
+    edit "udp1526"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1526 
+    next
+    edit "udp443"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 443 
+    next
+    edit "tcp5989"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5989 
+    next
+    edit "udp5989"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 5989 
+    next
+    edit "tcp8888"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8888 
+    next
+    edit "udp8888"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8888 
+    next
+    edit "tcp636"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 636 
+    next
+    edit "udp636"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 636 
+    next
+    edit "tcp6007"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6007 
+    next
+    edit "udp6007"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 6007 
+    next
+    edit "jianchaport"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6003 6000 6005 8892 8899 9152 9575 9415 
+        set udp-portrange 6003 6000 6005 8892 8899 9152 9575 9415 
+    next
+    edit "jianchaport1"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9050 9207 9090 
+        set udp-portrange 9050 9207 9090 
+    next
+    edit "tcp1522-1530"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1522-1530 
+    next
+    edit "udp1522-1530"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1522-1530 
+    next
+    edit "tcp1522-1537"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1522-1537 
+    next
+    edit "udp1522-1537"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1522-1537 
+    next
+    edit "31098"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 31098 
+    next
+    edit "TCP/18080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 18080 
+    next
+    edit "TCP/18005"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 18005 
+    next
+    edit "tcp1443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1443 
+    next
+    edit "181"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 181 
+    next
+    edit "tcp8880"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8880 
+    next
+    edit "udp8880"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8880 
+    next
+    edit "tcp3389"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3389 
+    next
+    edit "tcp6003"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6003 
+    next
+    edit "udp6003"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 6003 
+    next
+    edit "tcp6000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6000 
+    next
+    edit "udp6000"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 6000 
+    next
+    edit "tcp6005"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6005 
+    next
+    edit "udp6005"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 6005 
+    next
+    edit "tcp8892"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8892 
+    next
+    edit "udp8892"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8892 
+    next
+    edit "tcp8899"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8899 
+    next
+    edit "udp8899"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8899 
+    next
+    edit "tcp9512"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9512 
+    next
+    edit "udp9512"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9512 
+    next
+    edit "tcp9575"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9575 
+    next
+    edit "udp9575"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9575 
+    next
+    edit "tcp9415"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9415 
+    next
+    edit "udp9415"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9415 
+    next
+    edit "tcp9050"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9050 
+    next
+    edit "udp9050"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9050 
+    next
+    edit "tcp9207"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9207 
+    next
+    edit "udp9207"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9207 
+    next
+    edit "tcp9090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9090 
+    next
+    edit "udp9090"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9090 
+    next
+    edit "udp/3389"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 3389 
+    next
+    edit "udp/161-162"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 161-162 
+    next
+    edit "tcp/427"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 427 
+    next
+    edit "tcp/1718"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1718 
+    next
+    edit "tcp/1720"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1720 
+    next
+    edit "tcp/1722"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1722 
+    next
+    edit "tcp/1750-1751"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1750-1751 
+    next
+    edit "tcp/1755"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1755 
+    next
+    edit "tcp/8451-8455"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8451-8455 
+    next
+    edit "tcp/88"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 88 
+    next
+    edit "9050-9440"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9050-9440 
+    next
+    edit "9889"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9889 
+    next
+    edit "10449"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10449 
+    next
+    edit "TCP/30022-30025"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30022-30025 
+    next
+    edit "2000-2100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2000-2100 
+    next
+    edit "1710-1740"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1710 1712 1714 1716 1718 1720 1722 1724 1726 1728 1730 1732 1734 1736 1738 1740 
+    next
+    edit "2000-2200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2000-2200 
+    next
+    edit "tcp9568"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9568 
+    next
+    edit "tcp9569"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9569 
+    next
+    edit "tcp200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 200 
+    next
+    edit "tcp6020-6021"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6020-6021 
+    next
+    edit "tcp10600-10800"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10600-10800 
+    next
+    edit "tcp20600-20800"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20600-20800 
+    next
+    edit "tcp30600-30800"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30600-30800 
+    next
+    edit "tcp40600-40800"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40600-40800 
+    next
+    edit "tcp50600-50800"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50600-50800 
+    next
+    edit "tcp20-22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20-22 
+    next
+    edit "tcp_23"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 23 
+    next
+    edit "2463"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2463 
+    next
+    edit "tcp/29000-30000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 29000-30000 
+    next
+    edit "9440"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9440 
+    next
+    edit "TCP/20060-20065"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20060-20065 
+    next
+    edit "TCP/10133-10137"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10133-10137 
+    next
+    edit "TCP/10133-10138"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10133-10138 
+    next
+    edit "TCP/10133-10139"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10133-10139 
+    next
+    edit "TCP/10133-10143"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10133-10143 
+    next
+    edit "5180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5180 
+    next
+    edit "TCP5140-5141"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5140-5141 
+    next
+    edit "10001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10001 
+    next
+    edit "TCP/50022-50023"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50022-50023 
+    next
+    edit "TCP/3900"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3900 
+    next
+    edit "TCP/623"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 623 
+    next
+    edit "1080-1999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1999 
+    next
+    edit "9060-9499"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9060-9499 
+    next
+    edit "20-21"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20-21 
+    next
+    edit "31089"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 31089 
+    next
+    edit "2433"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2433 
+    next
+    edit "9930"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9930 
+    next
+    edit "9551"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9551 
+    next
+    edit "10000-2000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10000-20000 
+    next
+    edit "10000-20000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10000-20000 
+    next
+    edit "20010-20085"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20010-20015 20020-20025 20030-20035 20040-20045 20050-20055 20060-20065 20070-20075 20080-20085 
+    next
+    edit "tcp1081"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1081 
+    next
+    edit "1024-65535"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1024-65535 
+    next
+    edit "1080-1280"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1280 
+    next
+    edit "tcp50001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50001 
+    next
+    edit "1080-1190"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1190 
+    next
+    edit "TCP/1550"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1550 
+    next
+    edit "TCP/1538"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1538 
+    next
+    edit "tcp/8888"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8888 
+    next
+    edit "tcp2121"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2121 
+    next
+    edit "1181"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1181 
+    next
+    edit "1082"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1082 
+    next
+    edit "1182"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1182 
+    next
+    edit "tcp8009"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8009 
+    next
+    edit "tcp1080-1082"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1082 
+    next
+    edit "TCP/1080-1082"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1082 
+    next
+    edit "TCP/1180-1182"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1182 
+    next
+    edit "TCP/8008-8010"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8008-8010 
+    next
+    edit "TCP/8108-8110"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8108-8110 
+    next
+    edit "udp_8080"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8080 
+    next
+    edit "tcp445"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 445 
+    next
+    edit "20-22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20-22 
+    next
+    edit "TCP/20-22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20-22 
+    next
+    edit "1000-9999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1000-9999 
+    next
+    edit "7920"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7920 
+    next
+    edit "tcp2181"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2181 
+    next
+    edit "tcp/80-134"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-134 
+    next
+    edit "tcp/136-138"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 136-138 
+    next
+    edit "tcp/140-190"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 140-190 
+    next
+    edit "10020-10039"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10020-10039 
+    next
+    edit "tcp5030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5030 
+    next
+    edit "9000-9500"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9000-9500 
+    next
+    edit "2000-2002"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2000-2002 
+    next
+    edit "2008"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2008 
+    next
+    edit "tcp443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 443 
+    next
+    edit "tcp1080-1182"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1182 
+    next
+    edit "tcp8008-8110"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8008-8110 
+    next
+    edit "tcp162"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 162 
+    next
+    edit "tcp139"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 139 
+    next
+    edit "tcp20702"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20702 
+    next
+    edit "tcp_8081-8090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8081-8090 
+    next
+    edit "tcp_8080-8090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8080-8090 
+    next
+    edit "TCP_5505"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5505-5515 
+    next
+    edit "1521~1537"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1537 
+    next
+    edit "45001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 45001 
+    next
+    edit "8089"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8089 
+    next
+    edit "udp111"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 111 
+    next
+    edit "tcp2049"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2049 
+    next
+    edit "udp2049"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2049 
+    next
+    edit "tcp11111-11112"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 11111-11112 
+    next
+    edit "udp11111-11112"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 11111-11112 
+    next
+    edit "9000-9001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9000-9001 
+    next
+    edit "9095-9098"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9095-9098 
+    next
+    edit "9933"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9933 
+    next
+    edit "UDP9933"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9933 
+    next
+    edit "tcp9933"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9933 
+    next
+    edit "udp139"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 139 
+    next
+    edit "udp1537"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1537 
+    next
+    edit "udp9152"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9152 
+    next
+    edit "tcp135"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 135 
+    next
+    edit "udp135"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 135 
+    next
+    edit "tcp137"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 137 
+    next
+    edit "udp137"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 137 
+    next
+    edit "udp445"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 445 
+    next
+    edit "10021-10039"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10021-10039 
+    next
+    edit "tcp10086"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10086 
+    next
+    edit "TCP4090-4099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4090-4099 
+    next
+    edit "TCP5570-5579"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5570-5579 
+    next
+    edit "tcp30000-30100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30000-30100 
+    next
+    edit "tcp3000-3100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3000-3100 
+    next
+    edit "TCP/2029"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2029 
+    next
+    edit "TCP/7180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7180 
+    next
+    edit "TCP/60010"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 60010 
+    next
+    edit "TCP/60020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 60020 
+    next
+    edit "5029"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5029 
+    next
+    edit "1521-1551"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1551 
+    next
+    edit "tcp5018"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5018 
+    next
+    edit "tcp9068-9069"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9068-9069 
+    next
+    edit "tcp9037-9039"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9037-9039 
+    next
+    edit "tcp9061"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9061 
+    next
+    edit "ams5865449"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9062 9061 9051 9053 9071 9073 9091 9093 
+    next
+    edit "tcp/9051"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9051 
+    next
+    edit "tcp/9053"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9053 
+    next
+    edit "tcp/9071"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9071 
+    next
+    edit "tcp/9073"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9073 
+    next
+    edit "9091"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9091 
+    next
+    edit "tcp/9093"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9093 
+    next
+    edit "tcp/9045"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9045 
+    next
+    edit "8080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8080 
+    next
+    edit "2101"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2101 
+    next
+    edit "8102"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8102 
+    next
+    edit "ams5923587"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-89 180-189 
+    next
+    edit "1087"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1087 
+    next
+    edit "tcp_48443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 48443 
+    next
+    edit "tcp_9043-9047"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9043-9047 
+    next
+    edit "tcp9050-9200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9050-9200 
+    next
+    edit "tcp9400-9600"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9400-9600 
+    next
+    edit "1088"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1088 
+    next
+    edit "1030-1050"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1030-1050 
+    next
+    edit "TCP90"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 90 
+    next
+    edit "tcp6080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6080 
+    next
+    edit "tcp6180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6180 
+    next
+    edit "tcp6280"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6280 
+    next
+    edit "tcp6380"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6380 
+    next
+    edit "1050"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1050-1200 
+    next
+    edit "1050-1200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1050-1200 
+    next
+    edit "19043"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19043 
+    next
+    edit "29043"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 29043 
+    next
+    edit "39043"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 39043 
+    next
+    edit "tcp9037-9040"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9037-9040 
+    next
+    edit "tcp9043-9048"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9043-9048 
+    next
+    edit "9054"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9054 
+    next
+    edit "TCP/9087"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9087 
+    next
+    edit "TCP/9094"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9094 
+    next
+    edit "tcp/1520-1570"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520-1570 
+    next
+    edit "tcp20140"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20140 
+    next
+    edit "tcp20150"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20150 
+    next
+    edit "tcp20110"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20110 
+    next
+    edit "1520-1570"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520-1570 
+    next
+    edit "3650-3720"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3650-3720 
+    next
+    edit "8300-8360"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8300-8360 
+    next
+    edit "19910-19970"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19910-19970 
+    next
+    edit "8450-8520"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8450-8520 
+    next
+    edit "8282"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8282 
+    next
+    edit "8383"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8383 
+    next
+    edit "7423"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7423 
+    next
+    edit "7323"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7323 
+    next
+    edit "30630"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30630 
+    next
+    edit "31310"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 31310 
+    next
+    edit "8023"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8023 
+    next
+    edit "8020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8020 
+    next
+    edit "2024"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2024 
+    next
+    edit "9597"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9597 
+    next
+    edit "tcp/2000-10000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2000-10000 
+    next
+    edit "tcp/8082"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8082 
+    next
+    edit "udp6514"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 6514 
+    next
+    edit "TCP/1000-3000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1000-3000 
+    next
+    edit "tcp185"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 185 
+    next
+    edit "2042-2050"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2042-2050 
+    next
+    edit "2142-2150"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2142-2150 
+    next
+    edit "2492-2500"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2492-2500 
+    next
+    edit "2592-2600"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2592-2600 
+    next
+    edit "3692-3700"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3692-3700 
+    next
+    edit "4042-4050"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4042-4050 
+    next
+    edit "4092-4100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4092-4100 
+    next
+    edit "4142-4150"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4142-4150 
+    next
+    edit "4192-4200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4192-4200 
+    next
+    edit "8342-8350"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8342-8350 
+    next
+    edit "8492-8500"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8492-8500 
+    next
+    edit "19952-19960"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19952-19960 
+    next
+    edit "tcp/21"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21 
+    next
+    edit "tcp20145"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20145 
+    next
+    edit "tcp20151"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20151 
+    next
+    edit "tcp20160"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20160 
+    next
+    edit "tcp/20-21"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20-21 
+    next
+    edit "tcp20146-20150"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20146-20150 
+    next
+    edit "tcp19952"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19952 
+    next
+    edit "1180-1199"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1199 
+    next
+    edit "9080-9199"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080-9199 
+    next
+    edit "180-189"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 180-189 
+    next
+    edit "1522-1539"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1522-1539 
+    next
+    edit "tcp2001-2013"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2001-2013 
+    next
+    edit "tcp9100-9107"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9100-9107 
+    next
+    edit "tcp30001-30005"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30001-30005 
+    next
+    edit "tcp4000-4020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4000-4020 
+    next
+    edit "tcp1030-1031"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1030-1031 
+    next
+    edit "tcp46000-46006"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 46000-46006 
+    next
+    edit "tcp3310-3318"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3310-3318 
+    next
+    edit "tcp9000-9007"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9000-9007 
+    next
+    edit "tcp2201-2203"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2201-2203 
+    next
+    edit "tcp10086-10087"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10086-10087 
+    next
+    edit "tcp6001-6003"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6001-6003 
+    next
+    edit "TCP/9200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9200 
+    next
+    edit "TCP/9300"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9300 
+    next
+    edit "tcp/1522"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1522 
+    next
+    edit "9549"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9549 
+    next
+    edit "9550"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9550 
+    next
+    edit "9558"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9558 
+    next
+    edit "9559"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9559 
+    next
+    edit "9560"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9560 
+    next
+    edit "9561"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9561 
+    next
+    edit "9567"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9567 
+    next
+    edit "7777"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7777 
+    next
+    edit "7778"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7778 
+    next
+    edit "9549-9551"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9549-9551 
+    next
+    edit "9558-9561"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9558-9561 
+    next
+    edit "9567-9569"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9567-9569 
+    next
+    edit "7777-7778"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7777-7778 
+    next
+    edit "1000-1999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1000-1999 
+    next
+    edit "9000-9999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9000-9999 
+    next
+    edit "1050-8888"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1050-8888 
+    next
+    edit "10443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10443 
+    next
+    edit "8500"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8500 
+    next
+    edit "tcp5060"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5060 
+    next
+    edit "tcp/9080-9083"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080-9083 
+    next
+    edit "tcp/8080-8082"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8080-8082 
+    next
+    edit "tcp8452"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8452 
+    next
+    edit "tcp/21-60030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21-60030 
+    next
+    edit "udp/21-60030"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 21-60030 
+    next
+    edit "tcp/7300"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7300 
+    next
+    edit "udp/80"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 80 
+    next
+    edit "udp/3900"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 3900 
+    next
+    edit "udp/7180"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 7180 
+    next
+    edit "udp/9080"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9080 
+    next
+    edit "udp/21-23"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 21-23 
+    next
+    edit "udp/8983"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8983 
+    next
+    edit "udp/8984"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8984 
+    next
+    edit "udp/7574"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 7574 
+    next
+    edit "udp/7575"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 7575 
+    next
+    edit "udp/113"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 113 
+    next
+    edit "udp/32803"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 32803 
+    next
+    edit "udp/32769"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 32769 
+    next
+    edit "udp/875"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 875 
+    next
+    edit "udp/892"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 892 
+    next
+    edit "udp/662"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 662 
+    next
+    edit "udp/20049"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 20049 
+    next
+    edit "udp/4046"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 4046 
+    next
+    edit "udp/50010"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 50010 
+    next
+    edit "udp/50075"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 50075 
+    next
+    edit "udp/50475"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 50475 
+    next
+    edit "udp/50020"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 50020 
+    next
+    edit "udp/50070"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 50070 
+    next
+    edit "udp/50470"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 50470 
+    next
+    edit "udp/8020"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8020 
+    next
+    edit "udp/8485"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8485 
+    next
+    edit "udp/8480"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8480 
+    next
+    edit "udp/8019"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8019 
+    next
+    edit "udp/8032"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8032 
+    next
+    edit "udp/8030"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8030 
+    next
+    edit "udp/8031"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8031 
+    next
+    edit "udp/8033"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8033 
+    next
+    edit "udp/8088"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8088 
+    next
+    edit "udp/8040"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8040 
+    next
+    edit "udp/8042"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8042 
+    next
+    edit "udp/8041"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8041 
+    next
+    edit "udp/10020"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10020 
+    next
+    edit "udp/19888"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 19888 
+    next
+    edit "udp/60000"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 60000 
+    next
+    edit "udp/60010"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 60010 
+    next
+    edit "udp/60020"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 60020 
+    next
+    edit "udp/60030"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 60030 
+    next
+    edit "udp/2181"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2181 
+    next
+    edit "udp/10000"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10000 
+    next
+    edit "udp/2888"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2888 
+    next
+    edit "udp/3888"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 3888 
+    next
+    edit "udp/1011"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1011 
+    next
+    edit "udp/7578"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 7578 
+    next
+    edit "udp/5678"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 5678 
+    next
+    edit "udp/2199"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2199 
+    next
+    edit "udp/8208"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8208 
+    next
+    edit "udp/623"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 623 
+    next
+    edit "udp/5988"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 5988 
+    next
+    edit "udp/2198"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2198 
+    next
+    edit "udp/1494"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1494 
+    next
+    edit "udp/2598"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2598 
+    next
+    edit "udp/2200"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2200 
+    next
+    edit "udp/2221"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2221 
+    next
+    edit "tcp/8983"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8983 
+    next
+    edit "tcp/8984"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8984 
+    next
+    edit "tcp/7574"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7574 
+    next
+    edit "tcp/7575"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7575 
+    next
+    edit "tcp/113"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 113 
+    next
+    edit "tcp/32803"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 32803 
+    next
+    edit "tcp/32769"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 32769 
+    next
+    edit "tcp/875"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 875 
+    next
+    edit "tcp/892"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 892 
+    next
+    edit "tcp/662"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 662 
+    next
+    edit "tcp/20049"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20049 
+    next
+    edit "tcp/4046"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4046 
+    next
+    edit "tcp/50010"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50010 
+    next
+    edit "tcp/50075"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50075 
+    next
+    edit "tcp/50475"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50475 
+    next
+    edit "tcp/50020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50020 
+    next
+    edit "tcp/50070"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50070 
+    next
+    edit "tcp/50470"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50470 
+    next
+    edit "tcp/8485"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8485 
+    next
+    edit "tcp/8480"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8480 
+    next
+    edit "tcp/8032"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8032 
+    next
+    edit "tcp/8030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8030 
+    next
+    edit "tcp/8031"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8031 
+    next
+    edit "tcp/8033"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8033 
+    next
+    edit "tcp/8040-8042"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8040-8042 
+    next
+    edit "tcp/19888"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19888 
+    next
+    edit "tcp/60030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 60030 
+    next
+    edit "tcp/10000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10000 
+    next
+    edit "tcp/2888"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2888 
+    next
+    edit "tcp/3888"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3888 
+    next
+    edit "tcp/1011"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1011 
+    next
+    edit "tcp/7578"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7578 
+    next
+    edit "tcp/2199"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2199 
+    next
+    edit "tcp/8208"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8208 
+    next
+    edit "tcp/5988"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5988 
+    next
+    edit "tcp/2198"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2198 
+    next
+    edit "tcp/1494"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1494 
+    next
+    edit "tcp/2598"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 0 
+    next
+    edit "tcp/2200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2200 
+    next
+    edit "tcp2221"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2221 
+    next
+    edit "tcp20790"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20790 
+    next
+    edit "tcp7182"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7182 
+    next
+    edit "tcp9000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9000 
+    next
+    edit "9996"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9996 
+    next
+    edit "tcp9997"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9997 
+    next
+    edit "tcp53880"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 53880 
+    next
+    edit "7809"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7809 
+    next
+    edit "8400-8450"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8400-8450 
+    next
+    edit "19900-19950"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19900-19950 
+    next
+    edit "9092"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9092 
+    next
+    edit "10380"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10380 
+    next
+    edit "50000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50000 
+    next
+    edit "7800-7809"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7800-7809 
+    next
+    edit "657"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 657 
+    next
+    edit "9735"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9735 
+    next
+    edit "9443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9443 
+    next
+    edit "tcp/1141"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1141 
+    next
+    edit "tcp/1583"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1583 
+    next
+    edit "tcp/1683"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1683 
+    next
+    edit "tcp/8511"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8511 
+    next
+    edit "tcp/8611"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8611 
+    next
+    edit "udp/22"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 22 
+    next
+    edit "tcp/161-162"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 161-162 
+    next
+    edit "tcp/514"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 514 
+    next
+    edit "tcp/443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 443 
+    next
+    edit "tcp/5989"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5989 
+    next
+    edit "tcp/1750"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1750 
+    next
+    edit "tcp/9549-9551"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9549-9551 
+    next
+    edit "tcp/9558-9561"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9558-9561 
+    next
+    edit "tcp/9567-9569"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9567-9569 
+    next
+    edit "tcp/2433"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2433 
+    next
+    edit "tcp/2463"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2463 
+    next
+    edit "tcp/9330"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9330 
+    next
+    edit "tcp/8012"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8012 
+    next
+    edit "udp10161-10162"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10161-10162 
+    next
+    edit "tcp/9092_9099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9092 9099 
+    next
+    edit "tcp_49"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 49 
+    next
+    edit "TCP/9096"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9096 
+    next
+    edit "tcp11180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 11180 
+    next
+    edit "TCP/6550-6560"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6550-6560 
+    next
+    edit "tcp/9440"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9440 
+    next
+    edit "tcp/8400-8500"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8400-8500 
+    next
+    edit "tcp/19900-65535"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19900-65535 
+    next
+    edit "tcp_90"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 90 
+    next
+    edit "tcp/14237-14238"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 14237-14238 
+    next
+    edit "tcp/17990"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 17990 
+    next
+    edit "tcp/17988"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 17988 
+    next
+    edit "tcp_443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 443 
+    next
+    edit "tcp_80"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80 
+    next
+    edit "TCP/13389"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13389 
+    next
+    edit "tcp_2101"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2101 
+    next
+    edit "tcp/1800"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1800 
+    next
+    edit "tcp/2181"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2181 
+    next
+    edit "tcp/6080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6080 
+    next
+    edit "tcp/6180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6180 
+    next
+    edit "tcp/6280"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6280 
+    next
+    edit "tcp/6379"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6379 
+    next
+    edit "tcp/6380"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6380 
+    next
+    edit "tcp/8020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8020 
+    next
+    edit "tcp/8280"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8280 
+    next
+    edit "tcp/8380"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8380 
+    next
+    edit "tcp/8580"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8580 
+    next
+    edit "tcp/8680"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8680 
+    next
+    edit "tcp/8780"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8780 
+    next
+    edit "tcp/8880"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8880 
+    next
+    edit "tcp/8980"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8980 
+    next
+    edit "tcp/9092"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9092 
+    next
+    edit "tcp/16379"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 16379 
+    next
+    edit "tcp/18080-18083"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 18080-18083 
+    next
+    edit "tcp/19092"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19092 
+    next
+    edit "tcp/20300"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20300 
+    next
+    edit "tcp/20880-20884"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20880-20884 
+    next
+    edit "tcp/21884"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21884 
+    next
+    edit "tcp/26379"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 26379 
+    next
+    edit "tcp/33200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 33200 
+    next
+    edit "tcp/34200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 34200 
+    next
+    edit "tcp/60000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 60000 
+    next
+    edit "1521-1550"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1550 
+    next
+    edit "tcp/10080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10080 
+    next
+    edit "tcp/10082"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10082 
+    next
+    edit "tcp/10102"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10102 
+    next
+    edit "tcp/1783"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1783 
+    next
+    edit "tcp/1883"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1883 
+    next
+    edit "tcp/8711"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8711 
+    next
+    edit "tcp/8811"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8811 
+    next
+    edit "tcp/13720-13724"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13720-13724 
+    next
+    edit "tcp/13780-13782"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13780-13782 
+    next
+    edit "tcp_1-22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1-22 
+    next
+    edit "tcp_24-112"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 24-112 
+    next
+    edit "tcp_24-122"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 24-122 
+    next
+    edit "tcp_124-134"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 124-134 
+    next
+    edit "tcp_136-138"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 136-138 
+    next
+    edit "tcp_140-444"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 140-444 
+    next
+    edit "tcp_446-1023"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 446-1023 
+    next
+    edit "tcp_1024-1432"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1024-1432 
+    next
+    edit "tcp_1435-1520"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1435-1520 
+    next
+    edit "tcp_1522-1899"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1522-1899 
+    next
+    edit "tcp_1901-2512"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1901-2512 
+    next
+    edit "tcp_2514-2744"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2514-2744 
+    next
+    edit "tcp_2746-3126"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2746-3126 
+    next
+    edit "tcp_3128-3305"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3128-3305 
+    next
+    edit "tcp/1520-1521"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520-1521 
+    next
+    edit "tcp_3307-3388"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3307-3388 
+    next
+    edit "tcp_3390-6128"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3390-6128 
+    next
+    edit "tcp_6130-27664"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6130-27664 
+    next
+    edit "tcp_27666-65535"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 27666-65535 
+    next
+    edit "1580-1590"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1580-1590 
+    next
+    edit "tcp1000-1432"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1000-1432 
+    next
+    edit "tcp1345-1520"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1345-1520 
+    next
+    edit "tcp1522-1899"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1522-1899 
+    next
+    edit "tcp1901-2000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1901-2000 
+    next
+    edit "1500-1520"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1500-1520 
+    next
+    edit "1901-2500"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1901-2500 
+    next
+    edit "20000-20008"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20000-20008 
+    next
+    edit "tcp/8543"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8543 
+    next
+    edit "udp/395"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 395 
+    next
+    edit "udp/69"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 69 
+    next
+    edit "1951-1952"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1951-1952 
+    next
+    edit "tcp/6001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6001 
+    next
+    edit "tcp/7010"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7010 
+    next
+    edit "tcp/7601"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7601 
+    next
+    edit "9151-9152"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9151-9152 
+    next
+    edit "47000-48000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 47000-48000 
+    next
+    edit "46000-46030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 46000-46030 
+    next
+    edit "1521-1555"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-1555 
+    next
+    edit "10086-10106"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10086-10106 
+    next
+    edit "53389"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 53389 
+    next
+    edit "13805"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13805 
+    next
+    edit "30020-30029"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30020-30029 
+    next
+    edit "9151-9159"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9151-9159 
+    next
+    edit "6900-6999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6900-6999 
+    next
+    edit "1983"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1983 
+    next
+    edit "2083"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2083 
+    next
+    edit "2183"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2183 
+    next
+    edit "2283"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2283 
+    next
+    edit "8911"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8911 
+    next
+    edit "9011"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9011 
+    next
+    edit "9111"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9111 
+    next
+    edit "9211"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9211 
+    next
+    edit "1096"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1096 
+    next
+    edit "tcp/1096"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1096 
+    next
+    edit "2030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2030 
+    next
+    edit "tcp/2032"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2032 
+    next
+    edit "tcp/5050"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5050 
+    next
+    edit "tcp/8091"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8091 
+    next
+    edit "tcp/8787"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8787 
+    next
+    edit "tcp/9180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9180 
+    next
+    edit "tcp/19191"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19191 
+    next
+    edit "tcp/50004"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50004 
+    next
+    edit "tcp/19080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19080 
+    next
+    edit "tcp/8001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8001 
+    next
+    edit "tcp/8038"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8038 
+    next
+    edit "53380-53389"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 53380-53389 
+    next
+    edit "tcp/6800-6999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6800-6999 
+    next
+    edit "tcp_91"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 91 
+    next
+    edit "16553"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 16553 
+    next
+    edit "53380-53390"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 53380-53390 
+    next
+    edit "udp17990"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 17990 
+    next
+    edit "udp17988"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 17988 
+    next
+    edit "tcp/1142"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1142 
+    next
+    edit "tcp_8818"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8818 
+    next
+    edit "tcp_30000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30000 
+    next
+    edit "tcp_31089"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 31089 
+    next
+    edit "80-179"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-179 
+    next
+    edit "tcp/1580-1581"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1580-1581 
+    next
+    edit "tcp22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 22 
+    next
+    edit "10095"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10095 
+    next
+    edit "808"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 808 
+    next
+    edit "udp/2020"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 2020 
+    next
+    edit "udp/4001"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 4001 
+    next
+    edit "udp/9085"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9085 
+    next
+    edit "7810"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7810 
+    next
+    edit "tcp/24"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 24 
+    next
+    edit "tcp/25"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 25 
+    next
+    edit "tcp7811-7900"
+        set protocol TCP/UDP/SCTP
+        set color 1
+        set tcp-portrange 7811-7900 
+    next
+    edit "1080-1089"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1089 
+    next
+    edit "9441"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9441 
+    next
+    edit "9444"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9444 
+    next
+    edit "tcp/9445"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9445 
+    next
+    edit "tcp/9442"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9442 
+    next
+    edit "tcp/9086"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9086 
+    next
+    edit "tcp/9446"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9446 
+    next
+    edit "tcp/9447"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9447 
+    next
+    edit "TCP9440-9447"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9440-9447 
+    next
+    edit "9080-9087"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080-9087 
+    next
+    edit "1086"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1086 
+    next
+    edit "1186"
+        set protocol TCP/UDP/SCTP
+        set color 1
+        set tcp-portrange 1186 
+    next
+    edit "8013-8016"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8013-8016 
+    next
+    edit "8113-8116"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8113-8116 
+    next
+    edit "1080-1086"
+        set protocol TCP/UDP/SCTP
+        set color 1
+        set tcp-portrange 1080-1086 
+    next
+    edit "1180-1186"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1186 
+    next
+    edit "5080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5080 
+    next
+    edit "8085"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8085 
+    next
+    edit "4002"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4002 
+    next
+    edit "1037"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1037 
+    next
+    edit "9393"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9393 
+    next
+    edit "tcp7801-7900"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7801-7900 
+    next
+    edit "tcp1106"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1106 
+    next
+    edit "tcp/1414-1432"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1414-1432 
+    next
+    edit "40200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 40200 
+    next
+    edit "20769"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20769 
+    next
+    edit "20752"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20752 
+    next
+    edit "20762"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20762 
+    next
+    edit "20753"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20753 
+    next
+    edit "20750"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20750 
+    next
+    edit "20759"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20759 
+    next
+    edit "20668"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20668 
+    next
+    edit "20662"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20662 
+    next
+    edit "20754"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20754 
+    next
+    edit "1701"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1701 
+    next
+    edit "1180-1189"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1189 
+    next
+    edit "1280-1289"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1280-1289 
+    next
+    edit "1380-1389"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1380-1389 
+    next
+    edit "11443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 11443 
+    next
+    edit "12443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 12443 
+    next
+    edit "tcp8750"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8750 
+    next
+    edit "tcp32769-65535"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 32769-65535 
+    next
+    edit "TCP/9010-9011"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9010-9011 
+    next
+    edit "tcp7080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7080 
+    next
+    edit "tcp7443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7443 
+    next
+    edit "tcp/1581"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1581 
+    next
+    edit "tcp20000-20010"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20000-20010 
+    next
+    edit "6653"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6653 
+    next
+    edit "6654"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6654 
+    next
+    edit "6555"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6555 
+    next
+    edit "6574"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6574 
+    next
+    edit "7554"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7554 
+    next
+    edit "1718-1719"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1718-1719 
+    next
+    edit "8451-8452"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8451-8452 
+    next
+    edit "8455"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8455 
+    next
+    edit "tcp9100-9200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9100-9200 
+    next
+    edit "1084"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1084 
+    next
+    edit "udp8750"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 8750 
+    next
+    edit "udp32769-65535"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 32769-65535 
+    next
+    edit "8300"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8300 
+    next
+    edit "tcp7001to7012"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7001-7012:0-65535 
+    next
+    edit "tcp1521-2000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521-2000 
+    next
+    edit "tcp1000-65530"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1000-65530 
+    next
+    edit "tcp6621"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6621 
+    next
+    edit "tcp6673"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6673 
+    next
+    edit "tcp6676-6678"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6676-6678 
+    next
+    edit "tcp6942-6945"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6942-6945 
+    next
+    edit "tcp6947-6952"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6947-6952 
+    next
+    edit "tcp1000-65535"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1000-65535 
+    next
+    edit "tcp32"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 32 
+    next
+    edit "tcp9241"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9241 
+    next
+    edit "tcp_8014"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8014 
+    next
+    edit "tcp/9060-9063"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9060-9063 
+    next
+    edit "tcp19002"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19002 
+    next
+    edit "tcp38099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 38099 
+    next
+    edit "tcp48099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 48099 
+    next
+    edit "tcp/8011"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8011 
+    next
+    edit "tcp/8450-8499"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8450-8499 
+    next
+    edit "tcp7118"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7118 
+    next
+    edit "tcp/7891"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7891 
+    next
+    edit "TCP23"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 23:23 
+    next
+    edit "tcp/10000-25000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10000-25000 
+    next
+    edit "tcp/21005-21007"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21005-21007 
+    next
+    edit "7002"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7002 
+    next
+    edit "5222"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5222 
+    next
+    edit "5269"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5269 
+    next
+    edit "4505-4506"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4505-4506 
+    next
+    edit "1520-1530"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520-1530 
+    next
+    edit "21005"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21005 
+    next
+    edit "21007"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21007 
+    next
+    edit "21008"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21008 
+    next
+    edit "21009"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21009 
+    next
+    edit "tcp1521"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1521 
+    next
+    edit "udp32768"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 32768 
+    next
+    edit "tcp32768"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 32768 
+    next
+    edit "tcp50100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20100-50100 
+    next
+    edit "tcp50105"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50105 
+    next
+    edit "tcp50090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50090 
+    next
+    edit "tcp50091"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50091 
+    next
+    edit "tcp8188"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8188 
+    next
+    edit "tcp8481"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8481 
+    next
+    edit "tcp8040"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8040 
+    next
+    edit "tcp8042"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8042 
+    next
+    edit "tcp8041"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8041 
+    next
+    edit "tcp10020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10020 
+    next
+    edit "tcp60030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 60030 
+    next
+    edit "tcp2888"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2888 
+    next
+    edit "tcp9001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9001 
+    next
+    edit "tcp9092"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9092 
+    next
+    edit "tcp9393"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9393 
+    next
+    edit "udp1514"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1514 
+    next
+    edit "4118-4120"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4118-4120 
+    next
+    edit "4122"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4122 
+    next
+    edit "tcp/2010-2011"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2010-2011:0-65535 
+    next
+    edit "53489"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 53489 
+    next
+    edit "1520-1540"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520-1540 
+    next
+    edit "tcp180"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 180 
+    next
+    edit "TCP/21066-21070"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21066-21070 
+    next
+    edit "TCP/24000-24049"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 24000-24049 
+    next
+    edit "TCP/21000-21010"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21000-21010 
+    next
+    edit "TCP/21730-21749"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21730-21749 
+    next
+    edit "6672-6950"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6672-6950 
+    next
+    edit "8001-8004"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8001-8004 
+    next
+    edit "tcp/1080-1090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 0 
+    next
+    edit "1522-1550"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1522-1550 
+    next
+    edit "TCP2080-2085"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 2080-2085 
+    next
+    edit "TCP3080-3085"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3080-3085 
+    next
+    edit "UDP/24000-24049"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 24000-24049 
+    next
+    edit "UDP/21000-21010"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21000-21010 
+    next
+    edit "UDP/21730-21749"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 21730-21749 
+    next
+    edit "TCP/20007"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20007 
+    next
+    edit "TCP/20006"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20006 
+    next
+    edit "TCP/20005"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20005 
+    next
+    edit "TCP/20004"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20004 
+    next
+    edit "TCP/20003"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20003 
+    next
+    edit "TCP/3307"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3307 
+    next
+    edit "tcp/13786"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13786 
+    next
+    edit "1522-1570"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1522-1570 
+    next
+    edit "1520"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520 
+    next
+    edit "tcp/5432"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5432 
+    next
+    edit "UDP/32768-61000"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 32768-61000 
+    next
+    edit "TCP/32768-61000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 32768-61000 
+    next
+    edit "6620-7900"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6620-7900 
+    next
+    edit "5000-5200"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5000-5200 
+    next
+    edit "1180-1190"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1190 
+    next
+    edit "tcp/6551"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6551 
+    next
+    edit "tcp_31090"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 31090 
+    next
+    edit "tcp/9080-9099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080-9099 
+    next
+    edit "tcp/8080-8099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8080-8099 
+    next
+    edit "tcp/1101-1299"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1101-1299 
+    next
+    edit "tcp/1160"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1160 
+    next
+    edit "tcp/6020"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6020 
+    next
+    edit "8080-8081"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8080-8081 
+    next
+    edit "8000-8003"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000-8003 
+    next
+    edit "1380"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1380 
+    next
+    edit "80-84"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-84 
+    next
+    edit "tcp/9181"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9181 
+    next
+    edit "tcp/9183-9187"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9183-9187 
+    next
+    edit "tcp/9280-9287"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9280-9287 
+    next
+    edit "tcp/9380-9387"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9380-9387 
+    next
+    edit "tcp/9540"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9540 
+    next
+    edit "tcp/9541"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9541 
+    next
+    edit "tcp/9543-9547"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9543-9547 
+    next
+    edit "tcp/9640-9647"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9640-9647 
+    next
+    edit "tcp/9740-9747"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9740-9747 
+    next
+    edit "tcp/1081-1083"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1081-1083 
+    next
+    edit "tcp/1181-1183"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1181-1183 
+    next
+    edit "tcp/18008-18011"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 18008-18011 
+    next
+    edit "tcp/18108-18111"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 18108-18111 
+    next
+    edit "udp/1080"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1080 
+    next
+    edit "udp/1180"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1180 
+    next
+    edit "udp/1081-1083"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1081-1083 
+    next
+    edit "udp/1181-1183"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 1181-1183 
+    next
+    edit "udp/18008-18011"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 18008-18011 
+    next
+    edit "udp/18108-18111"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 18108-18111 
+    next
+    edit "udp/9081"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9081 
+    next
+    edit "udp/9084-9085"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9084-9085 
+    next
+    edit "tcp/9180-9181"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9180-9181 
+    next
+    edit "udp/9180-9181"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9180-9181 
+    next
+    edit "udp/9183-9187"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9183-9187 
+    next
+    edit "udp/9280-9287"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9280-9287 
+    next
+    edit "udp/9380-9387"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9380-9387 
+    next
+    edit "udp/9440-9441"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9440-9441 
+    next
+    edit "udp/9444-9445"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9444-9445 
+    next
+    edit "udp/9540-9541"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9540-9541 
+    next
+    edit "udp/9543-9547"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9543-9547 
+    next
+    edit "udp/9640-9647"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9640-9647 
+    next
+    edit "udp/9740-9747"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 9740-9747 
+    next
+    edit "8000-9093"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000-9093 
+    next
+    edit "tcp7910-7920"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7910-7920 
+    next
+    edit "tcp6550-6559"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6550-6559 
+    next
+    edit "9083-9093"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9083-9093 
+    next
+    edit "1180-1300"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1180-1300 
+    next
+    edit "6199-10000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6199-10000 
+    next
+    edit "26399-27664"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 26399-27664 
+    next
+    edit "27666-30000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 27666-30000 
+    next
+    edit "tcp/5000-6000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5000-6000 
+    next
+    edit "tcp6620"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6620 
+    next
+    edit "tcp6672-6675"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6672-6675 
+    next
+    edit "tcp6720"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6720 
+    next
+    edit "tcp6772-6775"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6772-6775 
+    next
+    edit "tcp6941-6948"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6941-6948 
+    next
+    edit "tcp7041-7048"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7041-7048 
+    next
+    edit "tcp5016-5018"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5016-5018 
+    next
+    edit "tcp6199-20000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6199-20000 
+    next
+    edit "tcp8000-10000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8000-10000 
+    next
+    edit "1108"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1108 
+    next
+    edit "tcp8030-8033"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8030-8033 
+    next
+    edit "tcp7070"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7070 
+    next
+    edit "7070"
+        set protocol TCP/UDP/SCTP
+        set color 1
+        set tcp-portrange 7070 
+    next
+    edit "udp/10050-10055"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 10050-10055 
+    next
+    edit "udp/7070"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 7070 
+    next
+    edit "udp/7443"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 7443 
+    next
+    edit "19011"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 19011 
+    next
+    edit "tcp9099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9099 
+    next
+    edit "6677"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6677 
+    next
+    edit "6675"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6675 
+    next
+    edit "tcp9080-9095"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080-9095 
+    next
+    edit "9966"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9966 
+    next
+    edit "tcp80"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80 
+    next
+    edit "tcp1580"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1580 
+    next
+    edit "tcp/9100-9300"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9100-9300 
+    next
+    edit "53380-53399"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 53380-53399 
+    next
+    edit "21000-27999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 21000-27999 
+    next
+    edit "50000-50500"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50000-50500 
+    next
+    edit "tcp902"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 902 
+    next
+    edit "tcp903"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 903 
+    next
+    edit "udp902"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 902 
+    next
+    edit "tcp8083"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8083 
+    next
+    edit "465"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 465 
+    next
+    edit "600-1023"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 600-1023 
+    next
+    edit "6081"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6081 
+    next
+    edit "8043"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8043 
+    next
+    edit "8099"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8099 
+    next
+    edit "8443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8443 
+    next
+    edit "8449"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8449 
+    next
+    edit "8773"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8773 
+    next
+    edit "10162"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10162 
+    next
+    edit "12321"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1232-12321 
+    next
+    edit "12902"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 12902 
+    next
+    edit "12904-12905"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 12904-12905 
+    next
+    edit "20161"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20161 
+    next
+    edit "tcp13399"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13399 
+    next
+    edit "tcp9151-9152"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9151-9152 
+    next
+    edit "tcp30021"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30021 
+    next
+    edit "tcp30030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 30030 
+    next
+    edit "tcp14237-14238"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 14237-14238 
+    next
+    edit "udp/0-22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 0-22:0-65535 
+    next
+    edit "27019"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 27019:27019 
+    next
+    edit "TCP27019"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 27019 
+    next
+    edit "TCp5801"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5801 
+    next
+    edit "UDp5432"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 5432 
+    next
+    edit "UDp27019"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 27019 
+    next
+    edit "UDp5801"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 5801 
+    next
+    edit "tcp9833"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9833 
+    next
+    edit "tcp8082"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8082 
+    next
+    edit "8022"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8022 
+    next
+    edit "tcp749"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 749 
+    next
+    edit "tcp3181"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3181 
+    next
+    edit "tcp4181"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 4181 
+    next
+    edit "tcp7574"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7574 
+    next
+    edit "tcp7575"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 7575 
+    next
+    edit "8649"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8649 
+    next
+    edit "8984"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8984 
+    next
+    edit "11000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 11000 
+    next
+    edit "11001"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 11001 
+    next
+    edit "16000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 16000 
+    next
+    edit "50030"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50030 
+    next
+    edit "50060"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50060 
+    next
+    edit "50071"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 50071 
+    next
+    edit "tcp1000-9999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1000-9999 
+    next
+    edit "tcp1520-1540"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1520-1540 
+    next
+    edit "tcp28001-28002"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 28001-28002 
+    next
+    edit "tcp1080-1184"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 1080-1184 
+    next
+    edit "tcp9080-9999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080-9999 
+    next
+    edit "tcp80-90"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 80-90 
+    next
+    edit "TCP22000"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 22000 
+    next
+    edit "TCP22100"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 22100 
+    next
+    edit "22418/tcp"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 22418 
+    next
+    edit "tcp/8021-8022"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8021-8022 
+    next
+    edit "tcp33890"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 33890 
+    next
+    edit "tcp13389"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 13389 
+    next
+    edit "tcp5678"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5678 
+    next
+    edit "tcp180-184"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 180-184 
+    next
+    edit "80-122"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8-122 
+    next
+    edit "tcp20443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20443 
+    next
+    edit "5673"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5673 
+    next
+    edit "8809"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8809 
+    next
+    edit "tcp9080"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 9080 
+    next
+    edit "tcp5673"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5673 
+    next
+    edit "tcp8809"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8809 
+    next
+    edit "3443"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 3443 
+    next
+    edit "tcp8003"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 8003 
+    next
+    edit "10160/tcp"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 10160 
+    next
+    edit "20000-27999"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 20000-27999 
+    next
+    edit "tcp0-22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 0-22 
+    next
+    edit "5559"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 5559 
+    next
+    edit "6559"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 6559 
+    next
+    edit "tcp_0-22"
+        set protocol TCP/UDP/SCTP
+        set tcp-portrange 0-22 
+    next
+    edit "udp_0-22"
+        set protocol TCP/UDP/SCTP
+        set udp-portrange 0-22 
+    next
+end

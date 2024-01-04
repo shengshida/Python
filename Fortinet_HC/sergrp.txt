@@ -1,0 +1,29 @@
+config firewall service group
+    edit "Email Access"
+            set member "DNS" "IMAP" "IMAPS" "POP3" "POP3S" "SMTP" "SMTPS"             
+    next
+    edit "Web Access"
+            set member "DNS" "HTTP" "HTTPS"             
+    next
+    edit "Windows AD"
+            set member "DCE-RPC" "DNS" "KERBEROS" "LDAP" "LDAP_UDP" "SAMBA" "SMB"             
+    next
+    edit "Exchange Server"
+            set member "DCE-RPC" "DNS" "HTTPS"             
+    next
+    edit "Exchange Server OWA"
+            set member "DNS" "HTTPS"             
+    next
+    edit "Outlook"
+            set member "DCE-RPC" "DNS" "IMAP" "IMAPS" "POP3" "POP3S" "SMTP" "SMTPS" "HTTPS"             
+    next
+    edit "移动巡检UDP端口"
+            set member "udp11211" "udp123" "udp135-139" "udp1433" "udp161" "udp23" "udp2381" "udp25" "udp3389" "udp513" "udp53" "udp6379" "udp69"             
+    next
+    edit "st_ib_host"
+            set member "1000-9999" "10086-10106" "20-22" "46000-46030" "47000-48000" "TCP/30001-30030" "53389" "tcp10086-10087" "tcp30001-30005" "tcp46000-46006" "13805"             
+    next
+    edit "bmw2000256947ser"
+            set member "TCP/3306" "tcp/113" "tcp/20049" "tcp/21" "tcp/22" "tcp/32769" "tcp/32803" "tcp/35000" "tcp/4046" "tcp/50010" "tcp/50020" "tcp/50070" "tcp/50075" "tcp/50475" "tcp/662" "tcp/7574" "tcp/7575" "tcp/80" "tcp/875" "tcp/892" "tcp/8984" "TCP/8088" "tcp/50470" "tcp/8019" "tcp/8020" "tcp/8030" "tcp/8031" "tcp/8032" "tcp/8033" "tcp/8480" "tcp/8485" "TCP/60010" "TCP/60020" "TCP/9083" "tcp/10000" "tcp/1011" "tcp/19888" "tcp/2181" "tcp/2888" "tcp/3888" "tcp/60000" "tcp2049" "tcp9000" "udp/1011" "udp/32769" "udp111" "udp2049" "tcp10020" "tcp111" "tcp2888" "tcp32768" "tcp50090" "tcp50091" "tcp50100" "tcp50105" "tcp60030" "tcp8040" "tcp8041" "tcp8042" "tcp8188" "tcp8481" "tcp9001" "tcp9092" "tcp9393" "udp32768"             
+    next
+end

@@ -1,0 +1,4 @@
+sy
+int lo 1 
+ip add 2.2.2.2 32 
+q

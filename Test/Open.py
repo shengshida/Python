@@ -1,0 +1,7 @@
+print ("输入你要打开的TXT文件")
+a=str(input())
+print ("输入你要写入的TXT文件")
+b=str(input())
+f1=open(a)
+f2=open(b,"r+")
+f2.write(f1.read())
