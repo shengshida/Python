@@ -6,7 +6,7 @@ import urllib.parse
 import requests
 import json
 
-url = "https://sctapi.ftqq.com/SCT148937TjbF0erjEQKSScMXqQljuqpah.send"
+url = "XXXX"
 data = {'title':"Title" , 'desp':"Desp"}
 json_data = json.dumps(data)
 aheaders = {'Content-Type':'application/json'}

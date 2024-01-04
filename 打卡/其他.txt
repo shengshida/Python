@@ -1,2 +1,0 @@
-https://sctapi.ftqq.com/SCT148937TjbF0erjEQKSScMXqQljuqpah.send?title=Clock-In%20Complete%20
-url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c376785d-a1fa-4ba9-9ef9-46c061f5e11c"

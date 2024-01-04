@@ -4,8 +4,8 @@ import requests
 import json
 
 
-url = 'https://open.feishu.cn/open-apis/bot/v2/hook/2f52f9da-4bbb-4bae-8790-4369f4ae1a76'
-#url = 'https://open.feishu.cn/open-apis/bot/v2/hook/4090d72d-04ff-4c26-b5f8-35be5bada176'
+url = 'XXXX'
+#url = 'XXXX'
 data = {'msg_type':'text','content':{'text':'Webhookwebhook测试'}}
 '''
 content = {

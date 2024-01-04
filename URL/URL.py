@@ -4,7 +4,7 @@
 from urllib.request import urlopen
 import time
 try :
-    URL = "https://sctapi.ftqq.com/SCT148937TjbF0erjEQKSScMXqQljuqpah.send?title=Clock-In%20Fail%20"
+    URL = "XXXX"
     myURL = urlopen(URL)
     print(myURL.read())
 except :
@@ -12,4 +12,4 @@ except :
 
 
 #tasklist |find "dnplayer.exe"
-#urlopen("https://sctapi.ftqq.com/SCT148937TjbF0erjEQKSScMXqQljuqpah.send?title=Clock-In%20Fail%20")
+#urlopen("XXXX")

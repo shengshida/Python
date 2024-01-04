@@ -32,8 +32,8 @@ with open('./log/clockin_log.csv',"a") as file :
 time.sleep(60)
 
 try :
-    WX_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c376785d-a1fa-4ba9-9ef9-46c061f5e11c"
-    DD_url = "https://oapi.dingtalk.com/robot/send?access_token=9c992c506733a8f649db33ce7ffdf15b9225c51b4917fe3c9c26cf6bdf6ebdec"
+    WX_url = "XXXX"
+    DD_url = "XXXX"
     header = {'Content-Type':'application/json'}
     data = {
         "msgtype" : "markdown" ,
