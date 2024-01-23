@@ -205,7 +205,7 @@ def clockin_action() :
         time.sleep(10)
         os.popen('..\\ld -s 0 input tap 110 1860')
         time.sleep(10)
-        os.popen('..\\ld -s 0 input tap 70 380')
+        os.popen('..\\ld -s 0 input tap 70 260')
         time.sleep(10)
         os.popen('..\\ld -s 0 input tap 340 1880')
         time.sleep(10)
