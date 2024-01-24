@@ -20,7 +20,6 @@ def snmp_get(ip, oid):
     print(errorIndication)
     print(errorStatus)
     print(errorIndex)
-    print(varBinds)
-    for i in varBinds:
-        return i
-print(snmp_get('192.168.1.1', '1.3.6.1.2.1.1.5.0'))
+    print(varBinds[0])
+    return(str(varBinds[0]))
+print(snmp_get('10.255.255.254', '1.3.6.1.2.1.1.5.0'))

@@ -4,7 +4,7 @@ import time
 def snmp_bulkget(ip, oid, n=0):
     # 实现snmpbulk
     iterator = bulkCmd(SnmpEngine(),
-                   CommunityData('xxxxxx'),
+                   CommunityData('SNMP_READ'),
                    UdpTransportTarget((ip, 161)),
                    ContextData(),
                    0,50,
@@ -26,4 +26,4 @@ def snmp_bulkget(ip, oid, n=0):
                 return snmp_bulkget(ip, oid, n)
     return result
 #
-print(snmp_bulkget('192.168.1.1','1.3.6.1.4.1.25506.2.6.1.1.1.1.8'))
+print(snmp_bulkget('10.255.255.254','1.3.6.1.4.1.2011.5.25.118.2.2.1'))
