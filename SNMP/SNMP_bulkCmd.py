@@ -26,4 +26,4 @@ def snmp_bulkget(ip, oid, n=0):
                 return snmp_bulkget(ip, oid, n)
     return result
 #
-print(snmp_bulkget('10.255.255.254','1.3.6.1.4.1.2011.5.25.118.2.2.1'))
+print(snmp_bulkget('192.168.1.1','1.3.6.1.2.1.5.29.1'))
