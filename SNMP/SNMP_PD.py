@@ -15,11 +15,9 @@ def snmp_bulkget(ip, oid):
     result = []
     j = 3
     for i in iterator :
-        j = j - 1
         if i[3] != [] :
             result.append(str(i[3][0]))
-        #print(str(i[3][0]))
-        if j < 0 :
+        else :
             return result
 
     return result
