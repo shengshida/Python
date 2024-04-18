@@ -3,7 +3,7 @@ import re
 import time
 #reader = easyocr.Reader(['ch_sim','en'])
 reader = easyocr.Reader(['ch_sim'])
-result = reader.readtext('./pictures/99.png')
+result = reader.readtext('./pictures/3.jpg')
 j = 0
 match_nowtime = time.asctime(time.localtime(time.time()))[11:13]
 for i in result:
