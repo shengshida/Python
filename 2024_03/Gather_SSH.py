@@ -24,10 +24,10 @@ def gather_ssh(name, ip, cli):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     try :
-        ssh.connect(hostname = ip, port = 22,username = "admin", password = "Huawei@123", timeout=180)
+        ssh.connect(hostname = ip, port = 22,username = "admin", password = "Sybfh@huawei7700", timeout=180)
     except :
         with open("error.txt","a",encoding="UTF-8") as file :
-            file.write(name + "_" + ip + "_采集错误\n")
+            file.write("[" + name + "]_[" + ip + "]_" + "_采集错误\n")
         return
     time.sleep(3)
     ssh_log = ssh.invoke_shell()
@@ -59,7 +59,7 @@ max_threas = 128
 
 thread_pool = threading.BoundedSemaphore(max_threas)
 
-dict_cli = {"huawei":[],"cisco":[]}
+dict_cli = {"huawei":[]}
 
 Thread_list = []
 
