@@ -15,5 +15,5 @@ class sleep (threading.Thread):
 
 thread_1 = sleep("thread_1")
 thread_1.start()
-#thread_1.join()
+thread_1.join()
 print("主线程结束")

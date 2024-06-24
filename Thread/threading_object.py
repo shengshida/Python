@@ -10,4 +10,5 @@ def sleep():
 #t = threading.Thread(target=sleep)
 t = threading.Thread(target=sleep,name="子线程1")
 t.start()
+t.join()
 print("主线程结束")

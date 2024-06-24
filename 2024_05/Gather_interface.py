@@ -1,8 +1,8 @@
-class class_match_1():
+class Class_Gather():
 
     value_number = 0
 
-    def match_1(slef, match_line, match_name, match_ip):
+    def function_match(slef, match_line, match_name, match_ip):
 
         #Match条件
         if slef.value_number == 0 :
@@ -61,7 +61,7 @@ class class_match_1():
 import re
 import os
 
-gather_info = class_match_1()
+gather_info = Class_Gather()
 
 for i in os.listdir():
     match_Obj_1 = re.match('\[(.+)\]_\[(.+)\].txt',i,re.I)
@@ -69,7 +69,7 @@ for i in os.listdir():
         print("正在收集 | " + match_Obj_1[0])
         with open(match_Obj_1[0],'r') as file_1 :
             for line_1 in file_1 :
-                gather_info.match_1(line_1, match_Obj_1[1], match_Obj_1[2])
+                gather_info.function_match(line_1, match_Obj_1[1], match_Obj_1[2])
 
 print("脚本结束")
 input()
