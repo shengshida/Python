@@ -121,15 +121,15 @@ def datacom_loop(device_ip,username,password,device_name,n_username,n_password):
 device_ip='192.168.240.253'
 username='python'
 password='Huawei@123'
-n_username='netconf'
-n_password='Huawei@123'
+nc_username='netconf'
+nc_password='Huawei@123'
 device_name='X_T1_AGG1'
 syslog_server='10.1.60.2'
 
 if __name__=='__main__':
     try:
-        netconf_syslog_host(device_ip,n_username,n_password,syslog_server)
-        datacom_loop(device_ip,username,password,device_name,n_username,n_password)
+        netconf_syslog_host(device_ip,nc_username,nc_password,syslog_server)
+        datacom_loop(device_ip,username,password,device_name,nc_username,nc_password)
     except KeyboardInterrupt:
         print('monitor stop')
 
