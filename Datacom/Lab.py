@@ -86,7 +86,7 @@ def netconf_time(device_ip,username,password):
     print(time)
     rpc_content = """
     <sys:set-current-datetime xmlns:sys="urn:ietf:params:xml:ns:yang:ietf-system">
-      <sys:current-datetime>2000-01-01T00:00:00-12:00</sys:current-datetime>
+      <sys:current-datetime>{}</sys:current-datetime>
     </sys:set-current-datetime>""".format(time)
     print('using netconf config time')
     netconf_by_rpc(device_ip, username, password, rpc_content)
