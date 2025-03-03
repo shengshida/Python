@@ -52,7 +52,7 @@ def netconf_by_rpc(device_ip,username,password,rpc_content):
     ) as m:
         rpc_command=to_ele(rpc_content)
         m.rpc(rpc_command)
-        print('netconf config by rpc sucess')
+        print('netconf config by rpc success')
 
 def netconf_syslog_host(device_ip,username,password,syslog_server):
     rpc_content="""
@@ -91,7 +91,7 @@ def netconf_time(device_ip,username,password):
     print('using netconf config time')
     netconf_by_rpc(device_ip, username, password, rpc_content)
 
-def datacom_loop(device_ip,username,password,device_name,n_username,n_password):
+def datacom_loop(device_ip,username,password,device_name,nc_username,nc_password):
     while True:
         datacom=Datacom(device_ip,username,password)
         with open('command.txt') as f:
@@ -99,14 +99,14 @@ def datacom_loop(device_ip,username,password,device_name,n_username,n_password):
                 print(datacom.command(cmd))
 
         if datacom.check_fan_fault():
-            print('All fans are faulty')
+            print('All fans are fault.')
 
         try:
             one_day_delta=datetime.now()-last_download_time>=timedelta(days=1)
         except NameError:
             one_day_delta=True
         if one_day_delta:
-            netconf_time(device_ip,n_username,n_password)
+            netconf_time(device_ip,nc_username,nc_password)
             download_time=datetime.now()
             download_date=download_time.strftime('%Y_%m_%d')
             config_filename='{}_{}.zip'.format(download_date,device_name)

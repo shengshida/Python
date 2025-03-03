@@ -24,7 +24,7 @@ def gather_ssh(name, ip, cli):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     try :
-        ssh.connect(hostname = "10.31.20.254", port = 22,username = "admin", password = "Huawei@123", timeout=180)
+        ssh.connect(hostname = "10.30.3.254", port = 22,username = "admin", password = "Sybfh@huawei7700", timeout=30)
     except :
         with open("error.txt","a",encoding="UTF-8") as file :
             file.write(name + "_" + ip + "_采集错误\n")
@@ -36,13 +36,13 @@ def gather_ssh(name, ip, cli):
     ssh_log.send("stelnet " + ip + "\n")
     time.sleep(1)
     ssh_log.send("admin\n")
-    time.sleep(20)
+    time.sleep(10)
     ssh_log.send("y\n")
-    time.sleep(10)
+    time.sleep(2)
     ssh_log.send("n\n")
-    time.sleep(10)
-    ssh_log.send("Huawei@123\n")
-    time.sleep(10)
+    time.sleep(8)
+    ssh_log.send("Sybfh@huawei7700\n")
+    time.sleep(2)
     iter_cli = iter(cli)
     for i in iter_cli:
         match_Obj_1 = re.match(r"(.+?),(\d+)",i,re.I)
@@ -67,7 +67,7 @@ def gather_ssh(name, ip, cli):
 
 file_mgmt = "file_mgmt.csv"
 file_huawei_cli = "huawei_cli.csv"
-max_threas = 3
+max_threas = 4
 
 thread_pool = threading.BoundedSemaphore(max_threas)
 
