@@ -65,7 +65,6 @@ def netconf_syslog_host(device_ip,username,password,syslog_server):
         <syslog:log-actions>
           <syslog:remote>
             <syslog:destination>
-              <syslog:name>syslog-host</syslog:name>
               <syslog:udp>
                 <syslog:address>{}</syslog:address>
                 <syslog:port>43</syslog:port>
@@ -76,7 +75,8 @@ def netconf_syslog_host(device_ip,username,password,syslog_server):
         </syslog:log-actions>
       </syslog:syslog>
     </config>
-  </edit-config>""".format(syslog_server)
+  </edit-config>
+    """.format(syslog_server)
     print('using netconf config syslog host')
     netconf_by_rpc(device_ip,username,password,rpc_content)
 
@@ -118,13 +118,13 @@ def datacom_loop(device_ip,username,password,device_name,nc_username,nc_password
         datacom.close()
         sleep(300)
 
-device_ip='192.168.240.253'
-username='python'
-password='Huawei@123'
-nc_username='netconf'
-nc_password='Huawei@123'
-device_name='X_T1_AGG1'
-syslog_server='10.1.60.2'
+device_ip = '10.255.255.100'
+syslog_server = '10.1.60.2'
+username = 'admin@huawei.com'
+password = 'Huawei@123'
+nc_username = 'admin@huawei.com'
+nc_password = 'Huawei@123'
+device_name = 'X_T1_AGG1'
 
 if __name__=='__main__':
     try:

@@ -43,7 +43,7 @@ class DataCom:
 
 
 def netconf_by_rpc(device_ip, nc_username, nc_password, rpc_content) :
-    with manager.connect_ssh(host = device_ip, usernaem  = nc_username, password = nc_password, hostkey_verify = False, device_params = {"name":"huaweiyang"}) as m :
+    with manager.connect_ssh(host = device_ip, username  = nc_username, password = nc_password, hostkey_verify = False, device_params = {"name":"huaweiyang"}) as m :
         m.rpc(to_ele(rpc_content))
         print("netconf config by rpc success.")
 

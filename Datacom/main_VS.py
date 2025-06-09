@@ -84,11 +84,11 @@ def netconf_config_syslog_host(device_ip, username, password, log_server):
     print('using netconf configuration syslog host...')
     netconf_by_rpc(device_ip, username, password, rpc_content)
 
-device_ip = '10.1.0.6'
+device_ip = '10.255.255.100'
 log_server = '10.1.60.2'
-username = 'python'
+username = 'admin@huawei.com'
 password = 'Huawei@123'
-nc_username = 'netconf'
+nc_username = 'admin@huawei.com'
 nc_password = 'Huawei@123'
 device_name = 'X_T1_AGG1'
 
