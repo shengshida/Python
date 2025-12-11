@@ -1,0 +1,5 @@
+screen-length 0 temporary,3
+dis cur,20
+dis int ,120
+dis transceiver verbose,120
+dis port vl ,10
