@@ -8,14 +8,14 @@ import re
 
 IPv4_address = "None"
 IPv6_address = "None"
-result = subprocess.run(['cmd', '/c', 'netsh interface ipv4 show ipaddress interface="WLAN"'], capture_output=True, text=True)
-Object_match = re.match(r'\n地址 (.+) .+',result.stdout,re.I)
-if Object_match != None:
-    IPv4_address = Object_match[1]
-result = subprocess.run(['cmd', '/c', 'netsh interface ipv6 show addresses interface="WLAN"'], capture_output=True, text=True)
-Object_match= re.match(r'\n地址 (.+)%\d+ .+',result.stdout,re.I)
-if Object_match != None:
-    IPv6_address = Object_match[1]
+result = subprocess.run(['cmd', '/c', 'netsh interface ipv4 show ipaddress interface="WLAN"'], capture_output=True, text=True, encoding='utf-8')
+Object_match = re.findall(r'\d+\.\d+\.\d+\.\d+',result.stdout,re.I)
+if len(Object_match) != 0:
+    IPv4_address = Object_match[0]
+result = subprocess.run(['cmd', '/c', 'netsh interface ipv6 show addresses interface="WLAN"'], capture_output=True, text=True, encoding='utf-8')
+Object_match= re.findall(r'\S+:\S+:\S+:\S+:\S+:\S+:\S+:\S+',result.stdout,re.I)
+if len(Object_match) != 0:
+    IPv6_address = Object_match[0]
 
 WX_url = "XXXX"
 DD_url = "XXXX"
