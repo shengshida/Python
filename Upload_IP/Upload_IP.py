@@ -15,7 +15,7 @@ if len(Object_match) != 0:
 result = subprocess.run(['cmd', '/c', 'netsh interface ipv6 show addresses interface="WLAN"'], capture_output=True, text=True, encoding='utf-8')
 Object_match= re.findall(r'\S+:\S+:\S+:\S+:\S+:\S+:\S+:\S+',result.stdout,re.I)
 if len(Object_match) != 0:
-    IPv6_address = Object_match[0]
+    IPv6_address = '\n'.join(Object_match)
 
 WX_url = "XXXX"
 DD_url = "XXXX"
@@ -24,8 +24,8 @@ data = {
     "msgtype" : "markdown" ,
     'markdown' : {
         "title" : "Upload_IP",
-        "text" : "#### IPv4_address:\n#### " + IPv4_address + "\n\n#### IPv6_address:\n#### " + IPv6_address,
-        "content" : " IPv4_address:\n " + IPv4_address + "\n\n IPv6_address:\n " + IPv6_address
+        "text" : "####IPv4_address:\n####" + IPv4_address + "\n\n####IPv6_address:\n####" + IPv6_address,
+        "content" : "IPv4_address:\n" + IPv4_address + "\n\nIPv6_address:\n" + IPv6_address
     }
 }
 json_data = json.dumps(data)
