@@ -24,7 +24,7 @@ data = {
     "msgtype" : "markdown" ,
     'markdown' : {
         "title" : "Upload_IP",
-        "text" : "####IPv4_address:\n####" + IPv4_address + "\n\n####IPv6_address:\n####" + IPv6_address,
+        "text" : "#### IPv4_address:\n#### " + IPv4_address + "\n\n#### IPv6_address:\n#### " + IPv6_address.replace("\n", "\n#### "),
         "content" : "IPv4_address:\n" + IPv4_address + "\n\nIPv6_address:\n" + IPv6_address
     }
 }
